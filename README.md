@@ -1,16 +1,59 @@
-## Hi there 👋
+# Hi 👋, I'm Vamshi Vade
 
-<!--
-**vamshivade/vamshivade** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## MERN Stack Developer | React.js | Next.js | Node.js | Express.js | MongoDB
 
-Here are some ideas to get you started:
+💻 Full Stack MERN Developer with 2.6+ years of experience building scalable web applications, REST APIs, real-time systems, Telegram Mini Apps, and blockchain-integrated applications.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🚀 Tech Stack
+
+### Frontend
+- React.js
+- Next.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Tailwind CSS
+- Bootstrap
+
+### Backend
+- Node.js
+- Express.js
+- REST APIs
+- JWT Authentication
+- RBAC
+
+### Database
+- MongoDB
+- Mongoose
+
+### Real-Time
+- WebSockets
+- Socket.io
+
+### Blockchain
+- TON
+- Solana
+
+### Tools
+- Git
+- GitHub
+- Postman
+- VS Code
+
+---
+
+## 🌱 Currently Learning
+
+- Advanced React.js
+- System Design
+- TypeScript
+
+---
+
+## 📫 Connect with Me
+
+- LinkedIn: https://linkedin.com/in/vamshivade
+- GitHub: https://github.com/vamshivade
+- Email: vamshi.vade1@gmail.com
