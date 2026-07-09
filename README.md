@@ -4,7 +4,7 @@
 
 ### MERN Stack Developer | React.js | Next.js | Node.js | Express.js | MongoDB
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&duration=3000&pause=1200&color=0A66C2&center=true&vCenter=true&width=850&lines=MERN+Stack+Developer;React.js+Developer;Next.js+Developer;Node.js+Backend+Developer;REST+API+Developer;WebSockets+%7C+MongoDB;Telegram+Mini+Apps+Developer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&duration=3000&pause=1200&color=0A66C2&center=true&vCenter=true&width=850&lines=Full+Stack+MERN+Developer;Building+Scalable+Web+Applications;REST+API+Developer;Real-Time+Applications;Telegram+Mini+Apps;TON+%26+Solana+Integration)](https://git.io/typing-svg)
 
 <br>
 
@@ -20,121 +20,134 @@
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-<br>
+<br><br>
 
-## 💫 About Me
-
-💻 MERN Stack Developer with **2.6+ years of experience** developing scalable web applications, Telegram Mini Apps, and real-time gaming platforms.
-
-🚀 Experienced in building production-ready applications using **React.js, Next.js, Node.js, Express.js, MongoDB, JavaScript, REST APIs, JWT Authentication, and Socket.io.**
-
-🔗 Hands-on experience integrating **TON** and **Solana** blockchain solutions into modern web applications.
-
-🏢 Currently working as a **MERN Stack Developer at String Metaverse Limited**, building Telegram-based Web3 gaming platforms and scalable backend services.
 <img src="https://komarev.com/ghpvc/?username=vamshivade&style=for-the-badge&color=0A66C2"/>
 
 </div>
 
-## ⚡ Tech Stack
+---
+
+# 💫 About
+
+- 💻 MERN Stack Developer with **2.6+ years** of professional experience.
+- 🚀 Building scalable web applications, Telegram Mini Apps and real-time gaming platforms.
+- 🔗 Experience integrating **TON** and **Solana** blockchain solutions.
+- 🎯 Open to **Frontend** and **MERN Stack Developer** opportunities.
+
+---
+
+# ⚡ Tech Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=js,react,nextjs,nodejs,express,mongodb,html,css,tailwind,bootstrap,git,github,postman,vscode,npm&perline=5"/>
+### Languages
+
+<img src="https://skillicons.dev/icons?i=js,html,css"/>
+
+### Frontend
+
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap"/>
+
+### Backend
+
+<img src="https://skillicons.dev/icons?i=nodejs,express,mongodb"/>
+
+### Tools
+
+<img src="https://skillicons.dev/icons?i=git,github,postman,vscode,npm"/>
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Mongoose-880000?style=for-the-badge"/>
-
 <img src="https://img.shields.io/badge/REST_API-009688?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge"/>
-
 <img src="https://img.shields.io/badge/WebSockets-000000?style=for-the-badge"/>
-
+<img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge"/>
-
 <img src="https://img.shields.io/badge/RBAC-0052CC?style=for-the-badge"/>
-
 <img src="https://img.shields.io/badge/TON-0098EA?style=for-the-badge"/>
-
 <img src="https://img.shields.io/badge/Solana-9945FF?style=for-the-badge"/>
 
 </div>
 
-## 💼 Professional Experience
+---
 
-### 🏢 String Metaverse Limited
+# 💼 Professional Experience
 
-**MERN Stack Developer**
+## 🏢 String Metaverse Limited
 
-📍 Hyderabad, India
+**MERN Stack Developer**  
+📍 Hyderabad, India  
+📅 January 2024 – Present
 
-📅 Jan 2024 – Present
-
-- 🚀 Developed scalable RESTful APIs using Node.js and Express.js.
-- ⚛️ Built responsive user interfaces with React.js and Next.js.
-- 🔐 Implemented JWT Authentication and Role-Based Access Control (RBAC).
-- ⚡ Built real-time applications using WebSockets (Socket.io).
-- 💾 Optimized MongoDB queries for high-frequency gameplay systems.
-- 🎮 Developed Telegram Mini Apps for Web3 gaming platforms.
-- 🔗 Integrated TON blockchain-based reward systems.
-
-## 🚀 Featured Projects
-
-### 🎮 String Games
-
-React.js • Node.js • MongoDB • Socket.io • TON
-
-- Multiplayer Gaming Platform
-- Crash, Dice, Mines & Limbo
-- Wallet Integration
-- Referral & Reward System
+- Designed and developed scalable backend services for gaming platforms.
+- Built responsive web applications and reusable frontend components.
+- Developed secure authentication and authorization systems.
+- Built real-time multiplayer functionality using WebSockets.
+- Optimized backend performance and MongoDB queries.
+- Developed Telegram Mini Apps with blockchain integrations.
 
 ---
 
-### 🎯 String Arc8
+# 🚀 Featured Projects
 
-React.js • Express.js • MongoDB
+## 🎮 String Games
 
+**React.js • Node.js • MongoDB • Socket.io • TON**
+
+- Multiplayer gaming platform
+- Crash, Dice, Mines & Limbo
+- Wallet integration
+- Referral & reward system
+
+---
+
+## 🎯 String Arc8
+
+**React.js • Express.js • MongoDB**
+
+- Arcade gaming platform
 - Doodle Jump
 - Stack
 - Flappy Bird
 - Leaderboards
-- Reward System
 
 ---
 
-### 🏎️ String Drive
+## 🏎️ String Drive
 
-React.js • Node.js • MongoDB
+**React.js • Node.js • MongoDB**
 
-- Racing Game
-- Coin Collection
-- Survival Scoring
-- Blockchain Rewards
+- Racing game
+- Coin collection
+- Survival mode
+- Blockchain rewards
 
 ---
 
-### 🧩 String Tetris
+## 🧩 String Tetris
 
-React.js • Context API • Node.js
+**React.js • Context API • Node.js**
 
-- Play-to-Earn
-- Scoring Engine
-- Level Progression
-- Reward System
+- Play-to-Earn gameplay
+- Level progression
+- Scoring engine
+- Reward system
 
-## 📈 GitHub Activity
+---
+
+# 📈 GitHub Activity
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=vamshivade&theme=tokyonight&hide_border=true"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=vamshivade&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img height="170" src="https://streak-stats.demolab.com?user=vamshivade&theme=tokyonight&hide_border=true"/>
 
 </div>
 
 ---
 
-## 🤝 Connect With Me
+# 🤝 Connect With Me
 
 <div align="center">
 
