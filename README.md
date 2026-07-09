@@ -136,9 +136,9 @@ I'm a **MERN Stack Developer** with **2.6+ years** of hands-on experience buildi
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=vamshivade&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=vamshivade&show_icons=true&theme=tokyonight&hide_border=true">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vamshivade&layout=compact&theme=tokyonight&hide_border=true"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vamshivade&layout=compact&theme=tokyonight&hide_border=true">
 
 </div>
 
