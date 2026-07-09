@@ -136,21 +136,15 @@ I'm a **MERN Stack Developer** with **2.6+ years** of hands-on experience buildi
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=vamshivade&show_icons=true&theme=tokyonight&hide_border=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=vamshivade&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vamshivade&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=vamshivade&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vamshivade&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=vamshivade&theme=tokyo-night" alt="Contribution Graph"/>
+<img src="https://streak-stats.demolab.com?user=vamshivade&theme=tokyonight&hide_border=true"/>
 
 </div>
 
