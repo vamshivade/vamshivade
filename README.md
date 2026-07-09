@@ -2,145 +2,110 @@
 
 # 👋 Hi, I'm Vamshi Vade
 
-### 🚀 MERN Stack Developer | React.js • Next.js • Node.js • Express.js • MongoDB
+### MERN Stack Developer | React.js | Next.js | Node.js | Express.js | MongoDB
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=26&duration=3500&pause=1200&color=0A66C2&center=true&vCenter=true&width=850&lines=MERN+Stack+Developer;Full-Stack+JavaScript+Developer;React.js+%7C+Next.js+Expert;Node.js+%7C+Express.js+Backend;REST+API+%7C+WebSockets+%7C+MongoDB;Blockchain+Enthusiast+(TON+%7C+Solana);Building+Scalable+Web+Apps+🚀)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=26&duration=3500&pause=1000&color=0A66C2&center=true&vCenter=true&width=900&lines=Full+Stack+MERN+Developer;React.js+%7C+Next.js+Developer;Node.js+%7C+Express.js+Backend;REST+API+%7C+WebSockets+%7C+MongoDB;Building+Scalable+Web+Applications;Always+Learning+New+Technologies+🚀)](https://git.io/typing-svg)
 
-<br/>
-
-<p>
-<a href="https://linkedin.com/in/vamshi-vade-1b7287157/">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+<a href="https://linkedin.com/in/vamshivade">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
+
 <a href="mailto:vamshi.vade1@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
+
 <a href="https://github.com/vamshivade">
-<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
-<a href="tel:+917013415923">
-<img src="https://img.shields.io/badge/Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Phone"/>
-</a>
-</p>
 
-<p>
-<img src="https://komarev.com/ghpvc/?username=vamshivade&style=for-the-badge&color=0e75b6" alt="Profile Views"/>
-<img src="https://img.shields.io/badge/Experience-2.6%20Years-blue?style=for-the-badge&logo=code" alt="Experience"/>
-<img src="https://img.shields.io/badge/Location-Hyderabad%2C%20India-red?style=for-the-badge&logo=google-maps" alt="Location"/>
-</p>
+<img src="https://komarev.com/ghpvc/?username=vamshivade&style=for-the-badge&color=0A66C2"/>
 
 </div>
 
 ---
 
-## 🧑‍💻 About Me
+# 💫 About Me
 
-I'm a **MERN Stack Developer** with **2.6+ years** of hands-on experience building scalable web applications, Telegram Mini Apps, and real-time gaming platforms. I thrive in fast‑paced startup environments, designing robust backend architectures and crafting high‑performance user interfaces.
+🚀 MERN Stack Developer with **2.6+ years** of experience building scalable web applications.
 
-- 🔭 Currently working at **String Metaverse Limited** – building Web3 gaming ecosystems on Telegram.
-- 🌱 Exploring **TypeScript**, **System Design**, and **Cloud Technologies**.
-- ⚡ Passionate about **clean code**, **REST API design**, and **real‑time systems**.
-- 🎯 Goal: Contribute to open‑source projects and master full‑stack development.
+💻 Specialized in **React.js, Next.js, Node.js, Express.js, MongoDB, REST APIs, JWT Authentication, WebSockets, Telegram Mini Apps, TON & Solana.**
+
+🏢 Currently working at **String Metaverse** building real-time Web3 gaming platforms.
+
+🌱 Currently learning **TypeScript, System Design and Cloud Technologies.**
+
+🎯 Looking for **Frontend / MERN Stack Developer** opportunities.
 
 ---
 
-## 🛠️ Tech Stack
+# ⚡ Tech Stack
 
 <div align="center">
 
-### **Languages & Core**
-<img src="https://skillicons.dev/icons?i=js,html,css" />
+<img src="https://skillicons.dev/icons?i=js,react,nextjs,nodejs,express,mongodb,html,css,tailwind,bootstrap,git,github,postman,vscode,npm&perline=5"/>
 
-### **Frontend**
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap" />
+<br>
 
-### **Backend & Database**
-<img src="https://skillicons.dev/icons?i=nodejs,express,mongodb" />
+<img src="https://img.shields.io/badge/REST%20API-009688?style=for-the-badge"/>
 
-### **Tools & Platforms**
-<img src="https://skillicons.dev/icons?i=git,github,postman,vscode,npm" />
+<img src="https://img.shields.io/badge/WebSockets-010101?style=for-the-badge"/>
 
-### **Specialized**
-<img src="https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white" />
-<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
-<img src="https://img.shields.io/badge/TON-0098EA?style=for-the-badge&logo=ton&logoColor=white" />
-<img src="https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white" />
+<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/TON-0098EA?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Solana-9945FF?style=for-the-badge"/>
 
 </div>
 
 ---
 
-## 💼 Professional Experience
+# 🚀 Featured Projects
 
-### 🏢 **String Metaverse Limited** — Hyderabad, India
-*Jan 2024 – Present*
+### 🎮 Telegram Gaming Platform
+> React.js • Node.js • MongoDB • WebSockets • TON Blockchain
 
-- Designed and developed **scalable RESTful APIs** using Node.js and Express.js for gaming and reward platforms.
-- Built responsive, interactive UIs with **React.js** and **Next.js**.
-- Implemented **JWT authentication** and **role‑based access control** to secure APIs.
-- Developed real‑time systems with **WebSockets** (Socket.io) to synchronize gameplay events.
-- Optimized **MongoDB** queries and backend services for high‑frequency gameplay events.
+✔ Multiplayer Games
 
----
+✔ Real-Time Gameplay
 
-## 🎮 Featured Projects
+✔ Wallet Integration
 
-### 🎯 **String Games** – Telegram Web3 Gaming Platform
-*A Telegram Mini‑App supporting Crash, Dice, Mines, and Limbo*
-- Built Node.js backend for game sessions, betting logic, reward calculations, and withdrawals.
-- Integrated **TON blockchain** wallet connections for cryptocurrency conversions.
-- Implemented real‑time multiplayer with WebSockets for synchronized rounds.
-- Developed referral, task, and booster systems to drive user engagement.
+✔ Referral & Reward System
 
 ---
 
-### 🎪 **String Arc8** – Telegram Arcade Gaming Platform
-*Mini‑games: Doodle Jump, Stack, Flappy Bird*
-- Implemented bet‑based mechanics with reward multipliers and win/loss validation.
-- Built leaderboards and score tracking using optimized MongoDB aggregation.
-- Integrated TON rewards for converting points to tokens.
-- Seamless Telegram bot onboarding with `/start` and Run App flows.
+### 🎲 Telegram Arcade Platform
+
+> React.js • Express.js • MongoDB
+
+✔ Doodle Jump
+
+✔ Stack
+
+✔ Flappy Bird
+
+✔ Leaderboards
 
 ---
 
-### 🏎️ **String Drive** – Telegram Racing Game
-*Arcade‑style racing with coin collection and survival scoring*
-- Built skill‑based gameplay and player profiles (statistics, balances, achievements).
-- Developed task, referral, and leaderboard systems to increase engagement.
-- Secure token withdrawal workflows connected to blockchain networks.
+### 🔗 Solana Swap Engine
+
+> Node.js • Solana • REST API
+
+✔ Wallet Integration
+
+✔ Token Swaps
+
+✔ Blockchain Transactions
+
+✔ High Performance APIs
 
 ---
 
-### 🧩 **String Tetris** – Play‑to‑Earn Puzzle Game
-*Telegram‑integrated Tetris with reward mechanics*
-- Built React.js frontend with Context API and responsive UI.
-- Implemented scoring engines, level progression, and reward calculations.
-- Developed backend APIs for user management, game state, and withdrawals.
-- Leaderboard, task, and reward systems to boost user retention.
-
----
-
-## 🎓 Education
-
-<div align="center">
-
-| **Degree** | **Field** | **CGPA** | **Year** | **Institution** |
-|------------|-----------|----------|----------|-----------------|
-| B.Sc.      | MPC       | 8.34     | 2017–2020 | SR & BGNR Government College, Khammam (Kakatiya University) |
-
-</div>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=vamshivade&show_icons=true&theme=tokyonight&hide_border=true">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vamshivade&layout=compact&theme=tokyonight&hide_border=true">
-
-</div>
+# 📈 GitHub Activity
 
 <div align="center">
 
@@ -148,32 +113,61 @@ I'm a **MERN Stack Developer** with **2.6+ years** of hands-on experience buildi
 
 </div>
 
----
-
-## 🤝 Let's Connect
-
-<p align="center">
-<a href="https://linkedin.com/in/vamshi-vade-1b7287157/">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-<a href="mailto:vamshi.vade1@gmail.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-<a href="https://github.com/vamshivade">
-<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-<a href="tel:+917013415923">
-<img src="https://img.shields.io/badge/Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-</a>
-</p>
-
----
+<br>
 
 <div align="center">
 
-### 💡 *Open to new opportunities & collaborations!*
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=vamshivade&theme=tokyo-night"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Poppins&size=22&duration=3000&pause=500&color=0A66C2&center=true&vCenter=true&width=600&lines=Building+the+Future+of+Web+Apps;MERN+%7C+Web3+%7C+Real-Time;Let's+Create+Something+Amazing+🚀)](https://git.io/typing-svg)
+</div>
+
+---
+
+# 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=vamshivade&theme=tokyonight&no-frame=true&margin-w=15&row=1"/>
+
+</div>
+
+---
+
+# 📌 Pinned Repositories
+
+<div align="center">
+
+<a href="https://github.com/vamshivade/YOUR_REPO_NAME_1">
+
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=vamshivade&repo=YOUR_REPO_NAME_1&theme=tokyonight&hide_border=true"/>
+
+</a>
+
+<a href="https://github.com/vamshivade/YOUR_REPO_NAME_2">
+
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=vamshivade&repo=YOUR_REPO_NAME_2&theme=tokyonight&hide_border=true"/>
+
+</a>
+
+</div>
+
+---
+
+# 🤝 Connect With Me
+
+<div align="center">
+
+<a href="mailto:vamshi.vade1@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="https://linkedin.com/in/vamshivade">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://github.com/vamshivade">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 
 </div>
 
@@ -181,6 +175,6 @@ I'm a **MERN Stack Developer** with **2.6+ years** of hands-on experience buildi
 
 <div align="center">
 
-### ⭐ Thank you for visiting! ⭐
+### ⭐ Thanks for visiting my profile!
 
 </div>
