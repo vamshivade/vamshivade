@@ -123,26 +123,6 @@
 
 ---
 
-# 📌 Pinned Repositories
-
-<div align="center">
-
-<a href="https://github.com/vamshivade/YOUR_REPO_NAME_1">
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=vamshivade&repo=YOUR_REPO_NAME_1&theme=tokyonight&hide_border=true"/>
-
-</a>
-
-<a href="https://github.com/vamshivade/YOUR_REPO_NAME_2">
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=vamshivade&repo=YOUR_REPO_NAME_2&theme=tokyonight&hide_border=true"/>
-
-</a>
-
-</div>
-
----
-
 # 🤝 Connect With Me
 
 <div align="center">
