@@ -10,38 +10,38 @@ export default function Contact() {
       
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
         <div>
-          <p className="text-xl md:text-2xl text-white/80 mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl lg:text-2xl text-white/80 mb-8 md:mb-12 leading-relaxed">
             I'm open to opportunities in frontend and full-stack web development.
           </p>
           
-          <div className="space-y-8">
-            <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-6 group">
-              <div className="w-14 h-14 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-white/70 group-hover:bg-orange-primary/10 group-hover:border-orange-primary/30 transition-all duration-300">
-                <img src="https://skillicons.dev/icons?i=gmail" alt="Email" className="w-7 h-7 object-contain group-hover:scale-110 transition-transform" />
+          <div className="space-y-6 md:space-y-8">
+            <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-4 md:gap-6 group">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-white/70 group-hover:bg-orange-primary/10 group-hover:border-orange-primary/30 transition-all duration-300 shrink-0">
+                <img src="https://skillicons.dev/icons?i=gmail" alt="Email" className="w-6 h-6 md:w-7 md:h-7 object-contain group-hover:scale-110 transition-transform" />
               </div>
-              <div>
-                <div className="text-sm font-medium text-white/50 mb-1 uppercase tracking-wider">Email</div>
-                <div className="text-lg font-medium text-white group-hover:text-orange-primary transition-colors">{personalInfo.email}</div>
-              </div>
-            </a>
-            
-            <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`} className="flex items-center gap-6 group">
-              <div className="w-14 h-14 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-white/70 group-hover:bg-orange-primary/10 group-hover:text-orange-primary group-hover:border-orange-primary/30 transition-all duration-300">
-                <Phone size={24} />
-              </div>
-              <div>
-                <div className="text-sm font-medium text-white/50 mb-1 uppercase tracking-wider">Phone</div>
-                <div className="text-lg font-medium text-white group-hover:text-orange-primary transition-colors">{personalInfo.phone}</div>
+              <div className="min-w-0">
+                <div className="text-xs md:text-sm font-medium text-white/50 mb-0.5 md:mb-1 uppercase tracking-wider">Email</div>
+                <div className="text-base md:text-lg font-medium text-white group-hover:text-orange-primary transition-colors truncate">{personalInfo.email}</div>
               </div>
             </a>
             
-            <div className="flex items-center gap-6 group">
-              <div className="w-14 h-14 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-white/70 group-hover:bg-orange-primary/10 group-hover:text-orange-primary group-hover:border-orange-primary/30 transition-all duration-300">
-                <MapPin size={24} />
+            <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`} className="flex items-center gap-4 md:gap-6 group">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-white/70 group-hover:bg-orange-primary/10 group-hover:text-orange-primary group-hover:border-orange-primary/30 transition-all duration-300 shrink-0">
+                <Phone size={20} className="md:w-6 md:h-6" />
               </div>
-              <div>
-                <div className="text-sm font-medium text-white/50 mb-1 uppercase tracking-wider">Location</div>
-                <div className="text-lg font-medium text-white group-hover:text-orange-primary transition-colors">{personalInfo.location}</div>
+              <div className="min-w-0">
+                <div className="text-xs md:text-sm font-medium text-white/50 mb-0.5 md:mb-1 uppercase tracking-wider">Phone</div>
+                <div className="text-base md:text-lg font-medium text-white group-hover:text-orange-primary transition-colors truncate">{personalInfo.phone}</div>
+              </div>
+            </a>
+            
+            <div className="flex items-center gap-4 md:gap-6 group">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-white/70 group-hover:bg-orange-primary/10 group-hover:text-orange-primary group-hover:border-orange-primary/30 transition-all duration-300 shrink-0">
+                <MapPin size={20} className="md:w-6 md:h-6" />
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs md:text-sm font-medium text-white/50 mb-0.5 md:mb-1 uppercase tracking-wider">Location</div>
+                <div className="text-base md:text-lg font-medium text-white group-hover:text-orange-primary transition-colors truncate">{personalInfo.location}</div>
               </div>
             </div>
           </div>

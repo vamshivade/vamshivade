@@ -16,13 +16,13 @@ export function Container({ className, children, id }) {
 
 export function SectionHeading({ title, subtitle, className }) {
   return (
-    <div className={cn("mb-16 md:mb-24", className)}>
+    <div className={cn("mb-12 md:mb-24", className)}>
       {subtitle && (
-        <span className="text-orange-primary font-medium tracking-wider uppercase text-sm mb-3 block">
+        <span className="text-orange-primary font-medium tracking-wider uppercase text-xs md:text-sm mb-2 md:mb-3 block">
           {subtitle}
         </span>
       )}
-      <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">
         {title}
       </h2>
     </div>
