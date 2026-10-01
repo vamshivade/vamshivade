@@ -196,7 +196,7 @@ export default function Hero() {
                 alt="Profile"
                 fetchPriority="high"
                 onLoad={() => setImgLoaded(true)}
-                className={`w-[220px] md:w-[300px] lg:w-[330px] h-auto object-contain transition-all duration-1000 ${imgLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                className={`w-[220px] md:w-[300px] lg:w-[330px] h-auto object-contain drop-shadow-[0_10px_40px_rgba(255,255,255,0.15)] transition-all duration-1000 ${imgLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                   }`}
               />
             </div>
