@@ -63,13 +63,13 @@ const TypingEffect = ({ titles }) => {
 
 export default function Hero() {
   return (
-    <Container id="home" className="min-h-screen flex flex-col relative overflow-hidden py-0 lg:py-0">
+    <Container id="home" className="flex flex-col relative overflow-hidden py-0 pt-[125px] pb-8 lg:py-0 lg:min-h-screen lg:justify-center lg:pt-0">
       {/* Dynamic Background Elements */}
       <div className="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-orange-primary/10 rounded-full blur-[150px] -z-10 pointer-events-none animate-pulse-slow"></div>
       <div className="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] bg-orange-deep/10 rounded-full blur-[150px] -z-10 pointer-events-none" style={{ animationDelay: '2s' }}></div>
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-[0.03] pointer-events-none"></div>
 
-      <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-12 lg:gap-8 items-center lg:items-stretch w-full flex-1 z-10 mt-24 lg:mt-20">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-6 lg:gap-8 items-center lg:items-stretch w-full lg:flex-1 z-10 lg:mt-20">
 
         {/* Left Column - Text Content */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center lg:col-span-7 xl:col-span-7 relative z-20 w-full">
@@ -113,7 +113,7 @@ export default function Hero() {
         </div>
 
         {/* Right Column - Profile Image */}
-        <div className="lg:col-span-5 xl:col-span-5 relative w-full flex items-center justify-center mt-8 lg:mt-0">
+        <div className="lg:col-span-5 xl:col-span-5 relative w-full flex items-center justify-center lg:mt-0">
           <div className="relative w-full max-w-[450px] flex items-center justify-center">
 
             {/* Animated Rings Behind Profile */}
@@ -167,10 +167,11 @@ export default function Hero() {
             </div>
 
             {/* Profile Image */}
-            <div className="relative z-20 transition-all duration-700 hover:scale-105 hover:-translate-y-2">
+            <div className="relative z-20 transition-all duration-700 hover:scale-105 hover:-translate-y-2 min-h-[220px] md:min-h-[300px] lg:min-h-[330px] flex items-end">
               <img
                 src={profileImg}
                 alt="Profile"
+                fetchpriority="high"
                 className="w-[220px] md:w-[300px] lg:w-[330px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(255,107,0,0.4)]"
               />
             </div>
