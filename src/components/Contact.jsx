@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { MapPin, Phone } from 'lucide-react';
 import { Container, SectionHeading } from './ui/shared';
 import { personalInfo } from '../data';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+  const formRef = useRef();
+  const [loading, setLoading] = useState(false);
+  const [statusMsg, setStatusMsg] = useState('');
+  const [statusType, setStatusType] = useState(''); // 'success' or 'error'
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatusMsg('');
+    setStatusType('');
+
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+      .then(() => {
+        setLoading(false);
+        setStatusMsg("Message sent successfully! Thanks for reaching out — I'll get back to you soon.");
+        setStatusType('success');
+        formRef.current.reset(); // Clear the form fields
+      })
+      .catch((error) => {
+        setLoading(false);
+        setStatusMsg('Something went wrong while sending your message. Please try again.');
+        setStatusType('error');
+        console.error('EmailJS Error:', error);
+      });
+  };
   return (
     <Container id="contact" className="relative">
       <SectionHeading title="Let's Build Something Together" subtitle="Get In Touch" />
@@ -65,27 +95,38 @@ export default function Contact() {
 
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">Start a Conversation</h3>
 
-          <form className="space-y-4" action={`mailto:${personalInfo.email}`} method="post" encType="text/plain">
+          <form 
+            ref={formRef}
+            className="space-y-4" 
+            onSubmit={sendEmail}
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium text-white/70 mb-1.5">Name</label>
-                <input type="text" name="name" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all" placeholder="John Doe" required />
+                <label htmlFor="name" className="block text-sm font-medium text-white/70 mb-1.5">Name</label>
+                <input type="text" id="name" name="name" minLength="2" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all" placeholder="John Doe" required />
               </div>
               <div>
-                <label className="block text-sm font-medium text-white/70 mb-1.5">Email</label>
-                <input type="email" name="email" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all" placeholder="john@example.com" required />
+                <label htmlFor="email" className="block text-sm font-medium text-white/70 mb-1.5">Email</label>
+                <input type="email" id="email" name="email" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all" placeholder="john@example.com" required />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-white/70 mb-1.5">Message</label>
-              <textarea name="message" rows="5" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all resize-none" placeholder="How can I help you?" required></textarea>
+              <label htmlFor="message" className="block text-sm font-medium text-white/70 mb-1.5">Message</label>
+              <textarea id="message" name="message" minLength="10" rows="5" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all resize-none" placeholder="How can I help you?" required></textarea>
             </div>
             <button
               type="submit"
-              className="inline-flex items-center justify-center gap-3 w-full py-3 mt-1 bg-orange-primary text-dark-300 font-bold text-lg rounded-xl hover:bg-orange-bright hover:shadow-[0_0_30px_rgba(250,179,132,0.3)] transition-all duration-300"
+              disabled={loading}
+              aria-label={loading ? 'Sending message...' : 'Send Message'}
+              className="inline-flex items-center justify-center gap-3 w-full py-3 mt-1 bg-orange-primary text-dark-300 font-bold text-lg rounded-xl hover:bg-orange-bright hover:shadow-[0_0_30px_rgba(250,179,132,0.3)] transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
             >
-              Send Message
+              {loading ? 'Sending...' : 'Send Message'}
             </button>
+            {statusMsg && (
+              <div aria-live="polite" className={`mt-4 p-3 rounded-xl text-center text-sm font-medium ${statusType === 'success' ? 'bg-green-500/10 text-green-400 border border-green-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'}`}>
+                {statusMsg}
+              </div>
+            )}
           </form>
         </div>
       </div>
