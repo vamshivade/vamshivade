@@ -111,8 +111,12 @@ export default function Contact() {
               </div>
             </div>
             <div>
+              <label htmlFor="subject" className="block text-sm font-medium text-white/70 mb-1.5">Subject</label>
+              <input type="text" id="subject" name="subject" minLength="3" maxLength="100" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all" placeholder="e.g. Frontend Developer Job Opportunity" required />
+            </div>
+            <div>
               <label htmlFor="message" className="block text-sm font-medium text-white/70 mb-1.5">Message</label>
-              <textarea id="message" name="message" minLength="10" rows="5" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all resize-none" placeholder="How can I help you?" required></textarea>
+              <textarea id="message" name="message" minLength="10" rows="5" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all resize-y" placeholder="How can I help you?" required></textarea>
             </div>
             <button
               type="submit"
