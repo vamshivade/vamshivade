@@ -11,6 +11,7 @@ import Loader from './components/Loader';
 import { About, Highlights } from './components/About';
 import Skills from './components/Skills';
 import Services from './components/Services';
+import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Process from './components/Process';
 import Education from './components/Education';
@@ -58,6 +59,7 @@ function App() {
         <Highlights />
         <Skills />
         <Services />
+        <Projects />
         <Experience />
         <Process />
         <Education />
