@@ -62,6 +62,8 @@ const TypingEffect = ({ titles }) => {
 };
 
 export default function Hero() {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   return (
     <Container id="home" className="flex flex-col relative overflow-hidden py-0 pt-[125px] pb-8 lg:py-0 lg:min-h-screen lg:justify-center lg:pt-0">
       {/* Dynamic Background Elements */}
@@ -166,13 +168,21 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Profile Image */}
-            <div className="relative z-20 transition-all duration-700 hover:scale-105 hover:-translate-y-2 min-h-[220px] md:min-h-[300px] lg:min-h-[330px] flex items-end">
+            {/* Profile Image with Loading Skeleton */}
+            <div className="relative z-20 transition-all duration-700 hover:scale-105 hover:-translate-y-2 min-h-[220px] md:min-h-[300px] lg:min-h-[330px] flex items-end justify-center w-[220px] md:w-[300px] lg:w-[330px]">
+              {/* Skeleton Loader - visible while image loads */}
+              {!imgLoaded && (
+                <div className="absolute inset-0 rounded-full bg-white/5 animate-pulse drop-shadow-[0_20px_50px_rgba(255,107,0,0.1)]" />
+              )}
+              
               <img
                 src={profileImg}
                 alt="Profile"
                 fetchpriority="high"
-                className="w-[220px] md:w-[300px] lg:w-[330px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(255,107,0,0.4)]"
+                onLoad={() => setImgLoaded(true)}
+                className={`w-[220px] md:w-[300px] lg:w-[330px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(255,107,0,0.4)] transition-all duration-1000 ${
+                  imgLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                }`}
               />
             </div>
           </div>
