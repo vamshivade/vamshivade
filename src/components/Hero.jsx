@@ -95,6 +95,7 @@ export default function Hero() {
               to="experience"
               smooth={true}
               duration={500}
+              offset={-68}
               className="group flex items-center justify-center gap-1.5 px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-orange-primary text-dark-300 text-xs sm:text-sm md:text-base font-bold rounded-xl hover:bg-orange-bright hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-[0_10px_30px_rgba(255,107,0,0.3)]"
             >
               View My Work

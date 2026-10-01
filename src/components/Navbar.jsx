@@ -37,6 +37,7 @@ export default function Navbar() {
           to="home" 
           smooth={true} 
           duration={500}
+          offset={-68}
           className="text-white font-bold text-xl tracking-wider cursor-pointer hover:text-orange-primary transition-colors"
         >
           VAMSHI<span className="text-orange-primary">.</span>
@@ -51,6 +52,7 @@ export default function Navbar() {
                   to={item.to}
                   smooth={true}
                   duration={500}
+                  offset={-68}
                   spy={true}
                   activeClass="text-orange-primary"
                   className="text-sm font-medium text-white/70 hover:text-white cursor-pointer transition-colors"
@@ -92,6 +94,7 @@ export default function Navbar() {
                 to={item.to}
                 smooth={true}
                 duration={500}
+                offset={-68}
                 spy={true}
                 activeClass="text-orange-primary"
                 onClick={() => setIsOpen(false)}
