@@ -73,8 +73,6 @@ export default function Services() {
               </div>
             </div>
           ))}
-          {/* Extra scroll room so last card can fully settle */}
-          <div style={{ height: `${services.length * 44}px` }} />
         </div>
 
       </Container>
