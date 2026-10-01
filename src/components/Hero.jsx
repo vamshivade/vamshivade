@@ -127,8 +127,8 @@ export default function Hero() {
         <div className="lg:col-span-5 xl:col-span-5 relative w-full flex items-center justify-center lg:mt-0">
           <div className="relative w-full max-w-[450px] flex items-center justify-center">
 
-            {/* Animated Rings Behind Profile - Hidden on mobile for performance */}
-            <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] z-10 pointer-events-none">
+            {/* Animated Rings Behind Profile - Re-enabled on mobile */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] z-10 pointer-events-none">
 
               {/* Mask Wrapper to fade bottom of rings and icons */}
               <div
