@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, SectionHeading } from './ui/shared';
 import { services } from '../data';
+import { ChevronDown } from 'lucide-react';
 
 const NAVBAR_H = 76; // Navbar height when scrolled
 
 export default function Services() {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const toggleAccordion = (idx) => {
+    setExpandedIndex(expandedIndex === idx ? null : idx);
+  };
+
   return (
     <div className="bg-dark-200 relative" id="services">
 
@@ -16,18 +23,32 @@ export default function Services() {
             {services.map((service, idx) => (
               <div
                 key={idx}
-                className="group flex flex-col sm:flex-row gap-4 md:gap-6 p-4 md:p-6 -m-4 md:-m-6 rounded-2xl hover:bg-white/5 transition-colors duration-300"
+                onClick={() => toggleAccordion(idx)}
+                className="group flex flex-col sm:flex-row gap-4 md:gap-6 p-4 md:p-6 -m-4 md:-m-6 rounded-2xl hover:bg-white/5 transition-colors duration-300 cursor-pointer"
               >
-                <div className="text-xl md:text-2xl font-black text-orange-primary/30 group-hover:text-orange-primary transition-colors">
+                <div className="text-xl md:text-2xl font-black text-orange-primary/30 group-hover:text-orange-primary transition-colors shrink-0 pt-1">
                   {service.id}
                 </div>
-                <div className="space-y-2 md:space-y-3">
-                  <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-orange-primary transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm md:text-base text-white/60 leading-relaxed">
-                    {service.description}
-                  </p>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-orange-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-orange-primary/50 group-hover:text-orange-primary transition-transform duration-300 ${
+                        expandedIndex === idx ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </div>
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      expandedIndex === idx ? 'max-h-40 opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'
+                    }`}
+                  >
+                    <p className="text-sm md:text-base text-white/60 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
