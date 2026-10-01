@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, SectionHeading } from './ui/shared';
 import { services } from '../data';
 
-const NAVBAR_H = 64; // px — height of your navbar
+const NAVBAR_H = 76; // Navbar height when scrolled
 
 export default function Services() {
   return (
@@ -40,7 +40,7 @@ export default function Services() {
 
         {/* Sticky section heading — sticks right below navbar */}
         <div
-          className="sticky z-50 bg-dark-200/95 backdrop-blur-md px-6 pt-5 pb-3 border-b border-white/5"
+          className="sticky z-40 bg-dark-200/95 backdrop-blur-md px-6 pt-5 pb-3 border-b border-white/5"
           style={{ top: `${NAVBAR_H}px` }}
         >
           <span className="text-orange-primary font-medium tracking-wider uppercase text-[10px] block mb-0.5">
@@ -58,9 +58,9 @@ export default function Services() {
               key={idx}
               className="sticky rounded-2xl p-5 mx-1 mb-3"
               style={{
-                /* Cards stack starting just below the sticky heading (~115px from top) */
-                top: `${NAVBAR_H + 68 + idx * 16}px`,
-                zIndex: idx + 1,
+                /* Cards stack starting just below the sticky heading (~80px height) */
+                top: `${NAVBAR_H + 80 + idx * 16}px`,
+                zIndex: 10 + idx,
                 background: `linear-gradient(135deg, rgba(20,18,14,0.93) 0%, rgba(30,22,10,0.89) 100%)`,
                 backdropFilter: 'blur(16px)',
                 WebkitBackdropFilter: 'blur(16px)',
