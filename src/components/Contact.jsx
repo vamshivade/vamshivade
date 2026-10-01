@@ -26,6 +26,12 @@ export default function Contact() {
         setStatusMsg("Message sent successfully! Thanks for reaching out — I'll get back to you soon.");
         setStatusType('success');
         formRef.current.reset(); // Clear the form fields
+        
+        // Reset textarea height if it was manually expanded
+        const textarea = formRef.current.querySelector('textarea[name="message"]');
+        if (textarea) {
+          textarea.style.height = 'auto'; // Reset to default height based on rows attribute
+        }
       })
       .catch((error) => {
         setLoading(false);
@@ -110,9 +116,10 @@ export default function Contact() {
                 <input type="email" id="email" name="email" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all" placeholder="john@example.com" required />
               </div>
             </div>
+            {/* Subject */}
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-white/70 mb-1.5">Subject</label>
-              <input type="text" id="subject" name="subject" minLength="3" maxLength="100" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all" placeholder="e.g. Frontend Developer Job Opportunity" required />
+              <label htmlFor="title" className="block text-sm font-medium text-white/70 mb-1.5">Subject</label>
+              <input type="text" id="title" name="title" minLength="3" maxLength="100" className="w-full bg-dark-300 border border-white/10 rounded-xl px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-orange-primary/50 focus:ring-1 focus:ring-orange-primary/50 transition-all" placeholder="e.g. Frontend Developer Job Opportunity" required />
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-white/70 mb-1.5">Message</label>
