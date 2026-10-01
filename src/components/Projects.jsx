@@ -98,53 +98,55 @@ const Projects = () => {
                 key={project.id}
                 variants={itemVariants}
                 onClick={() => setSelectedProject(project)}
-                className="group relative bg-dark-200/50 backdrop-blur-sm border border-orange-primary/20 rounded-2xl overflow-hidden hover:border-orange-primary/30 transition-colors duration-500 flex flex-col sm:flex-row sm:items-center cursor-pointer shadow-lg hover:shadow-orange-primary/5 sm:p-4"
+                className="group relative bg-dark-200/50 backdrop-blur-sm border border-orange-primary/20 rounded-2xl overflow-hidden hover:border-orange-primary/30 transition-colors duration-500 flex flex-col sm:flex-row sm:items-center cursor-pointer shadow-lg hover:shadow-orange-primary/5 p-4 sm:p-6"
               >
-                <div className="relative w-full sm:w-48 md:w-56 aspect-square overflow-hidden shrink-0 bg-dark-300 sm:rounded-xl">
-                  <div className="absolute inset-0 bg-dark-300/40 group-hover:bg-transparent transition-colors duration-500 z-10" />
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
-                  />
-                </div>
-                
-                <div className="p-6 sm:p-4 md:p-6 flex flex-col flex-grow relative z-30 justify-center">
-                  <div className="flex flex-col items-start mb-4">
-                    <h4 className="text-2xl font-bold text-orange-primary group-hover:text-orange-primary transition-colors duration-300 mb-3">
-                      {project.title}
-                    </h4>
-                    
-                    <div className="flex flex-wrap gap-3" onClick={(e) => e.stopPropagation()}>
-                      <button 
-                        onClick={() => setSelectedProject(project)}
-                        className="flex items-center gap-2 bg-dark-300 hover:bg-white text-orange-primary hover:text-dark-300 px-4 py-1.5 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-sm"
-                      >
-                        <span>View Details</span>
-                      </button>
-                      {(project.live || project.telegram) && (
-                        <a 
-                          href={project.live || project.telegram} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="flex items-center gap-2 bg-orange-primary/10 hover:bg-orange-primary text-orange-primary hover:text-orange-primary px-4 py-1.5 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-sm"
-                        >
-                          <FiExternalLink size={16} /> <span>Live Demo</span>
-                        </a>
-                      )}
-                      {project.github && (
-                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-orange-primary transition-colors text-gray-400 p-1.5" aria-label="GitHub">
-                          <FiGithub size={20} />
-                        </a>
-                      )}
-                    </div>
+                <div className="flex flex-col items-center shrink-0">
+                  <div className="relative w-[160px] sm:max-w-none mx-auto sm:mx-0 sm:w-36 md:w-44 aspect-square overflow-hidden bg-dark-300 rounded-xl">
+                    <div className="absolute inset-0 bg-dark-300/40 group-hover:bg-transparent transition-colors duration-500 z-10" />
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
+                    />
                   </div>
                   
-                  {project.role && (
-                    <p className="text-sm font-mono text-orange-primary/80 mb-2">Role: {project.role}</p>
-                  )}
+                  {/* Buttons below image */}
+                  <div className="flex flex-wrap gap-2 justify-center w-full mt-4" onClick={(e) => e.stopPropagation()}>
+                    <button 
+                      onClick={() => setSelectedProject(project)}
+                      className="flex-1 flex justify-center items-center gap-1 bg-dark-300 hover:bg-white text-orange-primary hover:text-dark-300 px-2 py-1.5 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-xs sm:text-sm"
+                    >
+                      <span>Details</span>
+                    </button>
+                    {(project.live || project.telegram) && (
+                      <a 
+                        href={project.live || project.telegram} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex-1 flex justify-center items-center gap-1 bg-orange-primary/10 hover:bg-orange-primary text-orange-primary hover:text-orange-primary px-2 py-1.5 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-xs sm:text-sm"
+                      >
+                        <FiExternalLink size={14} /> <span>Live</span>
+                      </a>
+                    )}
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1 hover:text-orange-primary transition-colors text-gray-400 p-1.5" aria-label="GitHub">
+                        <FiGithub size={18} />
+                      </a>
+                    )}
+                  </div>
+                </div>
+                
+                <div className="p-4 sm:p-0 sm:pl-6 md:pl-8 flex flex-col flex-grow relative z-30 justify-center">
+                  <h4 className="text-xl md:text-2xl font-bold text-orange-primary group-hover:text-orange-primary transition-colors duration-300 mb-2 text-center sm:text-left">
+                    {project.title}
+                  </h4>
                   
-                  <p className="text-gray-400 flex-grow whitespace-pre-wrap text-sm leading-relaxed line-clamp-3">
+                  {project.role && (
+                    <p className="text-sm font-mono text-orange-primary/80 mb-2 text-center sm:text-left">Role: {project.role}</p>
+                  )}
+
+                  
+                  <p className="text-gray-400 flex-grow whitespace-pre-wrap text-sm leading-relaxed text-center sm:text-left">
                     {project.description}
                   </p>
                 </div>
