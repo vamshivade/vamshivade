@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import ScrollToTop from './components/ScrollToTop';
 import CustomCursor from './components/CustomCursor';
 import Lenis from 'lenis';
+import Loader from './components/Loader';
 
 // Eager load all components
 import { About, Highlights } from './components/About';
@@ -17,6 +18,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  const [isLoaderDone, setIsLoaderDone] = useState(false);
+
   // Initialize honey-smooth scrolling
   useEffect(() => {
     const lenis = new Lenis({
@@ -43,6 +46,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-dark-300 font-sans selection:bg-orange-primary/30 selection:text-orange-primary relative z-0">
+      {!isLoaderDone && <Loader onComplete={() => setIsLoaderDone(true)} />}
       <CustomCursor />
       <Pattern />
       <Navbar />
