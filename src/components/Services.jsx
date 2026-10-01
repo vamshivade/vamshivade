@@ -19,39 +19,84 @@ export default function Services() {
       <div className="hidden md:block">
         <Container>
           <SectionHeading title="What I Do" subtitle="Capabilities" />
-          <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
-            {services.map((service, idx) => (
-              <div
-                key={idx}
-                onClick={() => toggleAccordion(idx)}
-                className="group flex flex-col sm:flex-row gap-4 md:gap-6 p-4 md:p-6 -m-4 md:-m-6 rounded-2xl hover:bg-white/5 transition-colors duration-300 cursor-pointer"
-              >
-                <div className="text-xl md:text-2xl font-black text-orange-primary/30 group-hover:text-orange-primary transition-colors shrink-0 pt-1">
-                  {service.id}
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-orange-primary transition-colors">
-                      {service.title}
-                    </h3>
-                    <ChevronDown
-                      className={`w-5 h-5 text-orange-primary/50 group-hover:text-orange-primary transition-transform duration-300 ${
-                        expandedIndex === idx ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </div>
+          <div className="flex flex-col md:flex-row gap-8 md:gap-16">
+            {/* Left Column (Even Indexes: 0, 2, 4, ...) */}
+            <div className="flex-1 flex flex-col gap-y-12">
+              {services.filter((_, idx) => idx % 2 === 0).map((service, mappedIdx) => {
+                const originalIdx = mappedIdx * 2;
+                return (
                   <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      expandedIndex === idx ? 'max-h-40 opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'
-                    }`}
+                    key={originalIdx}
+                    onClick={() => toggleAccordion(originalIdx)}
+                    className="group flex flex-col sm:flex-row gap-4 md:gap-6 p-4 md:p-6 -m-4 md:-m-6 rounded-2xl hover:bg-white/5 transition-colors duration-300 cursor-pointer items-start"
                   >
-                    <p className="text-sm md:text-base text-white/60 leading-relaxed">
-                      {service.description}
-                    </p>
+                    <div className="text-xl md:text-2xl font-black text-orange-primary/30 group-hover:text-orange-primary transition-colors shrink-0 pt-1">
+                      {service.id}
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-start justify-between">
+                        <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-orange-primary transition-colors">
+                          {service.title}
+                        </h3>
+                        <ChevronDown
+                          className={`w-5 h-5 mt-1 shrink-0 text-orange-primary/50 group-hover:text-orange-primary transition-transform duration-300 ${
+                            expandedIndex === originalIdx ? 'rotate-180' : ''
+                          }`}
+                        />
+                      </div>
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                          expandedIndex === originalIdx ? 'max-h-40 opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'
+                        }`}
+                      >
+                        <p className="text-sm md:text-base text-white/60 leading-relaxed">
+                          {service.description}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            ))}
+                );
+              })}
+            </div>
+
+            {/* Right Column (Odd Indexes: 1, 3, 5, ...) */}
+            <div className="flex-1 flex flex-col gap-y-12 mt-12 md:mt-0">
+              {services.filter((_, idx) => idx % 2 !== 0).map((service, mappedIdx) => {
+                const originalIdx = mappedIdx * 2 + 1;
+                return (
+                  <div
+                    key={originalIdx}
+                    onClick={() => toggleAccordion(originalIdx)}
+                    className="group flex flex-col sm:flex-row gap-4 md:gap-6 p-4 md:p-6 -m-4 md:-m-6 rounded-2xl hover:bg-white/5 transition-colors duration-300 cursor-pointer items-start"
+                  >
+                    <div className="text-xl md:text-2xl font-black text-orange-primary/30 group-hover:text-orange-primary transition-colors shrink-0 pt-1">
+                      {service.id}
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-start justify-between">
+                        <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-orange-primary transition-colors">
+                          {service.title}
+                        </h3>
+                        <ChevronDown
+                          className={`w-5 h-5 mt-1 shrink-0 text-orange-primary/50 group-hover:text-orange-primary transition-transform duration-300 ${
+                            expandedIndex === originalIdx ? 'rotate-180' : ''
+                          }`}
+                        />
+                      </div>
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                          expandedIndex === originalIdx ? 'max-h-40 opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'
+                        }`}
+                      >
+                        <p className="text-sm md:text-base text-white/60 leading-relaxed">
+                          {service.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </Container>
       </div>
