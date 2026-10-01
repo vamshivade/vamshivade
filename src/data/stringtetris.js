@@ -6,17 +6,18 @@ const stringTetrisProject = {
 
   title: "String Tetris",
 
-  subtitle: "Telegram Web3 Play-to-Earn Tetris Gaming Platform",
+  subtitle:
+    "Full-Stack Web3 Play-to-Earn Telegram Mini App & Gaming Platform",
 
-  category: "Frontend Development",
+  category: "Full Stack Development",
 
-  role: "Frontend Developer",
+  role: "Full Stack MERN Developer",
 
   description:
-    "A Telegram-integrated Web3 Play-to-Earn gaming platform built with React and Vite, featuring a custom Tetris game engine, ticket-based gameplay, daily rewards, engagement tasks, rewarded advertisements, referrals, leaderboards, profile management, and cryptocurrency withdrawal workflows across TON and Solana.",
+    "A full-stack Web3 Play-to-Earn gaming ecosystem built as a Telegram Mini App, combining a custom React-based Tetris game engine with ticket wagering, daily rewards, engagement tasks, rewarded advertisements, referrals, cryptocurrency withdrawals, an administrative dashboard, and a Node.js, Express, and MongoDB backend.",
 
   shortDescription:
-    "A mobile-first Telegram Mini App frontend combining classic Tetris gameplay with ticket-based wagering, rewards, tasks, referrals, rewarded ads, leaderboards, and Web3 wallet-related interactions.",
+    "A full-stack Telegram Mini App built with React, Node.js, Express, and MongoDB featuring custom Tetris gameplay, ticket wagering, rewards, referrals, Web3 withdrawals, Telegram authentication, and an admin management portal.",
 
   image: stringTetrisSquare,
 
@@ -24,264 +25,304 @@ const stringTetrisProject = {
 
   technologies: [
     "React",
+    "Vite",
     "JavaScript",
     "JSX",
-    "Vite",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
     "React Context API",
     "React Hooks",
     "React Router DOM",
     "Axios",
-    "Telegram WebApp SDK",
-    "Telegram Bot Integration",
     "Material UI",
     "Tailwind CSS",
     "Bootstrap",
     "React Bootstrap",
-    "CoreUI",
     "Sass",
     "Framer Motion",
+    "Telegram WebApp SDK",
+    "Telegram Bot API",
+    "JWT",
+    "Crypto-JS",
+    "HMAC-SHA256",
     "TonConnect UI",
-    "TON SDK",
-    "Solana Web3",
+    "TonWeb",
+    "TON Core",
+    "Solana Web3.js",
+    "TonAPI",
+    "DexScreener",
+    "Solscan",
     "Adsgram",
     "TON AI SDK",
     "Formik",
     "Yup",
-    "Crypto-JS",
+    "Node Cron",
+    "Nodemailer",
+    "Bcrypt",
+    "SheetJS",
+    "Google Analytics",
     "React Hot Toast",
-    "React Toastify",
-    "React GA",
-    "XLSX",
-    "Lucide React",
-    "React Icons"
+    "React Toastify"
   ],
 
-  projectType: "Telegram Mini Application",
+  projectType: "Full-Stack Telegram Mini Application",
 
-  developmentType: "Frontend Application",
+  developmentType: "Full-Stack MERN / Web3 Application",
 
   overview: {
     title: "Project Overview",
 
     content:
-      "String Tetris is a Telegram-integrated Web3 Play-to-Earn gaming platform designed specifically for users accessing the application through Telegram Mini Apps. The frontend provides a mobile-first Tetris gaming experience where users can play classic Tetris, participate in ticket-based game sessions, receive daily rewards, complete engagement tasks, watch rewarded advertisements, manage referrals, view leaderboards, and access cryptocurrency withdrawal functionality. The platform also includes a separate administrative frontend for managing users, game configurations, withdrawals, tasks, advertisements, reporting, and blockchain-related payout workflows."
+      "String Tetris is a full-stack Web3 Play-to-Earn gaming ecosystem developed specifically as a Telegram Mini App. The platform combines classic Tetris gameplay with ticket-based wagering, configurable difficulty levels, daily rewards, engagement tasks, rewarded advertisements, referrals, leaderboards, and cryptocurrency withdrawal workflows. Users access the application through Telegram, authenticate through Telegram WebApp data, play Tetris sessions using virtual tickets, earn rewards, and can request cryptocurrency withdrawals through TON or Solana wallet addresses. The overall system consists of a mobile-first React user application, a React-based administrative dashboard, and a centralized Node.js/Express REST API backed by MongoDB and Mongoose."
   },
 
   myRole: {
     title: "My Role",
 
-    position: "Frontend Developer",
+    position: "Full Stack MERN Developer",
 
     description:
-      "My primary responsibility in the String Tetris project was frontend application development. I worked on building the Telegram Mini App using React and Vite, developing the custom Tetris game interface and game logic, creating reusable UI components, integrating REST APIs using Axios, managing shared application state with React Context, implementing Telegram WebApp flows, developing ticket, rewards, task, referral, leaderboard, profile, advertising, and withdrawal interfaces, integrating wallet-related functionality, and building responsive mobile-first experiences for Telegram users."
+      "My role covered both frontend and backend development. I worked on the React Telegram Mini App, custom Tetris game experience, responsive UI, API integration, authentication flows, user and reward workflows, and administrative interfaces. On the backend, I worked with Node.js, Express, MongoDB, and Mongoose to implement REST APIs, authentication middleware, game session handling, ticket wagering, rewards, referrals, tasks, withdrawal validation, price conversion integrations, Telegram bot functionality, background jobs, and administrative operations."
   },
 
   frontend: {
     title: "Frontend Development",
 
     description:
-      "The frontend was developed using React, Vite, JavaScript, and JSX. The application follows a modular component-based architecture with dedicated game components, reusable UI elements, React Context-based shared state, React Router navigation, centralized Axios API communication, Telegram WebApp integration, responsive styling, and mobile-first layouts.",
+      "The frontend was developed using React and Vite and consists of two applications: a mobile-first Telegram Mini App for players and an administrative management portal. The player application provides the complete Tetris gaming experience, while the admin application provides management, configuration, reporting, withdrawal, and operational workflows.",
 
     architecture: [
       "React component-based architecture",
-
       "Vite-based frontend application",
-
-      "JavaScript and JSX development",
-
+      "Mobile-first Telegram Mini App",
+      "Separate administrative React application",
       "Reusable functional components",
-
-      "Dedicated Tetris game components",
-
-      "Game controller for board and piece state",
-
-      "React Context for shared application state",
-
-      "Component-level state management",
-
-      "React Router DOM navigation",
-
-      "Centralized Axios API communication",
-
-      "Telegram WebApp SDK integration",
-
-      "Telegram-specific mobile experience",
-
-      "Responsive and mobile-first UI",
-
+      "React Context API for shared state",
+      "React Hooks for component and game state",
+      "React Router DOM routing",
+      "Centralized Axios API configuration",
+      "Reusable game components",
       "Reusable modal components",
-
       "Reusable loading components",
+      "Responsive MUI and Tailwind interfaces",
+      "Bootstrap-based administrative layouts",
+      "Game-specific component architecture",
+      "Loading and error state handling",
+      "Toast-based user feedback"
+    ]
+  },
 
-      "Toast-based feedback",
+  backend: {
+    title: "Backend Development",
 
-      "Dedicated administrative dashboard frontend",
+    description:
+      "The backend was developed using Node.js and Express.js as a centralized REST API responsible for authentication, game mechanics, user progression, ticket wagering, rewards, referrals, tasks, advertisements, withdrawals, price conversion, administrative operations, Telegram integration, and background session management.",
 
-      "Lazy-loaded administrative views"
+    architecture: [
+      "Node.js backend runtime",
+      "Express.js REST API",
+      "MVC-style backend organization",
+      "Domain-specific controllers",
+      "Express middleware pipeline",
+      "MongoDB database",
+      "Mongoose data models",
+      "JWT authentication",
+      "Telegram HMAC authentication",
+      "Role-based authorization",
+      "Centralized route configuration",
+      "Background cron jobs",
+      "Telegram bot integration",
+      "External API integrations",
+      "Blockchain address validation",
+      "Administrative API operations",
+      "Atomic MongoDB updates"
+    ]
+  },
+
+  database: {
+    title: "MongoDB Database Architecture",
+
+    description:
+      "MongoDB was used as the primary database with Mongoose providing schema definitions, relationships, validation, querying, and atomic database operations. The backend contains dedicated models for users, game sessions, game history, tasks, completed tasks, advertisements, rewards, referrals, transactions, withdrawals, conversion settings, and administrative configuration.",
+
+    technologies: [
+      "MongoDB",
+      "Mongoose"
+    ],
+
+    models: [
+      "User",
+      "GameHistory",
+      "GameSchema",
+      "Task",
+      "CompletedTask",
+      "AdsSchema",
+      "CompleteAdSchema",
+      "DailyRewardSchema",
+      "ClaimHistory",
+      "Referer",
+      "ReferralSetting",
+      "RewardSetting",
+      "TicketConversion",
+      "TransactionSchema",
+      "WithdrawalLimitsSchema",
+      "WithdrawalSchema",
+      "WithdrawMethodSchema"
+    ],
+
+    responsibilities: [
+      "Designed MongoDB data structures for users and game sessions.",
+      "Stored game history and wager information.",
+      "Managed user ticket balances and reward information.",
+      "Stored daily reward claim records.",
+      "Tracked completed engagement tasks.",
+      "Maintained referral relationships and rewards.",
+      "Stored withdrawal requests and transaction information.",
+      "Managed configurable game and reward settings.",
+      "Used atomic MongoDB updates for balance-related operations.",
+      "Used Mongoose population and projections where required."
     ]
   },
 
   features: [
     {
+      title: "Telegram Mini App",
+
+      description:
+        "Built the primary player application specifically for the Telegram WebApp environment, allowing users to launch and interact with the game directly inside Telegram.",
+
+      items: [
+        "Telegram Mini App entry",
+        "Telegram WebApp SDK integration",
+        "Telegram mobile WebView support",
+        "Telegram viewport expansion",
+        "Telegram header configuration",
+        "Telegram back-button handling",
+        "Telegram platform validation",
+        "Telegram user initialization",
+        "Telegram-specific navigation",
+        "Mobile-first gaming experience"
+      ]
+    },
+
+    {
       title: "Custom Tetris Game Engine",
 
       description:
-        "Developed the core Tetris gaming experience in React, implementing the classic seven-piece Tetris system together with movement, rotation, collision detection, line clearing, gravity, scoring, and visual feedback.",
+        "Developed the core Tetris gameplay experience in React with custom game logic for tetromino movement, rotation, collision detection, line clearing, scoring, difficulty progression, and game session management.",
 
       items: [
-        "Classic Tetris board implementation",
-
+        "Classic Tetris board",
         "Seven standard tetrominoes",
-
-        "I tetromino",
-
-        "J tetromino",
-
-        "L tetromino",
-
-        "O tetromino",
-
-        "S tetromino",
-
-        "T tetromino",
-
-        "Z tetromino",
-
+        "I piece",
+        "J piece",
+        "L piece",
+        "O piece",
+        "S piece",
+        "T piece",
+        "Z piece",
         "Tetromino rotation logic",
-
         "Piece movement",
-
         "Boundary detection",
-
         "Collision detection",
-
         "Line-clear detection",
-
-        "Dynamic gravity speed",
-
-        "Progressive game difficulty",
-
         "Score calculation",
-
-        "Level multiplier handling",
-
+        "Progressive difficulty",
+        "Dynamic gravity speed",
         "Game-over handling",
-
         "Particle effects",
-
-        "Confetti-style visual feedback"
+        "Confetti effects",
+        "Game audio feedback"
       ]
     },
 
     {
-      title: "Responsive Tetris Gameplay",
+      title: "Responsive Game Scaling",
 
       description:
-        "Implemented responsive game-board scaling to provide a consistent Tetris experience across different mobile Telegram WebView dimensions.",
+        "Implemented dynamic viewport scaling using the project's `usePps` logic so the Tetris game board maintains appropriate proportions across different Telegram mobile screen sizes.",
 
       items: [
-        "Dynamic game viewport calculation",
-
-        "usePps responsive scaling logic",
-
-        "Window resize handling",
-
+        "Dynamic viewport calculations",
+        "Responsive game board",
         "Mobile screen adaptation",
-
-        "Consistent game board proportions",
-
-        "Responsive game layout",
-
-        "Telegram WebView compatibility",
-
-        "Mobile-focused gameplay experience"
+        "Window resize handling",
+        "Consistent game proportions",
+        "Mobile-first gameplay layout"
       ]
     },
 
     {
-      title: "Telegram Mini App Integration",
+      title: "Game Audio System",
 
       description:
-        "Built the frontend specifically for the Telegram Mini App environment, integrating Telegram WebApp APIs for application initialization, viewport behavior, navigation, and authentication.",
+        "Implemented audio feedback for important gameplay interactions and game states using browser audio capabilities.",
 
       items: [
-        "Telegram WebApp integration",
-
-        "Telegram mobile WebView support",
-
-        "Telegram environment detection",
-
-        "WebApp initialization",
-
-        "tg.expand() integration",
-
-        "Telegram header customization",
-
-        "Telegram back-button handling",
-
-        "Telegram viewport handling",
-
-        "Telegram initData integration",
-
-        "Telegram-specific user experience",
-
-        "Telegram bot launch flow"
+        "Background ambient audio",
+        "Piece rotation sounds",
+        "Piece drop sounds",
+        "Countdown sounds",
+        "Game-over audio",
+        "Gameplay feedback sounds"
       ]
     },
 
     {
-      title: "Ticket-Based Gameplay",
+      title: "Ticket Wagering & Game Sessions",
 
       description:
-        "Implemented frontend flows for ticket-based Tetris sessions, including wager selection, game initiation, score calculation, and result feedback.",
+        "Implemented the frontend and backend workflow for ticket-based Tetris sessions, including wager placement, game session creation, score submission, result reconciliation, and win/loss settlement.",
 
       items: [
         "Ticket balance display",
-
-        "Ticket wager interface",
-
-        "Game session initiation",
-
-        "Game difficulty selection",
-
-        "Level multiplier display",
-
-        "Score calculation",
-
-        "Win and loss states",
-
-        "Game result feedback",
-
-        "Ticket status updates",
-
-        "Backend synchronization"
+        "Wager selection",
+        "Game entry modal",
+        "Game session creation",
+        "Game session tracking",
+        "Score submission",
+        "Win/loss processing",
+        "Ticket settlement",
+        "Game history",
+        "Server-side score validation",
+        "Session status handling"
       ]
     },
 
     {
-      title: "Daily Check-In & Rewards",
+      title: "Game Difficulty & Multipliers",
 
       description:
-        "Developed the daily reward experience where users can view their streak status and interact with available daily ticket reward claims.",
+        "Implemented configurable gameplay difficulty and level multipliers that affect the relationship between game performance, cleared lines, and ticket rewards.",
 
       items: [
-        "Daily reward modal",
+        "Difficulty configuration",
+        "Level multipliers",
+        "Line-clear scoring",
+        "Progressive difficulty",
+        "Score calculation",
+        "Backend-configured game settings",
+        "Admin-controlled game parameters"
+      ]
+    },
 
-        "Daily streak interface",
+    {
+      title: "Daily Rewards & Streaks",
 
-        "Reward calendar",
+      description:
+        "Built the daily check-in and streak reward workflow allowing users to claim configured ticket rewards based on their daily participation.",
 
-        "Claim status display",
-
-        "Daily timestamp information",
-
-        "Reward claim interaction",
-
-        "Success feedback",
-
-        "Error feedback",
-
-        "Ticket reward updates"
+      items: [
+        "Daily reward calendar",
+        "Daily claim flow",
+        "Streak tracking",
+        "Claim timestamps",
+        "Reward status",
+        "Reward crediting",
+        "Claim history",
+        "Daily cooldown handling"
       ]
     },
 
@@ -289,32 +330,19 @@ const stringTetrisProject = {
       title: "Tasks & Social Engagement",
 
       description:
-        "Built the task and social engagement interface where users can discover available tasks, view their status, complete supported activities, and receive rewards.",
+        "Implemented a task and engagement system where users can complete configured activities and receive ticket rewards after successful task verification.",
 
       items: [
         "Task listing",
-
-        "Task categories",
-
         "Telegram channel tasks",
-
         "Social engagement tasks",
-
-        "Task status indicators",
-
-        "Pending task state",
-
-        "Claimed task state",
-
-        "Task completion flow",
-
+        "Task status",
+        "Claim flow",
+        "Completed task tracking",
+        "Duplicate claim prevention",
         "Reward accumulation",
-
-        "Task loading states",
-
-        "Task success feedback",
-
-        "Task error feedback"
+        "Task validation",
+        "Task feedback"
       ]
     },
 
@@ -322,26 +350,18 @@ const stringTetrisProject = {
       title: "Rewarded Advertising",
 
       description:
-        "Integrated rewarded advertising functionality into the Telegram gaming experience using Adsgram and TON AI SDK integrations.",
+        "Integrated rewarded advertisement networks into the gaming experience and implemented frontend and backend controls to prevent excessive reward claims.",
 
       items: [
         "Adsgram integration",
-
         "TON AI SDK integration",
-
-        "Rewarded advertisement flow",
-
-        "Ad completion handling",
-
-        "Advertisement status",
-
-        "Client-side ad timers",
-
-        "Reward claim timing",
-
-        "Ad-related feedback",
-
-        "Rewarded engagement workflow"
+        "Rewarded advertisements",
+        "Advertisement completion flow",
+        "Ad countdown handling",
+        "Daily advertisement limits",
+        "Ad reward cooldown",
+        "Ad completion tracking",
+        "Reward abuse prevention"
       ]
     },
 
@@ -349,49 +369,33 @@ const stringTetrisProject = {
       title: "AdBlocker Detection",
 
       description:
-        "Implemented client-side ad-blocker detection to identify blocked advertising resources and provide users with appropriate feedback before accessing rewarded advertising functionality.",
+        "Implemented client-side ad-blocker detection to identify environments that prevent rewarded advertisement functionality and provide appropriate user feedback.",
 
       items: [
-        "Ad-blocker detection",
-
-        "blockadblock.js integration",
-
-        "useAdBlockerDetector hook",
-
-        "Blocked-ad detection",
-
-        "Ad blocker warning modal",
-
-        "Reward feature restriction",
-
-        "User guidance feedback"
+        "AdBlocker detection",
+        "Script-based detection",
+        "AdBlocker popup",
+        "Rewarded feature restriction",
+        "User feedback"
       ]
     },
 
     {
-      title: "Referral Dashboard",
+      title: "Referral System",
 
       description:
-        "Developed the referral interface allowing users to generate referral links, share invitations through Telegram, and view referral-related information.",
+        "Developed referral functionality allowing users to invite other Telegram users and participate in referral-based reward mechanisms.",
 
       items: [
         "Referral link generation",
-
-        "Telegram referral URL generation",
-
-        "Referral link copying",
-
-        "Clipboard integration",
-
-        "Telegram sharing",
-
+        "Telegram referral URLs",
+        "Referral tracking",
+        "Referrer association",
+        "Signup bonuses",
+        "Referral commissions",
         "Referral history",
-
-        "Referral earnings information",
-
-        "Paginated referral data",
-
-        "Referral status display"
+        "Referral earnings",
+        "Telegram sharing flow"
       ]
     },
 
@@ -399,144 +403,117 @@ const stringTetrisProject = {
       title: "Leaderboard",
 
       description:
-        "Built leaderboard interfaces for displaying user rankings and game-related information within the Telegram gaming experience.",
+        "Implemented leaderboard interfaces for displaying user rankings and game-related performance information.",
 
       items: [
-        "Leaderboard page",
-
+        "Leaderboard screen",
         "User rankings",
-
+        "Game performance data",
         "Ranking information",
-
-        "Game-related ranking data",
-
-        "Responsive leaderboard UI",
-
-        "Leaderboard API integration",
-
-        "Loading states",
-
-        "Leaderboard feedback"
+        "API-driven leaderboard data",
+        "Responsive leaderboard UI"
       ]
     },
 
     {
-      title: "Profile Management",
+      title: "User Profile",
 
       description:
-        "Developed user profile interfaces for displaying account information and managing user-related data within the Telegram Mini App.",
+        "Developed user profile and account-related functionality for displaying player information, balances, activity, and account-related data.",
 
       items: [
         "User profile",
-
-        "Profile information",
-
-        "Account information",
-
-        "User session information",
-
-        "Profile interaction",
-
-        "Profile forms",
-
-        "Profile validation",
-
-        "Profile feedback"
+        "Telegram user information",
+        "Ticket balance",
+        "Game information",
+        "Reward information",
+        "Referral information",
+        "User activity",
+        "Account-related states"
       ]
     },
 
     {
-      title: "Cryptocurrency Withdrawal Interface",
+      title: "Cryptocurrency Withdrawal",
 
       description:
-        "Implemented the frontend withdrawal workflow allowing users to select supported assets, enter wallet addresses, preview conversions, and submit withdrawal requests.",
+        "Implemented cryptocurrency withdrawal workflows supporting TON and Solana destination addresses, ticket-to-crypto conversion, withdrawal limits, and administrative settlement.",
 
       items: [
-        "Withdrawal modal",
-
-        "TON asset selection",
-
-        "SOL asset selection",
-
+        "Withdrawal interface",
+        "TON withdrawal option",
+        "Solana withdrawal option",
         "Wallet address input",
-
-        "Ticket-to-USDT conversion preview",
-
-        "Minimum withdrawal validation",
-
-        "Maximum withdrawal validation",
-
-        "Wallet address validation",
-
-        "Withdrawal request flow",
-
-        "Withdrawal status feedback",
-
-        "Success notifications",
-
-        "Error notifications"
+        "TON address validation",
+        "Solana address validation",
+        "Ticket-to-USDT conversion",
+        "Minimum withdrawal limits",
+        "Maximum withdrawal limits",
+        "Daily withdrawal quotas",
+        "Platform fee calculation",
+        "Withdrawal request tracking",
+        "Withdrawal approval workflow"
       ]
     },
 
     {
-      title: "Web3 Wallet Integration",
+      title: "TON & Solana Web3 Integration",
 
       description:
-        "Integrated Web3 wallet functionality primarily within the administrative portal using TonConnect for non-custodial TON wallet connection and transaction signing workflows.",
+        "Integrated Web3 libraries and services for wallet address validation, price conversion, transaction information, and TON transaction signing workflows.",
 
       items: [
-        "TonConnect UI integration",
-
-        "TON wallet connection",
-
-        "Connected wallet state",
-
-        "Non-custodial wallet workflow",
-
-        "TON transaction preparation",
-
-        "Multi-recipient batch transfer flow",
-
-        "Transaction signing interface",
-
-        "Wallet connection feedback",
-
-        "Blockchain transaction status"
+        "TON wallet integration",
+        "TonConnect UI",
+        "TonWeb address validation",
+        "TON Core",
+        "Solana Web3.js",
+        "Solana public key validation",
+        "TON transaction workflows",
+        "Batch TON payout signing",
+        "Blockchain transaction lookup"
       ]
     },
 
     {
-      title: "Administrative Dashboard",
+      title: "Admin Dashboard",
 
       description:
-        "Developed and integrated frontend functionality for the administrative management portal used to manage platform configuration, users, withdrawals, tasks, advertisements, and operational information.",
+        "Developed and integrated an administrative management portal for platform operators to manage users, game configuration, tasks, advertisements, withdrawals, conversion settings, and platform operations.",
 
       items: [
         "Admin dashboard",
-
-        "Dashboard KPI cards",
-
-        "Responsive admin tables",
-
+        "Dashboard KPI information",
         "User management",
-
         "Game configuration",
-
-        "Game multiplier configuration",
-
+        "Tetris level configuration",
         "Line-clear score configuration",
-
-        "Withdrawal management",
-
+        "Ticket conversion configuration",
         "Task management",
-
         "Advertisement management",
+        "Withdrawal management",
+        "Transaction history",
+        "Platform settings",
+        "Telegram broadcast functionality"
+      ]
+    },
 
-        "Platform metrics",
+    {
+      title: "Admin Withdrawal Management",
 
-        "Administrative forms",
+      description:
+        "Implemented administrative workflows for reviewing and processing user withdrawal requests and initiating blockchain payout transactions through connected non-custodial wallets.",
 
-        "Status-driven workflows"
+      items: [
+        "Withdrawal request listing",
+        "Withdrawal status",
+        "Withdrawal approval",
+        "Withdrawal rejection",
+        "Wallet information",
+        "Transaction information",
+        "Batch payout workflow",
+        "TonConnect wallet connection",
+        "TON transaction signing"
       ]
     },
 
@@ -544,279 +521,237 @@ const stringTetrisProject = {
       title: "Excel Reporting",
 
       description:
-        "Implemented client-side Excel export functionality in the administrative portal for operational records and platform-related data.",
+        "Implemented client-side Excel export functionality within the administrative portal for operational reporting and data analysis.",
 
       items: [
-        "XLSX integration",
-
-        "Withdrawal export",
-
-        "Transaction history export",
-
-        "User record export",
-
-        "Client-side report generation",
-
-        "Downloadable Excel files"
-      ]
-    },
-
-    {
-      title: "Game Audio Manager",
-
-      description:
-        "Implemented frontend audio handling for gameplay events and application feedback using native HTML5 audio functionality.",
-
-      items: [
-        "Background ambient audio",
-
-        "Piece rotation sound",
-
-        "Piece drop sound",
-
-        "Countdown audio",
-
-        "Game-over audio",
-
-        "Gameplay audio triggers",
-
-        "Audio event management"
+        "Withdrawal exports",
+        "Transaction exports",
+        "User record exports",
+        "XLSX generation",
+        "Administrative reporting"
       ]
     }
   ],
 
   apiIntegration: {
-    title: "API Integration",
+    title: "REST API Integration",
 
     description:
-      "Integrated REST APIs into the React frontend using centralized Axios configuration and API helper modules. API-driven workflows support authentication, user information, ticket balances, game sessions, rewards, tasks, advertisements, referrals, leaderboard data, and withdrawal-related operations.",
+      "Built the complete frontend-to-backend communication layer using Axios and REST APIs. The React applications communicate with the Express backend for authentication, game sessions, users, rewards, tasks, referrals, advertisements, withdrawals, configuration, and administrative operations.",
 
     technologies: [
       "Axios",
-
       "REST APIs",
-
+      "Express.js",
       "React",
-
-      "Vite",
-
-      "Centralized API configuration",
-
-      "Axios interceptors",
-
-      "Crypto-JS"
+      "MongoDB",
+      "Mongoose",
+      "Crypto-JS",
+      "JWT"
     ],
 
     responsibilities: [
-      "Integrated frontend API requests using Axios.",
-
-      "Connected React components with backend REST APIs.",
-
+      "Created and consumed REST API workflows.",
       "Integrated authentication APIs.",
-
       "Integrated user profile APIs.",
-
-      "Integrated game configuration APIs.",
-
-      "Integrated wager and game-session APIs.",
-
-      "Integrated ticket balance APIs.",
-
+      "Integrated game session APIs.",
+      "Integrated wager APIs.",
+      "Integrated score submission APIs.",
       "Integrated daily reward APIs.",
-
-      "Integrated task and engagement APIs.",
-
-      "Integrated rewarded advertising APIs.",
-
+      "Integrated task APIs.",
+      "Integrated advertisement APIs.",
       "Integrated referral APIs.",
-
       "Integrated leaderboard APIs.",
-
       "Integrated withdrawal APIs.",
-
+      "Integrated administrative APIs.",
       "Handled API loading states.",
-
-      "Handled API success and failure states.",
-
-      "Displayed backend validation messages.",
-
-      "Provided user feedback using toast notifications."
+      "Handled API validation errors.",
+      "Handled success and failure responses.",
+      "Added authentication headers to requests.",
+      "Implemented centralized Axios configuration."
     ]
   },
 
   telegramIntegration: {
-    title: "Telegram Mini-App Integration",
+    title: "Telegram Mini-App & Bot Integration",
 
     description:
-      "The application was designed specifically for Telegram Mini Apps and integrates Telegram WebApp functionality for application entry, viewport management, authentication, navigation, and Telegram-specific user interactions.",
+      "The application was deeply integrated with the Telegram ecosystem. The player frontend runs as a Telegram Mini App while the backend validates Telegram authentication data and communicates with users through a Telegram bot.",
 
     technologies: [
       "Telegram WebApp SDK",
-
       "@twa-dev/sdk",
-
       "Telegram Bot API",
-
-      "Telegram WebApp initData"
+      "node-telegram-bot-api"
     ],
 
     responsibilities: [
-      "Integrated Telegram WebApp functionality.",
-
-      "Supported Telegram mobile WebView execution.",
-
-      "Handled Telegram application initialization.",
-
+      "Integrated Telegram WebApp initialization.",
+      "Handled Telegram WebView environment.",
       "Implemented Telegram viewport expansion.",
-
-      "Integrated Telegram header behavior.",
-
-      "Handled Telegram hardware/back-button navigation.",
-
-      "Worked with Telegram initData authentication.",
-
-      "Integrated Telegram-specific user flows.",
-
-      "Supported Telegram referral links.",
-
-      "Designed the frontend around the Telegram Mini App environment."
+      "Handled Telegram back-button behavior.",
+      "Validated Telegram platform access.",
+      "Processed Telegram WebApp initData.",
+      "Implemented Telegram authentication verification.",
+      "Generated Telegram Mini App launch flows.",
+      "Integrated Telegram bot `/start` handling.",
+      "Implemented Telegram broadcast messaging.",
+      "Managed Telegram chat IDs.",
+      "Integrated Telegram-specific user flows."
     ]
   },
 
   walletIntegration: {
-    title: "Wallet Integration",
+    title: "Web3 & Wallet Integration",
 
     description:
-      "Implemented Web3 wallet-related functionality across the platform, with user-facing withdrawal workflows for TON and Solana and TonConnect-based non-custodial wallet connectivity in the administrative portal.",
+      "Implemented Web3 functionality across the application using TON and Solana libraries. The system validates user wallet addresses, calculates crypto conversion values, retrieves blockchain transaction information, and allows administrators to sign TON batch payout transactions using connected non-custodial wallets.",
 
     technologies: [
       "@tonconnect/ui-react",
-
       "@tonconnect/sdk",
-
-      "TON",
-
-      "TON Core",
-
       "TonWeb",
-
-      "@solana/web3.js"
+      "@ton/core",
+      "@solana/web3.js",
+      "TweetNaCl",
+      "TonAPI",
+      "DexScreener",
+      "Solscan"
     ],
 
     features: [
       "TON wallet connection",
+      "Non-custodial wallet workflow",
+      "TON wallet address validation",
+      "Solana public key validation",
+      "TON batch transaction signing",
+      "TON price lookup",
+      "Solana token price lookup",
+      "Ticket-to-crypto conversion",
+      "Transaction verification",
+      "Blockchain transaction lookup",
+      "Administrative payout workflow"
+    ]
+  },
 
-      "Non-custodial wallet interaction",
+  authentication: {
+    title: "Authentication & Authorization",
 
-      "TON transaction signing",
+    description:
+      "Implemented a multi-layer authentication and authorization architecture combining Telegram WebApp HMAC verification, JWT sessions, AES-encrypted request timestamps, and role-based access control.",
 
-      "Batch TON transaction workflow",
+    technologies: [
+      "Telegram WebApp initData",
+      "HMAC-SHA256",
+      "JWT",
+      "Crypto-JS",
+      "Node Crypto",
+      "Bcrypt",
+      "Express Middleware"
+    ],
 
-      "TON wallet status",
+    features: [
+      "Telegram WebApp authentication",
+      "HMAC-SHA256 signature verification",
+      "Telegram Bot Token validation",
+      "JWT token generation",
+      "JWT token validation",
+      "JWT session persistence",
+      "AES-encrypted client timestamps",
+      "Replay attack prevention",
+      "5-second client timestamp validation",
+      "Admin authentication",
+      "Admin password verification",
+      "Role-based authorization",
+      "Admin/SubAdmin/User role handling",
+      "Protected API routes"
+    ]
+  },
 
-      "TON withdrawal workflow",
+  security: {
+    title: "Application Security",
 
-      "Solana withdrawal-related interface",
+    description:
+      "Implemented multiple security layers across the frontend and backend to protect authentication, API requests, game sessions, reward claims, and administrative functionality.",
 
-      "Wallet address input",
+    technologies: [
+      "HMAC-SHA256",
+      "AES Encryption",
+      "JWT",
+      "Bcrypt",
+      "Crypto-JS",
+      "CORS",
+      "Express Middleware"
+    ],
 
+    features: [
+      "Telegram signature verification",
+      "HMAC-SHA256 authentication",
+      "AES-encrypted request timestamps",
+      "Replay attack prevention",
+      "JWT authentication",
+      "Role-based authorization",
+      "Password hashing",
+      "User-Agent filtering",
+      "CORS configuration",
       "Wallet address validation",
-
-      "Wallet-related feedback",
-
-      "Crypto asset selection"
+      "Server-side score caps",
+      "Duplicate task claim prevention",
+      "Advertisement reward rate limiting",
+      "Withdrawal quota validation"
     ]
   },
 
-  responsiveDesign: {
-    title: "Responsive & Mobile-First Design",
+  gameEngine: {
+    title: "Custom Tetris Game Engine",
+
+    technology: "React + JavaScript",
 
     description:
-      "The frontend was designed primarily for Telegram mobile WebViews. Responsive layouts, dynamic game scaling, mobile-focused components, and responsive administrative views were implemented to support different screen dimensions.",
+      "Developed the Tetris gameplay engine as a custom React-based implementation rather than relying on an external game engine. The implementation manages board state, tetromino vectors, movement, rotation, collision detection, line clearing, gravity, scoring, and gameplay lifecycle.",
 
-    features: [
-      "Mobile-first Telegram Mini App",
-
-      "Responsive Tetris board",
-
-      "Dynamic viewport scaling",
-
-      "usePps responsive calculation",
-
-      "Window resize handling",
-
-      "Responsive game interface",
-
-      "Responsive game modals",
-
-      "Responsive profile interface",
-
-      "Responsive task interface",
-
-      "Responsive rewards interface",
-
-      "Responsive referral interface",
-
-      "Responsive leaderboard",
-
-      "Responsive withdrawal interface",
-
-      "Responsive wallet interface",
-
-      "Responsive admin tables",
-
-      "Responsive admin forms",
-
-      "Mobile-friendly navigation"
+    components: [
+      "Game board matrix",
+      "Tetromino definitions",
+      "Piece rotation matrices",
+      "Piece movement logic",
+      "Collision detection",
+      "Boundary detection",
+      "Line-clear algorithm",
+      "Gravity loop",
+      "Dynamic drop speed",
+      "Score calculation",
+      "Level progression",
+      "Game-over detection",
+      "Particle effects",
+      "Confetti effects",
+      "Audio manager",
+      "Game session synchronization"
     ]
   },
 
-  uiUx: {
-    title: "UI / UX Features",
+  stateManagement: {
+    title: "State Management",
+
+    technology: "React Context API + React Hooks",
 
     description:
-      "The frontend focuses on creating an interactive arcade-style Telegram experience with responsive layouts, game-specific interfaces, modal workflows, loading states, notifications, and clear feedback for user actions.",
+      "Used React Context API and React Hooks to maintain shared application state across the player application, while local component state and reducer-based state were used for specific UI and administrative requirements.",
 
-    features: [
-      "Cyberpunk-inspired gaming experience",
-
-      "Mobile-first interface",
-
-      "Interactive Tetris game screen",
-
-      "Responsive game board",
-
-      "Game countdown interface",
-
-      "Game-over feedback",
-
-      "Daily reward modal",
-
-      "Task interaction states",
-
-      "Referral interface",
-
-      "Leaderboard interface",
-
-      "Withdrawal modal",
-
-      "Wallet connection feedback",
-
-      "Ad blocker warning modal",
-
-      "Loading indicators",
-
-      "Fullscreen loading states",
-
-      "Toast notifications",
-
-      "Success feedback",
-
-      "Error feedback",
-
-      "Confirmation dialogs",
-
-      "Responsive admin dashboard"
+    responsibilities: [
+      "User authentication state",
+      "JWT token state",
+      "User profile state",
+      "Ticket balance state",
+      "Telegram environment state",
+      "Game state",
+      "Game session state",
+      "Reward state",
+      "Task state",
+      "Referral state",
+      "Wallet state",
+      "Admin configuration state",
+      "Component-level UI state"
     ]
   },
 
@@ -826,120 +761,27 @@ const stringTetrisProject = {
     technology: "React Router DOM",
 
     description:
-      "Implemented frontend navigation using React Router DOM. The user application uses route-based rendering for the Telegram Mini App experience, while the administrative application uses nested routes and lazy-loaded views.",
+      "Implemented route-based navigation across the player Telegram Mini App and administrative application. The user application uses React Router for player-facing views, while the admin application uses nested routes and lazy-loaded views.",
 
     areas: [
       "Home",
-
-      "Tetris Game",
-
-      "Profile",
-
-      "Daily Rewards",
-
+      "Tetris game",
+      "Rewards",
       "Tasks",
-
-      "Referral",
-
+      "Referrals",
       "Leaderboard",
-
-      "Withdrawal",
-
-      "Wallet-related views",
-
-      "Game-related views",
-
-      "Admin Dashboard",
-
-      "Admin Users",
-
-      "Admin Game Configuration",
-
-      "Admin Tasks",
-
-      "Admin Advertisements",
-
-      "Admin Withdrawals",
-
-      "Admin Reports"
-    ]
-  },
-
-  stateManagement: {
-    title: "State Management",
-
-    technology: "React Context API",
-
-    description:
-      "Used React Context and React Hooks for shared application state across the Telegram Mini App. The state architecture manages authentication, user information, ticket balances, Telegram environment information, and session-related data.",
-
-    responsibilities: [
-      "User authentication state",
-
-      "User profile state",
-
-      "Ticket balance state",
-
-      "Session state",
-
-      "Authentication token state",
-
-      "Telegram WebApp state",
-
-      "Telegram viewport information",
-
-      "User-related application state",
-
-      "Game-related component state",
-
-      "Modal state",
-
-      "Loading state",
-
-      "Application-level state sharing",
-
-      "Component-level state management"
-    ]
-  },
-
-  authentication: {
-    title: "Authentication & Session Handling",
-
-    description:
-      "The frontend uses Telegram WebApp initData as part of the authentication flow. The client packages Telegram authentication information into API requests and receives a signed JWT that is persisted locally for subsequent authenticated requests.",
-
-    technologies: [
-      "Telegram WebApp initData",
-
-      "JWT",
-
-      "localStorage",
-
-      "Axios",
-
-      "Crypto-JS"
-    ],
-
-    features: [
-      "Telegram-based authentication",
-
-      "Telegram initData handling",
-
-      "JWT session handling",
-
-      "JWT persistence",
-
-      "localStorage token storage",
-
-      "Bearer token API requests",
-
-      "Authenticated user state",
-
-      "Protected API communication",
-
-      "Encrypted timestamp headers",
-
-      "Client request security handling"
+      "Profile",
+      "Wallet",
+      "Withdrawals",
+      "Game history",
+      "Admin dashboard",
+      "Users",
+      "Game configuration",
+      "Tasks management",
+      "Advertisements",
+      "Withdrawals",
+      "Transactions",
+      "Platform settings"
     ]
   },
 
@@ -951,35 +793,28 @@ const stringTetrisProject = {
         name: "Material UI",
 
         usage:
-          "Used for responsive and reusable frontend components, form controls, dialogs, layouts, and application interface elements."
+          "Used for responsive player interfaces, form controls, dialogs, cards, and reusable UI components."
       },
 
       {
         name: "Tailwind CSS",
 
         usage:
-          "Used for utility-based responsive styling and mobile-focused layout implementation."
+          "Used for utility-based responsive styling and mobile-focused interface development."
       },
 
       {
         name: "Bootstrap",
 
         usage:
-          "Used for responsive layout structures and reusable interface styling."
+          "Used for responsive layout structures and administrative interface styling."
       },
 
       {
         name: "React Bootstrap",
 
         usage:
-          "Used for Bootstrap-based React components within the administrative frontend."
-      },
-
-      {
-        name: "CoreUI",
-
-        usage:
-          "Used within the administrative dashboard interface and management-oriented UI components."
+          "Used for reusable Bootstrap-based React components within the administrative application."
       },
 
       {
@@ -993,14 +828,14 @@ const stringTetrisProject = {
         name: "Framer Motion",
 
         usage:
-          "Used for frontend animations and interactive motion effects."
+          "Used for interface animations and motion effects."
       },
 
       {
         name: "Lucide React",
 
         usage:
-          "Used for interface icons and visual UI elements."
+          "Used for interface icons and visual controls."
       }
     ]
   },
@@ -1009,50 +844,36 @@ const stringTetrisProject = {
     title: "Charts & Visualization",
 
     technologies: [
-      "React Circular Progressbar",
-
-      "React-based dashboard visualization"
+      "React Circular Progressbar"
     ],
 
     note:
-      "The project documentation identifies React Circular Progressbar as part of the frontend technology stack. Chart.js and D3 are listed as administrative dependencies but are documented as boilerplate artifacts rather than confirmed implemented views."
+      "The project dependencies also contain charting libraries, but the project review identifies React Circular Progressbar as the implemented visualization dependency and notes that Chart.js, D3, and Google Charts entries are boilerplate rather than confirmed implemented views."
   },
 
   formsAndValidation: {
-    title: "Forms & User Interaction",
+    title: "Forms & Validation",
 
     technologies: [
       "Formik",
-
       "Yup",
-
-      "Material UI form controls",
-
-      "React controlled components"
+      "Material UI Form Controls",
+      "Custom JavaScript Validation",
+      "Mongoose Validation"
     ],
 
     features: [
-      "Profile forms",
-
+      "Administrative profile forms",
+      "Configuration forms",
       "Withdrawal forms",
-
-      "Wallet address input",
-
-      "Administrative forms",
-
-      "Game configuration forms",
-
-      "Task configuration forms",
-
-      "User input handling",
-
-      "Client-side validation",
-
-      "Form state management",
-
-      "Validation feedback",
-
-      "Success and error states"
+      "Wallet address validation",
+      "TON address validation",
+      "Solana address validation",
+      "Minimum withdrawal validation",
+      "Maximum withdrawal validation",
+      "Game configuration validation",
+      "Client-side form handling",
+      "Backend parameter validation"
     ]
   },
 
@@ -1061,511 +882,542 @@ const stringTetrisProject = {
 
     technologies: [
       "React Hot Toast",
-
-      "React Toastify"
+      "React Toastify",
+      "Telegram Bot API",
+      "Nodemailer"
     ],
 
     features: [
-      "Authentication feedback",
-
+      "Login feedback",
       "Game result feedback",
-
-      "Daily reward feedback",
-
+      "Reward notifications",
       "Task completion notifications",
-
-      "Advertisement feedback",
-
-      "Referral feedback",
-
+      "Withdrawal status feedback",
       "Wallet connection feedback",
-
-      "Withdrawal feedback",
-
-      "Form validation feedback",
-
-      "Success notifications",
-
-      "Error notifications",
-
-      "API validation messages",
-
-      "Application status feedback"
+      "Validation errors",
+      "API errors",
+      "Admin notifications",
+      "Telegram broadcast messages",
+      "Password recovery OTP emails"
     ]
   },
 
-  userExperience: {
-    title: "User Experience",
+  telegramBot: {
+    title: "Telegram Bot Backend",
 
     description:
-      "The frontend focuses on delivering a mobile-first Telegram gaming experience by combining classic Tetris gameplay with ticket-based sessions, rewards, tasks, advertisements, referrals, leaderboards, profile management, and Web3 withdrawal-related workflows.",
+      "Implemented backend Telegram bot functionality using node-telegram-bot-api for Mini App onboarding and administrative communication workflows.",
 
-    highlights: [
-      "Telegram-first user experience",
+    technologies: [
+      "node-telegram-bot-api",
+      "Telegram Bot API",
+      "Axios"
+    ],
 
-      "Mobile-focused Tetris gameplay",
+    features: [
+      "Bot polling",
+      "/start command handling",
+      "Mini App launch interaction",
+      "Telegram chat ID management",
+      "User onboarding",
+      "Broadcast messaging",
+      "Administrative announcements"
+    ]
+  },
 
-      "Interactive custom Tetris engine",
+  backgroundJobs: {
+    title: "Background Jobs",
 
-      "Responsive game board",
+    technology: "node-cron",
 
-      "Ticket-based game participation",
+    description:
+      "Implemented scheduled backend processing to identify and expire abandoned game sessions, helping maintain consistent gameplay session state.",
 
-      "Progressive game difficulty",
+    features: [
+      "Scheduled session cleanup",
+      "One-minute cron execution",
+      "Detection of stale game sessions",
+      "Three-minute session expiration threshold",
+      "Automatic PENDING to EXPIRED transition",
+      "Game session data integrity"
+    ]
+  },
 
-      "Daily reward experience",
+  externalApis: {
+    title: "External API Integrations",
 
-      "Task and social engagement",
+    technologies: [
+      "Telegram Bot API",
+      "TonAPI",
+      "DexScreener API",
+      "Solscan API"
+    ],
 
-      "Rewarded advertising",
+    integrations: [
+      {
+        name: "TonAPI",
 
-      "Referral experience",
+        usage:
+          "Used for TON and USDT price information required for cryptocurrency conversion calculations."
+      },
 
-      "Leaderboard experience",
+      {
+        name: "DexScreener",
 
-      "Profile management",
+        usage:
+          "Used to retrieve Solana token market price information for conversion calculations."
+      },
 
-      "Cryptocurrency withdrawal interface",
+      {
+        name: "Solscan",
 
-      "TON wallet-related workflows",
+        usage:
+          "Used to retrieve blockchain transaction information and verify processed transaction details."
+      },
 
-      "Solana wallet-related workflows",
+      {
+        name: "Telegram Bot API",
 
-      "Admin management experience",
+        usage:
+          "Used for Telegram bot communication, Mini App onboarding, and administrative broadcast messaging."
+      }
+    ]
+  },
 
-      "Toast-based feedback",
+  adminDashboard: {
+    title: "Administrative Dashboard",
 
-      "Loading states",
+    description:
+      "Developed the administrative side of the platform to provide operational control over users, game configuration, rewards, advertisements, tasks, withdrawals, conversion settings, transactions, and Telegram communication.",
 
-      "Interactive modals",
+    modules: [
+      "Dashboard",
+      "User Management",
+      "Game Management",
+      "Tetris Configuration",
+      "Level Multipliers",
+      "Line-Clear Scores",
+      "Task Management",
+      "Advertisement Management",
+      "Withdrawal Management",
+      "Transaction Management",
+      "Ticket Conversion",
+      "Reward Settings",
+      "Referral Settings",
+      "Withdrawal Limits",
+      "Telegram Broadcast",
+      "Administrative Profile",
+      "Excel Reporting"
+    ]
+  },
 
-      "Responsive layouts"
+  responsiveDesign: {
+    title: "Responsive & Mobile-First Design",
+
+    description:
+      "The player application was designed primarily for mobile Telegram WebViews, while the administrative portal provides responsive layouts for operational management.",
+
+    features: [
+      "Mobile-first Telegram interface",
+      "Responsive Tetris board",
+      "Dynamic game viewport scaling",
+      "Responsive game controls",
+      "Responsive modals",
+      "Responsive reward interfaces",
+      "Responsive task interfaces",
+      "Responsive profile",
+      "Responsive withdrawal interface",
+      "Responsive leaderboard",
+      "Responsive admin tables",
+      "Responsive admin forms",
+      "Mobile Telegram WebView optimization"
+    ]
+  },
+
+  uiUx: {
+    title: "UI / UX Features",
+
+    description:
+      "The UI combines an arcade gaming experience for players with a structured management experience for administrators.",
+
+    features: [
+      "Cyberpunk-inspired gaming interface",
+      "Mobile-first game experience",
+      "Interactive Tetris board",
+      "Game animations",
+      "Particle effects",
+      "Confetti effects",
+      "Loading indicators",
+      "Toast notifications",
+      "Confirmation modals",
+      "Reward modals",
+      "Withdrawal modals",
+      "Task cards",
+      "Leaderboard views",
+      "Responsive tables",
+      "Admin management cards",
+      "Clear success and error feedback"
     ]
   },
 
   challenges: [
     {
+      title: "Building a Custom Tetris Engine",
+
+      description:
+        "Implementing the complete Tetris gameplay experience required managing tetromino matrices, rotation, movement, collision detection, line clearing, gravity, scoring, and game lifecycle state inside a React application."
+    },
+
+    {
       title: "Telegram Mini-App Environment",
 
       description:
-        "Building the frontend specifically for Telegram Mini Apps required adapting the application to Telegram WebView behavior, viewport handling, mobile constraints, Telegram navigation, and Telegram-specific authentication data."
+        "The application had to operate correctly inside Telegram WebViews, requiring Telegram-specific viewport handling, platform checks, WebApp initialization, back-button handling, and Telegram authentication."
     },
 
     {
-      title: "Custom Tetris Game Logic",
+      title: "Secure Telegram Authentication",
 
       description:
-        "Implementing a complete Tetris experience required handling board matrices, seven tetromino types, rotation, movement, collision detection, line clearing, gravity, scoring, progressive difficulty, and game-over states within the React application."
+        "Authentication required validating Telegram WebApp initData using HMAC-SHA256 and generating JWT-based sessions for subsequent API communication."
     },
 
     {
-      title: "Responsive Game Scaling",
+      title: "API Request Security",
 
       description:
-        "Maintaining consistent Tetris board proportions across different mobile screen sizes required dynamic viewport calculations and responsive game scaling using the usePps approach."
+        "The application implemented encrypted timestamp-based request validation to restrict unauthorized requests and reduce replay-style API abuse."
     },
 
     {
-      title: "Complex Gaming Workflow",
+      title: "Game Wager & Settlement",
 
       description:
-        "The frontend connects multiple user journeys including ticket wagering, game sessions, scoring, rewards, tasks, advertisements, referrals, leaderboards, and withdrawals, requiring organized state handling and reusable components."
+        "The game required coordination between frontend gameplay, ticket wagers, backend game sessions, score validation, and final win/loss settlement."
     },
 
     {
-      title: "API-Driven Game State",
+      title: "Reward Abuse Prevention",
 
       description:
-        "The game and reward platform depends on backend APIs for balances, game sessions, rewards, tasks, advertisements, referrals, leaderboard information, and withdrawals, requiring clear loading, success, failure, and synchronization states."
+        "Daily rewards, tasks, and advertisements required backend-side validation, cooldowns, duplicate-claim prevention, and rate-limiting logic."
     },
 
     {
-      title: "Web3 User Experience",
+      title: "Cryptocurrency Withdrawal Validation",
 
       description:
-        "Integrating cryptocurrency-related functionality required presenting wallet addresses, asset selections, conversion information, withdrawal limits, and transaction-related states in a user-friendly Telegram interface."
+        "Withdrawal workflows required validation of TON and Solana wallet addresses, conversion calculations, withdrawal limits, quotas, and transaction processing."
     },
 
     {
-      title: "Rewarded Advertising",
+      title: "Admin Blockchain Payout Workflow",
 
       description:
-        "Integrating rewarded advertisements while managing ad completion states, client-side timers, and ad-blocker detection required additional frontend control around reward-related user interactions."
+        "The administrative dashboard needed to connect to a non-custodial TON wallet and support batch transaction signing for approved withdrawal requests."
     },
 
     {
-      title: "Administrative Dashboard",
+      title: "External Price Integration",
 
       description:
-        "The project includes a separate administrative frontend with management tables, configuration forms, withdrawal workflows, reporting, and wallet-related transaction interfaces, requiring a different UI structure from the mobile Telegram client."
+        "The backend integrated external APIs such as TonAPI and DexScreener to calculate current asset conversion values for withdrawal processing."
+    },
+
+    {
+      title: "Game Session Cleanup",
+
+      description:
+        "Abandoned game sessions required scheduled cleanup so that pending sessions did not remain indefinitely and game-state integrity could be maintained."
     }
   ],
 
   learning: [
-    "React application development",
-
-    "Vite frontend development",
-
-    "JavaScript and JSX",
-
-    "React component architecture",
-
-    "React Hooks",
-
+    "Full-stack MERN application development",
+    "React application architecture",
     "React Context state management",
-
+    "React Hooks",
+    "Vite-based React development",
     "React Router DOM",
-
-    "Custom game-engine development",
-
-    "Tetris board and matrix logic",
-
-    "Tetromino rotation algorithms",
-
+    "Custom browser game development",
+    "Tetris game logic",
+    "Game board matrix management",
     "Collision detection",
-
     "Line-clearing algorithms",
-
-    "Dynamic game difficulty",
-
     "Responsive game scaling",
-
-    "Telegram WebApp development",
-
-    "Telegram Mini App integration",
-
-    "Telegram initData authentication",
-
-    "JWT session handling",
-
-    "Axios REST API integration",
-
-    "Centralized API communication",
-
-    "Crypto-JS request security",
-
-    "Mobile-first frontend development",
-
-    "Material UI",
-
-    "Tailwind CSS",
-
-    "Bootstrap",
-
-    "React Bootstrap",
-
-    "Sass",
-
-    "Framer Motion",
-
+    "Node.js backend development",
+    "Express.js REST API development",
+    "MongoDB database design",
+    "Mongoose schema development",
+    "JWT authentication",
+    "Telegram WebApp authentication",
+    "HMAC-SHA256 verification",
+    "AES-encrypted request validation",
+    "Role-based authorization",
+    "REST API security",
+    "Telegram Bot API integration",
+    "Telegram Mini App development",
     "TON wallet integration",
-
-    "TonConnect integration",
-
-    "Solana wallet-related frontend integration",
-
-    "Rewarded advertising SDK integration",
-
-    "Ad-blocker detection",
-
-    "Daily reward workflows",
-
-    "Task and engagement workflows",
-
-    "Referral interfaces",
-
-    "Leaderboard development",
-
-    "Cryptocurrency withdrawal interfaces",
-
+    "Solana wallet validation",
+    "Web3 wallet workflows",
+    "Cryptocurrency price API integration",
+    "Background jobs with node-cron",
+    "Reward and referral systems",
     "Administrative dashboard development",
-
-    "Excel reporting with XLSX",
-
-    "Frontend notifications and feedback"
+    "Ad network integration",
+    "Withdrawal processing workflows",
+    "Excel reporting",
+    "Email OTP workflows"
   ],
 
   frontendTechnologyStack: {
     framework: [
       "React",
-
       "Vite"
     ],
 
     language: [
       "JavaScript",
-
       "JSX"
     ],
 
     routing: [
-      "React Router DOM v7",
-
-      "React Router DOM v6 for Admin"
+      "React Router DOM"
     ],
 
     stateManagement: [
       "React Context API",
-
       "React Hooks",
-
-      "useState",
-
-      "useReducer",
-
-      "useContext",
-
-      "useRef",
-
-      "useCallback",
-
-      "useMemo"
+      "useReducer"
     ],
 
     apiCommunication: [
       "Axios",
-
       "REST APIs",
-
-      "Centralized API configuration",
-
-      "Axios interceptors"
+      "Crypto-JS"
     ],
 
     telegram: [
       "Telegram WebApp SDK",
-
       "@twa-dev/sdk",
-
-      "Telegram Bot Integration",
-
-      "Telegram initData"
+      "Telegram Bot Integration"
     ],
 
     ui: [
       "Material UI",
-
       "Tailwind CSS",
-
       "Bootstrap",
-
       "React Bootstrap",
-
-      "CoreUI",
-
       "Sass",
-
-      "Emotion"
-    ],
-
-    wallet: [
-      "@tonconnect/ui-react",
-
-      "@tonconnect/sdk",
-
-      "TON",
-
-      "TON Core",
-
-      "TonWeb",
-
-      "@solana/web3.js"
+      "Framer Motion",
+      "Lucide React"
     ],
 
     game: [
       "Custom React Tetris Engine",
-
-      "Tetromino Matrix Logic",
-
-      "Collision Detection",
-
-      "Line-Clear Logic",
-
-      "Dynamic Gravity",
-
-      "Responsive Game Scaling",
-
+      "JavaScript Game Logic",
+      "Dynamic Viewport Scaling",
       "HTML5 Audio"
     ],
 
-    advertising: [
-      "Adsgram",
-
-      "TON AI SDK",
-
-      "AdBlock Detection"
+    wallet: [
+      "@tonconnect/ui-react",
+      "@tonconnect/sdk",
+      "TonWeb",
+      "@ton/core",
+      "@solana/web3.js"
     ],
 
     forms: [
       "Formik",
-
-      "Yup"
+      "Yup",
+      "Custom Validation"
     ],
 
     notifications: [
       "React Hot Toast",
-
       "React Toastify"
     ],
 
     analytics: [
-      "React GA",
-
-      "Google Analytics"
+      "Google Analytics",
+      "react-ga"
     ],
 
     utilities: [
-      "XLSX",
+      "SheetJS / XLSX",
+      "JWT Decode",
+      "Lucide React"
+    ]
+  },
 
-      "Lucide React",
+  backendTechnologyStack: {
+    runtime: [
+      "Node.js"
+    ],
 
-      "React Icons",
+    framework: [
+      "Express.js"
+    ],
 
-      "Crypto-JS"
+    database: [
+      "MongoDB",
+      "Mongoose"
+    ],
+
+    authentication: [
+      "JWT",
+      "Telegram HMAC-SHA256",
+      "Bcrypt",
+      "Bcryptjs"
+    ],
+
+    authorization: [
+      "Role-Based Access Control",
+      "Express Middleware"
+    ],
+
+    api: [
+      "Express Router",
+      "REST APIs",
+      "express-async-handler",
+      "Axios"
+    ],
+
+    security: [
+      "Crypto-JS",
+      "Node Crypto",
+      "HMAC-SHA256",
+      "AES",
+      "CORS",
+      "User-Agent Validation"
+    ],
+
+    telegram: [
+      "node-telegram-bot-api",
+      "Telegram Bot API"
+    ],
+
+    blockchain: [
+      "TonWeb",
+      "@ton/core",
+      "@solana/web3.js",
+      "TweetNaCl"
+    ],
+
+    externalApis: [
+      "TonAPI",
+      "DexScreener",
+      "Solscan",
+      "Telegram Bot API"
+    ],
+
+    backgroundJobs: [
+      "node-cron"
+    ],
+
+    email: [
+      "Nodemailer",
+      "Gmail SMTP"
+    ],
+
+    configuration: [
+      "dotenv"
     ]
   },
 
   projectHighlights: [
-    "Telegram-integrated Web3 gaming platform",
-
-    "React and Vite frontend",
-
-    "Mobile-first Telegram Mini App",
-
-    "Custom Tetris game engine",
-
-    "Seven standard Tetris tetrominoes",
-
-    "Tetromino rotation logic",
-
-    "Collision detection",
-
-    "Line-clearing logic",
-
-    "Dynamic gravity and difficulty",
-
-    "Responsive game scaling",
-
-    "usePps viewport scaling",
-
-    "Game audio management",
-
-    "Ticket-based gameplay",
-
-    "Daily streak rewards",
-
-    "Task and social engagement system",
-
-    "Rewarded advertisements",
-
-    "Adsgram integration",
-
-    "TON AI SDK integration",
-
-    "Ad-blocker detection",
-
-    "Referral dashboard",
-
-    "Leaderboard interface",
-
-    "User profile management",
-
-    "Cryptocurrency withdrawal interface",
-
-    "TON wallet integration",
-
-    "Solana wallet-related functionality",
-
-    "TonConnect administrative transaction flow",
-
-    "React Context state management",
-
-    "Axios REST API integration",
-
+    "Full-stack MERN Web3 gaming platform",
+    "Telegram Mini App architecture",
+    "Custom React Tetris game engine",
+    "React + Vite frontend",
+    "Node.js + Express backend",
+    "MongoDB + Mongoose database",
     "Telegram WebApp authentication",
-
-    "JWT session handling",
-
-    "Responsive Material UI and Tailwind interfaces",
-
-    "Administrative management dashboard",
-
+    "HMAC-SHA256 verification",
+    "AES-encrypted timestamp validation",
+    "JWT authentication",
+    "Role-based access control",
+    "Ticket-based gameplay",
+    "Game wager and settlement flow",
+    "Daily reward system",
+    "Task and engagement system",
+    "Referral and commission system",
+    "Rewarded advertising",
+    "AdBlocker detection",
+    "TON wallet integration",
+    "Solana wallet validation",
+    "TON batch payout workflow",
+    "Cryptocurrency withdrawal system",
+    "TonAPI integration",
+    "DexScreener integration",
+    "Solscan integration",
+    "Telegram Bot integration",
+    "Background game-session cleanup",
+    "Administrative dashboard",
     "Excel reporting",
-
-    "Toast notifications",
-
-    "Reusable React components"
+    "Responsive mobile-first UI"
   ],
 
   portfolioDescription:
-    "Developed a Telegram-first Web3 gaming frontend using React and Vite, providing a mobile-first Tetris experience with a custom game engine, responsive viewport scaling, ticket-based gameplay, daily rewards, tasks, rewarded advertisements, referrals, leaderboards, profile management, and cryptocurrency withdrawal workflows. Integrated Telegram WebApp functionality, Axios-based REST APIs, React Context for shared state, JWT session handling, Material UI, Tailwind CSS, Bootstrap, Adsgram, TON AI SDK, and TON/Solana wallet-related functionality. Also contributed to the administrative frontend supporting game configuration, withdrawal management, reporting, and TonConnect-based transaction workflows.",
+    "Developed String Tetris as a full-stack Web3 Play-to-Earn Telegram Mini App using React, Vite, Node.js, Express, and MongoDB. Built the custom Tetris game engine with tetromino movement, rotation, collision detection, line clearing, dynamic difficulty, responsive viewport scaling, audio feedback, and game-session synchronization. Implemented ticket wagering, daily rewards, tasks, referrals, rewarded advertisements, leaderboards, user profiles, and cryptocurrency withdrawal workflows supporting TON and Solana. Developed REST APIs and MongoDB models for gameplay, users, rewards, referrals, tasks, advertisements, transactions, and withdrawals. Implemented Telegram HMAC-SHA256 authentication, AES-encrypted request validation, JWT authorization, role-based access control, background game-session cleanup, Telegram bot messaging, external price integrations, and an administrative dashboard with withdrawal management and batch TON payout workflows.",
 
   resumeDescription:
-    "Developed a Telegram Mini App frontend using React and Vite for a Web3 Play-to-Earn Tetris platform, implementing a custom Tetris engine with responsive scaling, collision detection, line clearing, dynamic difficulty, and audio feedback. Integrated Telegram WebApp authentication, Axios REST APIs, React Context state management, ticket-based gameplay, daily rewards, tasks, rewarded ads, referrals, leaderboards, and cryptocurrency withdrawal interfaces with TON and Solana wallet-related workflows.",
+    "Developed a full-stack Web3 Telegram Mini App using React, Node.js, Express, and MongoDB, featuring a custom Tetris game engine, ticket wagering, rewards, tasks, referrals, rewarded advertisements, leaderboards, and cryptocurrency withdrawals. Implemented secure Telegram HMAC-SHA256 authentication, AES-encrypted request validation, JWT authorization, MongoDB/Mongoose data models, REST APIs, TON and Solana wallet validation, Telegram Bot integration, background game-session cleanup, external price APIs, and an administrative dashboard for platform and withdrawal management.",
 
   resumeBulletPoints: [
-    "Developed a mobile-first Telegram Mini App using React and Vite featuring a custom Tetris game engine with tetromino rotation, collision detection, line clearing, dynamic difficulty, and audio feedback.",
+    "Developed a full-stack Web3 Telegram Mini App using React, Node.js, Express.js, and MongoDB, combining custom Tetris gameplay with ticket-based wagering and cryptocurrency rewards.",
 
-    "Implemented responsive Tetris gameplay using dynamic viewport scaling to maintain consistent game-board proportions across Telegram mobile WebViews.",
+    "Built a custom React Tetris game engine implementing tetromino rotation, movement, collision detection, line clearing, dynamic gravity, scoring, progressive difficulty, audio feedback, and responsive viewport scaling.",
 
-    "Integrated Telegram WebApp SDK functionality including viewport expansion, back-button handling, Telegram initData authentication, and Telegram-specific application flows.",
+    "Designed and implemented REST APIs with Express.js and MongoDB/Mongoose for user management, game sessions, wagers, rewards, tasks, referrals, advertisements, transactions, and withdrawals.",
 
-    "Built ticket-based gameplay, daily reward, task, referral, leaderboard, profile, and cryptocurrency withdrawal interfaces using reusable React components.",
+    "Implemented secure Telegram WebApp authentication using HMAC-SHA256 signature verification, AES-encrypted timestamp validation, JWT authorization, and role-based access control.",
 
-    "Integrated REST APIs using Axios and managed shared authentication, user, ticket, session, and Telegram states using React Context API.",
+    "Integrated TON and Solana Web3 workflows including wallet address validation, live price conversion through TonAPI and DexScreener, transaction verification through Solscan, and TON batch payout signing through TonConnect.",
 
-    "Integrated rewarded advertising through Adsgram and TON AI SDK with client-side ad-blocker detection and reward interaction workflows.",
+    "Implemented automated game-session cleanup using node-cron to expire stale sessions and maintain consistent wager and game-state handling.",
 
-    "Implemented TON and Solana wallet-related frontend workflows, including wallet address handling, withdrawal interfaces, and TonConnect-based administrative transaction signing.",
+    "Developed Telegram Bot functionality using node-telegram-bot-api for Mini App onboarding, user communication, and administrative broadcast messaging.",
 
-    "Contributed to the administrative frontend with responsive management tables, game configuration interfaces, withdrawal workflows, and XLSX-based data exports.",
+    "Built rewarded advertising, daily reward, task, referral, and anti-abuse workflows with frontend and backend validation, cooldowns, limits, and duplicate-claim prevention.",
 
-    "Built responsive and interactive interfaces using Material UI, Tailwind CSS, Bootstrap, React Bootstrap, Sass, and Framer Motion.",
+    "Developed an administrative dashboard for user management, game configuration, task and advertisement management, withdrawal processing, platform settings, Telegram broadcasts, and Excel reporting.",
 
-    "Implemented loading states, validation feedback, success/error notifications, and reusable modal-based user interactions across the platform."
+    "Integrated external REST APIs including TonAPI, DexScreener, Solscan, and Telegram Bot API to support cryptocurrency conversion, transaction verification, and platform communication."
   ],
 
   links: {
     telegramName: "@stringtetris_bot",
-
     liveDemo: "",
-
     github: "",
-
     caseStudy: ""
   },
 
   modal: {
     showImage: true,
-
     showOverview: true,
-
     showRole: true,
-
     showResponsibilities: true,
-
     showFeatures: true,
-
     showFrontendArchitecture: true,
-
+    showBackendArchitecture: true,
+    showDatabaseArchitecture: true,
+    showGameEngine: true,
     showApiIntegration: true,
-
     showTelegramIntegration: true,
-
+    showTelegramBot: true,
     showWalletIntegration: true,
-
     showAuthentication: true,
-
+    showSecurity: true,
+    showAdminDashboard: true,
+    showBackgroundJobs: true,
+    showExternalApis: true,
     showResponsiveDesign: true,
-
     showUiUx: true,
-
     showChallenges: true,
-
     showTechnologyStack: true,
-
     showLearning: false,
-
     showResumeDescription: false
   }
 };
