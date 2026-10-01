@@ -6,17 +6,17 @@ const stringDriveProject = {
 
   title: "String Drive",
 
-  subtitle: "Telegram Play-to-Earn Web3 Racing Platform",
+  subtitle: "Telegram Play-to-Earn Web3 Gaming Platform & Admin Portal",
 
-  category: "Frontend Development",
+  category: "Full Stack Development",
 
-  role: "Frontend Developer",
+  role: "Full Stack MERN Developer",
 
   description:
-    "A Telegram-integrated Web3 Play-to-Earn gaming platform featuring an interactive 2D car racing game built with React and HTML5 Canvas, ticket-based gameplay, daily rewards, social tasks, advertisements, referrals, leaderboards, user profiles, and cryptocurrency withdrawal-related interfaces.",
+    "A full-stack Telegram Mini-App Web3 gaming platform built with React, Vite, Node.js, Express, MongoDB, and Mongoose. The platform provides a mobile-first 2D car racing game using HTML5 Canvas, ticket-based wagering, rewards, daily check-ins, social tasks, referrals, leaderboards, Telegram authentication, cryptocurrency withdrawal workflows, and a dedicated administrative dashboard.",
 
   shortDescription:
-    "A mobile-first Telegram Mini-App frontend featuring a custom HTML5 Canvas car racing game, ticket-based gameplay, rewards, tasks, referrals, leaderboard, profile management, advertising integrations, and Web3 wallet-related functionality.",
+    "A full-stack Telegram Mini-App gaming ecosystem combining a React/Vite HTML5 Canvas racing game with Node.js/Express APIs, MongoDB game economics, Telegram authentication, Web3 withdrawal workflows, and an administrative management portal.",
 
   image: stringDriveSquare,
 
@@ -24,346 +24,246 @@ const stringDriveProject = {
 
   technologies: [
     "React 18",
-    "JavaScript",
-    "JSX",
     "Vite",
+    "JavaScript",
     "HTML5 Canvas",
-    "React Context API",
-    "React Hooks",
+    "Node.js",
+    "Express 5",
+    "MongoDB",
+    "Mongoose",
+    "REST APIs",
     "React Router DOM",
+    "React Context API",
     "Axios",
     "Material UI",
     "React-Bootstrap",
     "Bootstrap",
     "Sass",
-    "Framer Motion",
-    "Telegram WebApp SDK",
-    "@twa-dev/sdk",
-    "Ton-AI SDK",
-    "Adsgram",
-    "TonConnect UI",
-    "CryptoJS",
     "Formik",
     "Yup",
-    "React Hot Toast",
-    "React Toastify",
+    "JWT",
+    "bcryptjs",
+    "CryptoJS",
+    "Telegram WebApp SDK",
+    "Telegram Bot API",
+    "node-telegram-bot-api",
+    "TonConnect",
+    "TonWeb",
+    "TON Core",
+    "Solana Web3.js",
+    "Dexscreener API",
+    "Solscan API",
+    "node-cron",
+    "Nodemailer",
     "SheetJS",
-    "React GA"
+    "React Hot Toast",
+    "React Toastify"
   ],
 
-  projectType: "Telegram Mini Application",
+  projectType: "Full Stack Telegram Mini Application",
 
-  developmentType: "Frontend Application",
+  developmentType: "Full Stack MERN Application",
 
   overview: {
     title: "Project Overview",
 
     content:
-      "String Drive is a Telegram-integrated Web3 Play-to-Earn gaming platform designed primarily as a mobile-first Telegram Mini-App. The frontend provides an interactive 2D car racing experience where users drive through multiple lanes, avoid obstacles, collect game elements, use ticket-based wagers, and progress through configurable difficulty levels. The platform also provides daily rewards, social tasks, advertising interactions, referrals, leaderboards, profile management, and withdrawal-related flows. A separate administrative frontend provides interfaces for game configuration, user management, task and advertisement management, withdrawal lifecycle management, reporting, and Web3 wallet-related payout operations. The player-facing frontend communicates with backend REST APIs using Axios and uses React Context for shared application state.",
-
+      "String Drive is a Web3 Play-to-Earn gaming ecosystem built primarily as a Telegram Mini-App with a dedicated administrative back-office. The platform allows users to launch the game through Telegram, stake virtual tickets, play an interactive 2D obstacle-dodging car racing game, progress through different difficulty stages, collect rewards, complete daily check-ins and social tasks, participate in referrals, view global rankings, and submit cryptocurrency withdrawal requests. The system uses React and Vite for the player-facing application, Node.js and Express for the backend REST API, MongoDB with Mongoose for persistence, Telegram WebApp and Bot integrations, and Web3 utilities for TON and Solana wallet/address validation. A separate React-based administration portal allows authorized administrators to manage game configuration, users, tasks, advertisements, withdrawals, reports, and blockchain payout workflows."
   },
 
   myRole: {
     title: "My Role",
 
-    position: "Frontend Developer",
+    position: "Full Stack MERN Developer",
 
     description:
-      "My primary responsibility in the String Drive project was frontend application development. I worked on the React-based Telegram Mini-App, building the mobile-first gaming interface, developing the HTML5 Canvas racing experience, implementing player controls and game interactions, integrating REST APIs using Axios, managing shared state using React Context, implementing Telegram WebApp functionality, building reward, task, referral, leaderboard, profile, and wagering interfaces, integrating advertising providers, handling responsive UI behavior, and contributing to the administrative frontend with configuration, reporting, user-management, and wallet-related interfaces."
+      "My role in String Drive covered both frontend and backend development across the player-facing Telegram Mini-App and the administrative platform. I worked on React and Vite frontend development, HTML5 Canvas game implementation, Telegram WebApp integration, responsive mobile UI, React Context state management, REST API integration, Node.js and Express backend development, MongoDB and Mongoose data modeling, authentication and authorization, game session and wagering workflows, reward and referral logic, withdrawal processing, Telegram bot functionality, background jobs using node-cron, Web3 address validation, administrative APIs, and the React-based admin dashboard."
   },
 
   frontend: {
     title: "Frontend Development",
 
     description:
-      "The String Drive frontend consists of a player-facing Telegram Mini-App and a separate administrative operations portal. The player application is built with React 18 and Vite and uses HTML5 Canvas for the custom 2D racing game. The administrative application uses React with React-Bootstrap, Formik, and responsive dashboard components.",
+      "The player-facing application was developed using React 18 and Vite as a mobile-first Telegram Mini-App. The frontend includes a custom HTML5 Canvas 2D car racing engine, Telegram WebApp integration, game controls, ticket wagering, rewards, tasks, advertisements, referrals, leaderboards, profiles, and withdrawal-related interfaces. A separate React administrative dashboard was developed using React-Bootstrap, Formik, Sass, and supporting libraries for operational management.",
 
     architecture: [
       "React 18 single-page application",
-      "Vite frontend build system",
+      "Vite-based frontend build system",
       "Feature-based React component structure",
       "Reusable functional components",
-      "HTML5 Canvas 2D game engine",
-      "React Context API for shared application state",
+      "React Router DOM routing",
+      "React Context API for shared state",
       "React Hooks for component and game state",
-      "React Router DOM for client-side navigation",
+      "HTML5 Canvas 2D rendering",
+      "requestAnimationFrame game loop",
+      "Touch and mouse drag controls",
+      "Custom collision detection",
+      "Particle animation systems",
+      "Web Audio / HTML5 audio integration",
       "Axios-based REST API integration",
-      "Centralized API configuration",
       "Telegram WebApp SDK integration",
-      "Mobile-first Telegram Mini-App architecture",
-      "Material UI based player interface",
-      "React-Bootstrap based admin interface",
-      "Reusable modal components",
-      "Reusable loaders and notification components",
-      "Custom game rendering and animation logic",
-      "Touch and mouse interaction handling",
-      "Loading and error state handling",
-      "Toast-based user feedback",
-      "Local storage based session information"
+      "Telegram mobile environment detection",
+      "Responsive Material UI layouts",
+      "Reusable modal and dialog components",
+      "Loading and error states",
+      "Toast notification system",
+      "Mobile-first Telegram interface",
+      "Separate React administrative dashboard"
     ]
   },
 
   features: [
     {
-      title: "Telegram Mini-App Integration",
+      title: "HTML5 Canvas Car Racing Game",
 
       description:
-        "Developed the player-facing application specifically for the Telegram WebApp environment, including Telegram environment detection, mobile access restrictions, WebApp initialization, and Telegram-specific interaction behavior.",
-
-      items: [
-        "Telegram WebApp integration",
-        "Telegram mobile environment detection",
-        "Telegram desktop/browser fallback",
-        "Telegram WebApp initialization",
-        "Telegram viewport handling",
-        "Telegram back-button handling",
-        "Telegram user information access",
-        "Telegram initData handling",
-        "Telegram-specific navigation",
-        "Mobile-first Telegram experience"
-      ]
-    },
-
-    {
-      title: "2D Car Racing Game",
-
-      description:
-        "Built the interactive car racing game interface using the native HTML5 Canvas API instead of a third-party game engine. The game renders the road, player vehicle, obstacles, effects, and gameplay interactions inside the React application.",
+        "Built an interactive 2D obstacle-dodging car racing game using the native HTML5 Canvas API rather than a third-party game engine. The game continuously renders the road, player vehicle, obstacles, particles, and other visual elements through a requestAnimationFrame-based game loop.",
 
       items: [
         "HTML5 Canvas 2D rendering",
-        "Continuous requestAnimationFrame game loop",
-        "Multi-lane road system",
-        "Player car movement",
+        "Continuous requestAnimationFrame loop",
+        "Scrolling road simulation",
+        "Multi-lane car movement",
         "Touch drag controls",
         "Mouse drag controls",
-        "Road scrolling",
         "Enemy vehicle rendering",
-        "Road pothole rendering",
+        "Road pothole obstacles",
         "Coin cluster rendering",
-        "Game animation",
-        "Game state handling",
-        "Game session interface"
-      ]
-    },
-
-    {
-      title: "Game Controls & Interaction",
-
-      description:
-        "Implemented interactive player controls for navigating the car across multiple lanes using touch and mouse drag interactions, with gameplay behavior designed for mobile Telegram users.",
-
-      items: [
-        "Touch drag controls",
-        "Mouse drag controls",
-        "Multi-lane movement",
-        "Player position tracking",
-        "Input event handling",
-        "Mobile touch interaction",
-        "Desktop mouse interaction",
-        "Game control state",
-        "Gameplay interaction feedback"
-      ]
-    },
-
-    {
-      title: "Collision Detection",
-
-      description:
-        "Implemented client-side collision detection for interactions between the player's vehicle, enemy vehicles, and road hazards using custom bounding-box calculations.",
-
-      items: [
-        "Player vehicle collision detection",
-        "Enemy vehicle collision detection",
-        "Road hazard collision detection",
-        "Bounding-box calculations",
-        "Collision state handling",
-        "Crash detection",
-        "Life reduction flow",
-        "Game-over interaction",
-        "Collision-related effects"
-      ]
-    },
-
-    {
-      title: "Procedural Obstacles",
-
-      description:
-        "Implemented frontend rendering and spawning logic for different types of road obstacles and game elements to create changing gameplay scenarios.",
-
-      items: [
-        "Enemy vehicle spawning",
-        "Multiple enemy vehicle sprites",
-        "Road potholes",
-        "Coin clusters",
-        "Procedural obstacle positioning",
-        "Dynamic obstacle movement",
-        "Obstacle collision handling",
-        "Difficulty-related spawning",
-        "Game environment variation"
-      ]
-    },
-
-    {
-      title: "Particle & Visual Effects",
-
-      description:
-        "Developed custom particle effects for crash and road hazard interactions to improve the visual feedback of the Canvas-based game.",
-
-      items: [
-        "Vehicle crash explosion particles",
-        "Pothole water splash particles",
-        "Particle position updates",
-        "Particle animation",
-        "Particle lifecycle handling",
-        "Canvas-based visual effects",
-        "Game event-based effects",
-        "Crash feedback"
-      ]
-    },
-
-    {
-      title: "Audio Integration",
-
-      description:
-        "Integrated browser-based audio effects into the game to provide feedback for gameplay events and create a more immersive racing experience.",
-
-      items: [
+        "Procedural obstacle spawning",
+        "Custom bounding-box collision detection",
+        "Dynamic difficulty configuration",
+        "Player life system",
+        "Game pause and resume handling",
+        "Crash animations",
+        "Particle effects",
+        "Water splash effects",
         "Engine audio",
-        "Crash sound",
-        "Pothole splash sound",
-        "Coin collection sound",
-        "Background audio",
-        "Game event-based audio",
-        "Audio reference management",
-        "Gameplay audio feedback"
+        "Crash audio",
+        "Coin collection audio"
       ]
     },
 
     {
-      title: "Game Difficulty & Configuration",
+      title: "Game Difficulty & Physics",
 
       description:
-        "Integrated frontend game configuration data provided by the backend to control gameplay parameters such as road speed, enemy speed, spawn frequency, and level distance.",
+        "Implemented a configurable game system where important gameplay parameters can be controlled from backend configuration and managed through the administrative dashboard.",
 
       items: [
         "Road speed configuration",
         "Enemy speed configuration",
         "Obstacle spawn frequency",
         "Level distance configuration",
-        "Dynamic difficulty values",
-        "Game multiplier values",
-        "Backend-driven game settings",
-        "Frontend configuration handling"
+        "Level multipliers",
+        "Dynamic difficulty settings",
+        "Backend-driven game configuration",
+        "Admin-controlled game parameters",
+        "Game physics configuration",
+        "Progressive difficulty"
       ]
     },
 
     {
-      title: "Wager / Ticket Staking",
+      title: "Ticket Wagering System",
 
       description:
-        "Built the pre-game wager interface where users can select ticket amounts within configured limits before starting the racing session.",
+        "Implemented the frontend and backend flow for users to select a ticket wager before starting a game. The backend validates the wager against the user's available balance and creates a pending game session.",
 
       items: [
         "Pre-game wager modal",
         "Ticket amount selection",
         "Minimum wager validation",
         "Maximum wager validation",
-        "Available balance display",
-        "Wager confirmation",
-        "Invalid wager feedback",
-        "Game initialization after wager"
+        "Balance validation",
+        "Ticket deduction",
+        "Pending game creation",
+        "Duplicate active game prevention",
+        "Game session tracking",
+        "Wager status handling",
+        "Win amount calculation",
+        "Game settlement"
       ]
     },
 
     {
-      title: "Life & Revive System",
+      title: "Game Session Lifecycle",
 
       description:
-        "Implemented frontend interactions around the game's life system and advertisement-based revive flow.",
+        "Developed the backend lifecycle for game sessions from wager placement through result settlement and automatic expiration of abandoned sessions.",
 
       items: [
-        "Three-life game system",
-        "Life counter display",
-        "Life state updates",
-        "Crash-related life reduction",
-        "Game-over state",
-        "Advertisement-based revive flow",
-        "Revive interaction",
-        "Revive feedback"
+        "Game session creation",
+        "Pending game status",
+        "Active game validation",
+        "Concurrent game prevention",
+        "Game result submission",
+        "Server-side payout validation",
+        "Win amount limits",
+        "Balance crediting",
+        "Game history creation",
+        "Completed game status",
+        "Expired game status",
+        "Abandoned game cleanup"
       ]
     },
 
     {
-      title: "Advertising & Monetization",
+      title: "Daily Check-In Rewards",
 
       description:
-        "Integrated supported Telegram advertising providers into the frontend for advertisement-based rewards and revive interactions.",
+        "Implemented daily reward functionality allowing users to claim configured daily bonuses while the backend tracks claim timing and prevents repeated claims within the configured interval.",
 
       items: [
-        "Ton-AI SDK integration",
-        "Adsgram integration",
-        "Telegram advertisement flows",
-        "Advertisement popup handling",
-        "Advertisement countdown timers",
-        "Daily advertisement limits",
-        "Advertisement reward interactions",
-        "Ad-watch revive flow",
-        "Advertisement status feedback"
+        "Daily reward interface",
+        "Reward claim modal",
+        "Daily reward API",
+        "Claim validation",
+        "24-hour reward interval",
+        "Reward balance updates",
+        "Claim timestamp tracking",
+        "Success notifications",
+        "Error handling",
+        "Reward status display"
       ]
     },
 
     {
-      title: "Ad Blocker Detection",
+      title: "Social Task System",
 
       description:
-        "Implemented frontend ad-blocker detection to identify when sponsored advertising scripts are blocked and provide users with an appropriate notification.",
-
-      items: [
-        "Ad blocker detection hook",
-        "Blocked advertisement detection",
-        "Persistent notification popup",
-        "User guidance",
-        "Advertisement availability state",
-        "Ad-related error handling"
-      ]
-    },
-
-    {
-      title: "Daily Rewards",
-
-      description:
-        "Built the daily check-in reward interface allowing users to view and claim available daily bonuses while displaying updated reward and balance information.",
-
-      items: [
-        "Daily reward modal",
-        "Daily check-in interface",
-        "Reward availability state",
-        "Reward claim flow",
-        "Balance update",
-        "Reward timestamp display",
-        "Claim success feedback",
-        "Claim error feedback"
-      ]
-    },
-
-    {
-      title: "Social Task Hub",
-
-      description:
-        "Developed the task interface for displaying categorized social and community activities that provide users with reward points after supported task completion.",
+        "Built task-related frontend and backend workflows allowing administrators to configure tasks while users can view available tasks, complete supported activities, and receive reward points after successful verification.",
 
       items: [
         "Task listing",
         "Task categories",
-        "Social tasks",
-        "Community tasks",
+        "Social/community tasks",
         "Task completion flow",
-        "Task verification response",
-        "Reward update",
-        "Task loading states",
-        "Task success feedback",
-        "Task error feedback"
+        "Task verification",
+        "One-time reward tracking",
+        "Completed task records",
+        "Task reward processing",
+        "Task administration",
+        "Task CRUD operations"
+      ]
+    },
+
+    {
+      title: "Advertisement & Monetization",
+
+      description:
+        "Integrated Telegram advertisement providers into the gaming experience with countdown controls, daily claim limitations, reward handling, and ad-blocker detection.",
+
+      items: [
+        "Telegram advertisement integration",
+        "Adsgram integration",
+        "Ton-AI SDK integration",
+        "Advertisement display flow",
+        "Countdown timers",
+        "Daily advertisement limits",
+        "Ad reward processing",
+        "Anti-spam cooldown",
+        "Ad-blocker detection",
+        "Ad configuration from admin dashboard"
       ]
     },
 
@@ -371,18 +271,19 @@ const stringDriveProject = {
       title: "Referral System",
 
       description:
-        "Implemented Telegram referral and invitation flows allowing users to generate referral links, copy them, and share invitations through Telegram.",
+        "Implemented a multi-tier referral system that connects Telegram referral links with backend referral tracking and reward attribution.",
 
       items: [
-        "Referral interface",
-        "Unique referral link",
+        "Telegram referral links",
         "Referral link generation",
-        "Copy-to-clipboard functionality",
+        "Invite friends interface",
+        "Copy referral link",
         "Telegram sharing",
-        "Telegram URL schemes",
-        "Referral information",
-        "Referral navigation",
-        "Referral engagement flow"
+        "Referral user tracking",
+        "Referral history",
+        "Signup bonus attribution",
+        "Multi-tier referral structure",
+        "Referral reward processing"
       ]
     },
 
@@ -390,26 +291,25 @@ const stringDriveProject = {
       title: "Leaderboard",
 
       description:
-        "Developed the competitive leaderboard interface displaying user rankings based on ticket balances, including top-ranked user presentation and pagination.",
+        "Developed a global leaderboard showing users ranked according to ticket balance, including top-three visual indicators and pagination.",
 
       items: [
         "Global leaderboard",
         "User ranking",
         "Ticket balance ranking",
-        "Top-three visual indicators",
-        "Leaderboard pagination",
-        "Leaderboard API integration",
-        "Ranking state",
-        "Responsive leaderboard UI",
-        "User ranking information"
+        "Top-three ranking indicators",
+        "Pagination",
+        "Leaderboard API",
+        "Dynamic ranking data",
+        "Responsive leaderboard interface"
       ]
     },
 
     {
-      title: "Profile & Account Management",
+      title: "User Profile",
 
       description:
-        "Built the profile interface for displaying user statistics, balances, game activity, and account-related actions.",
+        "Built the user profile interface and supporting backend APIs for displaying player statistics, balances, account information, and withdrawal-related actions.",
 
       items: [
         "User profile",
@@ -417,88 +317,142 @@ const stringDriveProject = {
         "Username editing",
         "Ticket balance",
         "Games played",
-        "Wins information",
-        "User statistics",
-        "Profile editing modal",
-        "Account interaction",
-        "Withdrawal-related navigation"
+        "Wins",
+        "Player statistics",
+        "Account status",
+        "Profile update API",
+        "Withdrawal bot navigation"
       ]
     },
 
     {
-      title: "Withdrawal-Related Interface",
+      title: "Telegram Mini-App Integration",
 
       description:
-        "Implemented frontend interactions and navigation related to the platform's withdrawal workflow, including access to withdrawal functionality and user account information.",
+        "Integrated the application with Telegram WebApp functionality so the player experience runs directly inside Telegram and follows Telegram-specific viewport, lifecycle, authentication, and navigation behavior.",
 
       items: [
-        "Withdrawal-related UI",
-        "Account balance display",
-        "Withdrawal navigation",
-        "Wallet-related information",
-        "Withdrawal status interaction",
-        "External withdrawal bot redirection",
-        "User feedback"
+        "Telegram WebApp SDK",
+        "Telegram environment detection",
+        "Mobile gatekeeper",
+        "Telegram viewport handling",
+        "Telegram WebApp initialization",
+        "Telegram BackButton handling",
+        "Telegram user data",
+        "Telegram initData",
+        "Telegram bot deep links",
+        "Telegram-specific navigation",
+        "Desktop fallback screen"
       ]
     },
 
     {
-      title: "Administrative Dashboard",
+      title: "Authentication & Authorization",
 
       description:
-        "Contributed to the administrative frontend used by platform administrators to monitor users, configure game settings, manage tasks and advertisements, inspect game history, and manage withdrawal workflows.",
+        "Implemented a multi-layer authentication and authorization system combining Telegram WebApp authentication, HMAC-SHA256 signature verification, AES timestamp verification, JWT sessions, and role-based authorization.",
 
       items: [
-        "Admin dashboard",
-        "KPI metric cards",
+        "Telegram WebApp authentication",
+        "Telegram initData validation",
+        "HMAC-SHA256 signature verification",
+        "JWT authentication",
+        "24-hour JWT expiration",
+        "JWT token validation",
+        "Admin authorization",
+        "User authorization",
+        "Ownership validation",
+        "Protected API routes",
+        "Authenticated frontend state"
+      ]
+    },
+
+    {
+      title: "Anti-Replay Client Verification",
+
+      description:
+        "Implemented an additional client verification layer using AES-encrypted timestamped request headers. The backend decrypts and validates the timestamp within a strict five-second window before allowing protected requests.",
+
+      items: [
+        "AES-encrypted client payload",
+        "CryptoJS integration",
+        "Timestamp generation",
+        "Timestamp validation",
+        "Five-second replay window",
+        "Client ID verification",
+        "Protected request headers",
+        "Backend verification middleware",
+        "Replay protection workflow"
+      ]
+    },
+
+    {
+      title: "Cryptocurrency Withdrawal System",
+
+      description:
+        "Implemented backend withdrawal workflows for users requesting cryptocurrency settlement using TON and Solana wallet addresses. The system validates withdrawal limits, balances, daily quotas, wallet addresses, and transaction states.",
+
+      items: [
+        "Withdrawal request creation",
+        "Minimum withdrawal validation",
+        "Maximum withdrawal validation",
+        "Daily withdrawal limits",
+        "Ticket balance validation",
+        "Atomic balance deduction",
+        "TON wallet validation",
+        "Solana wallet validation",
+        "Withdrawal status tracking",
+        "Pending withdrawal",
+        "Approved withdrawal",
+        "Rejected withdrawal",
+        "Transferred withdrawal"
+      ]
+    },
+
+    {
+      title: "TON & Solana Web3 Integration",
+
+      description:
+        "Integrated Web3 utilities for validating blockchain settlement destinations and supporting cryptocurrency-related platform workflows across TON and Solana networks.",
+
+      items: [
+        "TON address validation",
+        "TON TEP-2 format validation",
+        "Bounceable TON address validation",
+        "Non-bounceable TON address validation",
+        "Solana address validation",
+        "Solana curve validation",
+        "TonWeb integration",
+        "TON Core integration",
+        "Solana Web3.js integration",
+        "Blockchain-aware withdrawal workflow"
+      ]
+    },
+
+    {
+      title: "Admin Dashboard",
+
+      description:
+        "Developed a dedicated React-based administrative portal for managing game configuration, users, tasks, advertisements, withdrawals, reports, and blockchain payout operations.",
+
+      items: [
+        "Admin login",
+        "KPI dashboard",
         "Total users metric",
         "Total transactions metric",
         "Total games metric",
         "Game configuration",
         "Game level management",
-        "Multiplier configuration",
+        "Multiplier management",
         "Task management",
         "Advertisement management",
         "User management",
         "Game history inspection",
         "Withdrawal management",
-        "Responsive admin layouts"
-      ]
-    },
-
-    {
-      title: "Admin User Management",
-
-      description:
-        "Developed administrative interfaces for viewing and managing user records and reviewing user-related game information.",
-
-      items: [
-        "User listing",
-        "User records",
-        "User status information",
-        "User data tables",
-        "Game history inspection",
-        "User-related API integration",
-        "Responsive data tables"
-      ]
-    },
-
-    {
-      title: "Admin Withdrawal Management",
-
-      description:
-        "Implemented administrative interfaces for managing the withdrawal lifecycle and displaying withdrawal-related transaction information.",
-
-      items: [
-        "Pending withdrawals",
-        "Approved withdrawals",
-        "Rejected withdrawals",
-        "Transferred withdrawals",
-        "Withdrawal details",
-        "Transaction information",
-        "Withdrawal status",
-        "Administrative actions",
-        "Status feedback"
+        "Withdrawal approval",
+        "Withdrawal rejection",
+        "Transaction hash recording",
+        "Audit reporting"
       ]
     },
 
@@ -506,34 +460,85 @@ const stringDriveProject = {
       title: "Excel Reporting",
 
       description:
-        "Implemented client-side report generation in the administrative frontend using SheetJS for exporting user, game history, and withdrawal-related data.",
+        "Implemented client-side Excel report generation in the administrative portal using SheetJS for user logs, game history, and withdrawal-related data.",
 
       items: [
         "SheetJS integration",
-        "Excel export",
         "User log export",
         "Game history export",
         "Withdrawal batch export",
-        "Client-side file generation",
-        "Report data formatting"
+        "Excel file generation",
+        "Administrative reporting"
       ]
     },
 
     {
-      title: "Web3 Wallet Integration",
+      title: "Admin Web3 Payout Workflow",
 
       description:
-        "Integrated wallet-related functionality into the administrative frontend using TonConnect UI for non-custodial TON wallet interactions and payout-related operations.",
+        "Integrated non-custodial TON wallet functionality into the administrative dashboard using TonConnect UI to support administrator-controlled batch payout workflows.",
 
       items: [
-        "TonConnect UI integration",
         "TON wallet connection",
-        "Wallet status",
-        "Non-custodial wallet interaction",
-        "Batch payout interface",
-        "Wallet transaction interaction",
-        "Transaction feedback",
-        "Administrative payout flow"
+        "Non-custodial wallet flow",
+        "TonConnect UI integration",
+        "Withdrawal batch processing",
+        "Payout transaction preparation",
+        "Transaction signing",
+        "Transaction hash recording",
+        "Withdrawal status reconciliation"
+      ]
+    },
+
+    {
+      title: "Telegram Bot",
+
+      description:
+        "Implemented a Telegram bot daemon used for user onboarding, application launch, introductory content, and WebApp deep-link access.",
+
+      items: [
+        "Telegram bot integration",
+        "/start command",
+        "Introductory messages",
+        "Marketing media",
+        "Inline keyboard launchers",
+        "WebApp deep links",
+        "Telegram user onboarding"
+      ]
+    },
+
+    {
+      title: "Automated Background Jobs",
+
+      description:
+        "Implemented scheduled backend maintenance using node-cron to identify abandoned or stale pending game sessions and automatically transition them to expired states.",
+
+      items: [
+        "node-cron integration",
+        "Minute-based scheduled job",
+        "Pending game inspection",
+        "Dynamic expiry threshold",
+        "Stale session detection",
+        "Automatic game expiration",
+        "Database status update",
+        "Game lifecycle maintenance"
+      ]
+    },
+
+    {
+      title: "Email & OTP Recovery",
+
+      description:
+        "Implemented administrator credential recovery using OTP generation and transactional email delivery through Nodemailer and Gmail SMTP.",
+
+      items: [
+        "OTP generation",
+        "Administrator password recovery",
+        "Email delivery",
+        "Nodemailer integration",
+        "Gmail SMTP",
+        "OTP validation",
+        "Credential recovery workflow"
       ]
     }
   ],
@@ -542,90 +547,107 @@ const stringDriveProject = {
     title: "API Integration",
 
     description:
-      "Integrated REST APIs into the React frontend using Axios and centralized API configuration. The API-driven frontend supports authentication, game configuration, game sessions, balances, rewards, tasks, advertisements, referrals, leaderboards, profiles, users, game history, and withdrawal-related workflows.",
+      "Designed and integrated REST APIs using Node.js and Express 5 for the player application and administrative portal. The API layer handles authentication, users, games, tasks, rewards, referrals, advertisements, leaderboards, withdrawals, administrative operations, and Web3-related workflows. The React frontend communicates with the backend through Axios using centralized API configuration.",
 
     technologies: [
       "Axios",
       "REST APIs",
-      "React",
-      "Centralized Axios configuration",
-      "API service helpers"
+      "Node.js",
+      "Express 5",
+      "Express Router",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "CryptoJS"
     ],
 
     responsibilities: [
-      "Integrated frontend API requests using Axios.",
-      "Connected React components with backend REST endpoints.",
-      "Integrated APIs for Telegram user authentication.",
-      "Integrated game configuration APIs.",
-      "Integrated game wager and session APIs.",
-      "Integrated user balance APIs.",
-      "Integrated daily reward APIs.",
-      "Integrated social task APIs.",
-      "Integrated advertisement-related APIs.",
-      "Integrated referral APIs.",
-      "Integrated leaderboard APIs.",
-      "Integrated profile APIs.",
-      "Integrated game history APIs.",
-      "Integrated withdrawal-related APIs.",
-      "Integrated administrative APIs.",
-      "Handled API loading states.",
+      "Designed REST API endpoints using Express Router.",
+      "Integrated frontend requests using Axios.",
+      "Created centralized API configuration.",
+      "Connected React components with backend services.",
+      "Implemented user authentication APIs.",
+      "Implemented game session APIs.",
+      "Implemented wager placement APIs.",
+      "Implemented game result settlement APIs.",
+      "Implemented daily reward APIs.",
+      "Implemented task APIs.",
+      "Implemented referral APIs.",
+      "Implemented leaderboard APIs.",
+      "Implemented withdrawal APIs.",
+      "Implemented administrative APIs.",
+      "Implemented game configuration APIs.",
+      "Implemented advertisement management APIs.",
       "Handled API success and failure states.",
-      "Updated frontend state based on API responses.",
-      "Provided user feedback using toast notifications."
+      "Implemented structured HTTP status responses.",
+      "Added authentication middleware to protected routes.",
+      "Connected MongoDB operations through Mongoose models."
     ]
   },
 
   telegramIntegration: {
-    title: "Telegram Mini-App Integration",
+    title: "Telegram Mini-App & Bot Integration",
 
     description:
-      "String Drive is designed around the Telegram WebApp environment. The frontend integrates Telegram WebApp functionality for application initialization, mobile environment handling, user authentication, viewport behavior, navigation, and Telegram-specific user interactions.",
+      "String Drive is designed around Telegram as its primary user-entry platform. The frontend operates as a Telegram WebApp while the backend validates Telegram initialization data and a dedicated Telegram bot provides application onboarding and WebApp launch functionality.",
 
     technologies: [
       "Telegram WebApp SDK",
       "@twa-dev/sdk",
-      "Telegram Bot Integration"
+      "Telegram Bot API",
+      "node-telegram-bot-api",
+      "Telegram initData",
+      "HMAC-SHA256"
     ],
 
     responsibilities: [
-      "Integrated Telegram WebApp SDK into the React application.",
-      "Detected whether the application was running inside Telegram.",
-      "Implemented mobile Telegram environment handling.",
-      "Provided fallback UI for external browser and desktop access.",
-      "Integrated Telegram WebApp initialization.",
-      "Handled Telegram viewport behavior.",
-      "Handled Telegram hardware back-button interactions.",
-      "Accessed Telegram WebApp initialization data.",
-      "Integrated Telegram authentication flows.",
-      "Implemented Telegram-specific navigation behavior.",
-      "Integrated Telegram referral sharing flows.",
-      "Optimized the application for Telegram mobile usage."
+      "Integrated Telegram WebApp SDK into the React frontend.",
+      "Implemented Telegram environment detection.",
+      "Handled Telegram WebApp initialization.",
+      "Implemented Telegram mobile viewport behavior.",
+      "Integrated Telegram BackButton functionality.",
+      "Captured Telegram WebApp initData.",
+      "Sent Telegram authentication information to the backend.",
+      "Implemented server-side HMAC-SHA256 validation.",
+      "Implemented Telegram bot onboarding.",
+      "Implemented /start bot command handling.",
+      "Created WebApp launch buttons.",
+      "Implemented Telegram referral deep links.",
+      "Supported Telegram-specific navigation flows."
     ]
   },
 
   walletIntegration: {
-    title: "Wallet & Web3 Integration",
+    title: "Web3 & Wallet Integration",
 
     description:
-      "The project includes Web3-related frontend functionality for wallet-aware gaming and administrative payout workflows. The administrative frontend integrates TonConnect UI for non-custodial TON wallet interactions and batch payout operations.",
+      "Implemented Web3-related functionality across the backend and administrative frontend. The backend validates TON and Solana withdrawal addresses and calculates settlement values, while the admin frontend uses TonConnect UI for non-custodial TON wallet transaction workflows.",
 
     technologies: [
       "TonConnect UI",
-      "TON",
-      "Ton-AI SDK",
-      "Solana-related Web3 ecosystem",
-      "Web3 wallet interaction"
+      "TonWeb",
+      "TON Core",
+      "Solana Web3.js",
+      "Dexscreener API",
+      "Solscan API"
     ],
 
     features: [
       "TON wallet connection",
-      "Wallet status display",
-      "Non-custodial wallet interaction",
-      "Administrative payout interface",
-      "Batch payout interaction",
-      "Wallet transaction state",
-      "Transaction feedback",
-      "Web3-aware withdrawal workflows"
+      "Non-custodial admin wallet flow",
+      "TON address validation",
+      "TON TEP-2 validation",
+      "Bounceable address validation",
+      "Non-bounceable address validation",
+      "Solana address validation",
+      "Solana curve validation",
+      "Withdrawal destination validation",
+      "Token price lookup",
+      "Dexscreener price integration",
+      "Transaction hash recording",
+      "Solscan transaction lookup",
+      "Withdrawal status reconciliation",
+      "Batch TON payout workflow"
     ]
   },
 
@@ -633,24 +655,22 @@ const stringDriveProject = {
     title: "Responsive & Mobile-First Design",
 
     description:
-      "The player-facing application is designed primarily for mobile users accessing the game through Telegram. The frontend uses mobile-focused layouts, responsive Material UI components, touch interactions, responsive game interfaces, and desktop fallback handling.",
+      "The player-facing application was designed primarily for mobile users accessing String Drive through Telegram. The interface uses Material UI and responsive layout patterns for the player application, while the administrative dashboard uses React-Bootstrap responsive grids.",
 
     features: [
-      "Mobile-first Telegram layout",
-      "Responsive game interface",
-      "Responsive game controls",
-      "Touch-friendly controls",
+      "Telegram mobile-first layout",
+      "Mobile game interface",
+      "Responsive game screens",
+      "Touch drag controls",
+      "Mobile navigation",
       "Responsive profile page",
-      "Responsive task page",
+      "Responsive task interface",
       "Responsive leaderboard",
-      "Responsive referral interface",
       "Responsive reward modals",
-      "Responsive wager modal",
-      "Responsive administrative dashboard",
-      "Bootstrap responsive grids",
+      "Responsive admin dashboard",
+      "Bootstrap responsive grid",
       "Material UI responsive components",
-      "Desktop fallback handling",
-      "Mobile-oriented navigation"
+      "Mobile-friendly forms"
     ]
   },
 
@@ -658,31 +678,29 @@ const stringDriveProject = {
     title: "UI / UX Features",
 
     description:
-      "The frontend focuses on delivering a game-oriented Telegram experience with custom Canvas rendering, responsive layouts, interactive modals, visual feedback, animations, notifications, and mobile touch interactions.",
+      "The application provides a game-focused Telegram experience combining interactive Canvas gameplay with reward, task, referral, leaderboard, profile, and withdrawal workflows. The administrative application provides structured operational interfaces for platform management.",
 
     features: [
       "Game-focused interface",
+      "Telegram-first experience",
       "Mobile-first navigation",
-      "Custom Canvas rendering",
-      "Interactive game controls",
-      "Game loading states",
-      "Wager selection modal",
+      "Interactive game canvas",
+      "Touch controls",
+      "Mouse controls",
+      "Game wager modal",
       "Daily reward modal",
-      "Profile editing modal",
-      "Ad blocker notification",
-      "Toast notifications",
-      "Loading animations",
+      "Profile edit modal",
+      "Ad blocker popup",
+      "Loading indicators",
       "Material UI components",
-      "Responsive Bootstrap components",
-      "Game particle effects",
-      "Audio feedback",
-      "Crash visual feedback",
-      "Reward feedback",
-      "Task completion feedback",
-      "Wallet transaction feedback",
-      "Error states",
-      "Empty states",
-      "Conditional navigation"
+      "Bootstrap components",
+      "Toast notifications",
+      "Success feedback",
+      "Error feedback",
+      "Game status feedback",
+      "Responsive admin tables",
+      "Administrative forms",
+      "Withdrawal status indicators"
     ]
   },
 
@@ -692,7 +710,7 @@ const stringDriveProject = {
     technology: "React Router DOM",
 
     description:
-      "Implemented client-side navigation using React Router DOM. The routing architecture separates major player-facing sections and game routes while conditionally displaying global navigation elements based on the active page.",
+      "Implemented client-side routing for both the player-facing Telegram Mini-App and the administrative dashboard. The player application uses React Router to navigate between games, profile, tasks, referrals, leaderboard, and other platform sections, while active gameplay routes can hide global navigation elements.",
 
     areas: [
       "Games",
@@ -701,16 +719,15 @@ const stringDriveProject = {
       "Profile",
       "Refer",
       "Leaderboard",
-      "Home / Dashboard",
-      "Game route",
-      "Active gameplay screen",
+      "Home",
       "Administrative Dashboard",
-      "Admin User Management",
-      "Admin Game Configuration",
-      "Admin Task Management",
-      "Admin Advertisement Management",
-      "Admin Withdrawal Management",
-      "Admin Reports"
+      "Admin Users",
+      "Admin Games",
+      "Admin Tasks",
+      "Admin Advertisements",
+      "Admin Withdrawals",
+      "Admin Game History",
+      "Admin Configuration"
     ]
   },
 
@@ -720,137 +737,226 @@ const stringDriveProject = {
     technology: "React Context API + React Hooks",
 
     description:
-      "Used React Context API for shared application state and React Hooks for component-level state and lifecycle management. Player-side contexts handle user information, balance synchronization, Telegram WebApp controls, and shared application state, while local hooks manage game rendering, canvas references, animation loops, particles, audio, and interactive UI states.",
+      "Implemented shared application state using React Context API along with React Hooks. The player application uses contexts for user information, Telegram WebApp state, balance synchronization, and shared application state, while the administrative application uses dedicated configuration and account state management.",
 
     responsibilities: [
-      "User state",
-      "User balance state",
-      "Ticket balance synchronization",
+      "User authentication state",
+      "User profile state",
+      "Ticket balance state",
       "Telegram WebApp state",
-      "Shared application state",
-      "Authentication state",
       "Game state",
-      "Canvas references",
-      "Particle state",
-      "Audio references",
-      "Loading states",
-      "Modal state",
+      "Game lifecycle state",
       "Wager state",
-      "Reward state",
-      "Task state",
-      "Wallet-related state"
+      "Loading state",
+      "Modal state",
+      "Admin authentication state",
+      "Admin configuration state",
+      "Withdrawal state",
+      "API response state",
+      "Local component state",
+      "useState",
+      "useEffect",
+      "useRef",
+      "useCallback",
+      "useReducer"
     ]
   },
 
   authentication: {
-    title: "Authentication & Session Handling",
+    title: "Authentication & Security",
 
     description:
-      "The frontend integrates Telegram WebApp authentication by capturing Telegram initialization data and sending it to the backend authentication flow. After successful authentication, session-related identifiers and tokens are stored on the client and shared through application context.",
+      "String Drive implements multiple authentication and request-validation layers. Telegram WebApp initialization data is cryptographically validated on the backend using HMAC-SHA256, protected requests use AES-encrypted timestamp verification, and JWT-based authentication with role-based authorization protects user and administrative APIs.",
 
     technologies: [
-      "Telegram WebApp",
-      "Telegram initData",
+      "Telegram WebApp initData",
+      "HMAC-SHA256",
       "JWT",
-      "Local Storage",
-      "React Context API"
+      "bcryptjs",
+      "CryptoJS AES",
+      "Role-Based Access Control",
+      "CORS"
     ],
 
     features: [
-      "Telegram-based authentication",
-      "Telegram initData handling",
-      "Telegram user information",
-      "JWT session handling",
-      "Token persistence",
-      "User ID persistence",
-      "Chat ID persistence",
-      "Authenticated user state",
-      "Authentication-aware API requests",
-      "Session information through React Context"
+      "Telegram authentication",
+      "Telegram HMAC-SHA256 verification",
+      "JWT token generation",
+      "JWT token validation",
+      "24-hour JWT expiration",
+      "Admin role authorization",
+      "User role authorization",
+      "User ownership validation",
+      "AES-encrypted request verification",
+      "Timestamp validation",
+      "Five-second replay window",
+      "Password hashing using bcryptjs",
+      "Protected API routes",
+      "Authenticated frontend state",
+      "Administrative route protection"
     ]
   },
 
-  uiTechnologies: {
-    title: "UI Technologies",
+  backend: {
+    title: "Backend Development",
 
-    technologies: [
-      {
-        name: "Material UI",
+    description:
+      "The backend was developed using Node.js and Express 5 as a REST API service backed by MongoDB and Mongoose. It manages the platform's user system, game economy, game session lifecycle, rewards, tasks, referrals, advertisements, withdrawals, administrative operations, authentication, Web3 validation, Telegram bot operations, and automated background maintenance.",
 
-        usage:
-          "Used extensively in the player-facing Telegram Mini-App for responsive layouts, cards, typography, buttons, dialogs, grids, containers, and mobile-oriented interface components."
-      },
-
-      {
-        name: "React-Bootstrap",
-
-        usage:
-          "Used in the administrative frontend for dashboard layouts, tables, cards, forms, grids, and responsive administrative interfaces."
-      },
-
-      {
-        name: "Bootstrap",
-
-        usage:
-          "Used for responsive layout structures and administrative UI development."
-      },
-
-      {
-        name: "Sass",
-
-        usage:
-          "Used for custom styling and maintainable stylesheet organization within the frontend."
-      },
-
-      {
-        name: "Framer Motion",
-
-        usage:
-          "Used for frontend animation and motion effects where required by the interface."
-      },
-
-      {
-        name: "HTML5 Canvas",
-
-        usage:
-          "Used to build the custom 2D car racing engine, rendering gameplay objects, animations, obstacles, particles, and game effects."
-      }
+    architecture: [
+      "Node.js runtime",
+      "Express 5 REST API",
+      "MongoDB database",
+      "Mongoose ODM",
+      "Express Router",
+      "Modular controllers",
+      "Route-level middleware",
+      "User controllers",
+      "Game controllers",
+      "Task controllers",
+      "Admin controllers",
+      "Withdrawal controllers",
+      "Ticket controllers",
+      "Authentication middleware",
+      "Role-based middleware",
+      "Telegram validation middleware",
+      "AES client verification middleware",
+      "JWT validation middleware",
+      "node-cron background worker",
+      "Telegram bot daemon",
+      "Nodemailer email service",
+      "Web3 validation utilities"
     ]
   },
 
-  chartsAndVisualization: {
-    title: "Charts & Visualization",
+  database: {
+    title: "MongoDB & Database Development",
 
-    technologies: [],
+    technology: "MongoDB + Mongoose",
 
-    note:
-      "The project overview does not identify an active charting library implementation. The main visual rendering technology is the HTML5 Canvas 2D game engine, while the administrative frontend primarily uses KPI cards, tables, dashboards, and data-oriented interfaces."
+    description:
+      "Designed and implemented MongoDB data models using Mongoose for users, game configuration, game history, withdrawals, tasks, completed tasks, advertisements, and related platform operations. Database operations support user balances, game lifecycle tracking, reward processing, administrative management, and financial audit information.",
+
+    models: [
+      "User Schema",
+      "Game Schema",
+      "Game History Schema",
+      "Withdrawal Schema",
+      "Task Schema",
+      "Completed Task Schema",
+      "Ads Schema",
+      "Completed Advertisement Schema"
+    ],
+
+    responsibilities: [
+      "Created Mongoose schemas.",
+      "Defined required database fields.",
+      "Defined schema enumerations.",
+      "Implemented timestamps.",
+      "Managed user balances.",
+      "Stored Telegram user identifiers.",
+      "Stored referral information.",
+      "Stored game configuration.",
+      "Stored game history.",
+      "Stored wager amounts.",
+      "Stored win amounts.",
+      "Stored initial and final balances.",
+      "Stored withdrawal information.",
+      "Stored wallet addresses.",
+      "Stored transaction hashes.",
+      "Tracked withdrawal status.",
+      "Tracked completed tasks.",
+      "Tracked advertisement completion.",
+      "Implemented atomic balance updates.",
+      "Implemented database connection retry handling."
+    ]
+  },
+
+  gameEngine: {
+    title: "Game Engine Development",
+
+    technology: "HTML5 Canvas 2D + JavaScript",
+
+    description:
+      "Built the player-facing car racing engine from scratch using the native HTML5 Canvas API. The game uses a requestAnimationFrame rendering loop, custom collision calculations, procedural obstacle generation, particle systems, audio effects, and touch/mouse controls.",
+
+    features: [
+      "Canvas initialization",
+      "requestAnimationFrame loop",
+      "Road scrolling",
+      "Player car movement",
+      "Multi-lane navigation",
+      "Touch drag input",
+      "Mouse drag input",
+      "Enemy vehicle generation",
+      "Pothole generation",
+      "Coin cluster generation",
+      "Bounding-box collision detection",
+      "Life management",
+      "Crash detection",
+      "Particle explosion effects",
+      "Water splash particles",
+      "Engine audio",
+      "Crash sound",
+      "Coin collection sound",
+      "Game pause on visibility change",
+      "Game resume handling",
+      "Backend-driven difficulty configuration"
+    ]
+  },
+
+  security: {
+    title: "Application Security",
+
+    description:
+      "Implemented multiple security mechanisms across the frontend and backend to validate Telegram users, protect API requests, authenticate sessions, restrict administrative operations, and reduce request replay risks.",
+
+    mechanisms: [
+      "Telegram HMAC-SHA256 verification",
+      "Telegram initData validation",
+      "AES-encrypted client request payload",
+      "Timestamp-based request verification",
+      "Five-second replay protection window",
+      "JWT authentication",
+      "Role-Based Access Control",
+      "User ownership validation",
+      "bcrypt password hashing",
+      "CORS configuration",
+      "Protected REST endpoints",
+      "Withdrawal validation",
+      "Game wager validation",
+      "Server-side payout limits",
+      "Concurrent active-game prevention"
+    ]
   },
 
   formsAndValidation: {
-    title: "Forms & User Interaction",
+    title: "Forms & Validation",
 
     technologies: [
       "Formik",
       "Yup",
-      "React controlled inputs",
-      "Frontend validation"
+      "Mongoose Validation",
+      "Custom JavaScript Validation",
+      "Web3 Address Validation"
     ],
 
     features: [
-      "Username editing form",
-      "Wager amount input",
-      "Wager validation",
-      "Administrative login forms",
+      "Admin login forms",
       "Game configuration forms",
-      "Task management forms",
-      "Advertisement configuration forms",
-      "Withdrawal-related forms",
-      "Controlled form inputs",
-      "Form state management",
-      "Validation feedback",
-      "API validation responses",
-      "Form submission states"
+      "Task forms",
+      "Advertisement forms",
+      "User profile editing",
+      "Username validation",
+      "Wager amount validation",
+      "Minimum and maximum wager validation",
+      "Withdrawal amount validation",
+      "Withdrawal limit validation",
+      "TON wallet address validation",
+      "Solana wallet address validation",
+      "Mongoose schema validation",
+      "Administrative form validation",
+      "API response validation"
     ]
   },
 
@@ -864,19 +970,177 @@ const stringDriveProject = {
 
     features: [
       "Login feedback",
-      "Game action feedback",
+      "Game start feedback",
       "Wager validation feedback",
+      "Game result feedback",
       "Reward notifications",
       "Task completion notifications",
-      "Advertisement feedback",
       "Referral feedback",
-      "Profile update feedback",
-      "Wallet connection feedback",
-      "Transaction feedback",
+      "Wallet feedback",
+      "Withdrawal status feedback",
+      "Admin operation feedback",
+      "API success notifications",
       "API error notifications",
-      "Success notifications",
-      "Error notifications",
-      "Loading feedback"
+      "Validation errors",
+      "Loading indicators"
+    ]
+  },
+
+  chartsAndVisualization: {
+    title: "Charts & Visualization",
+
+    technologies: [
+      "HTML5 Canvas 2D",
+      "Material UI",
+      "Bootstrap"
+    ],
+
+    note:
+      "The project does not contain a significant dedicated charting library implementation. The primary visualization technology is the custom HTML5 Canvas 2D game engine, while the administrative dashboard uses KPI cards, tables, forms, and structured management interfaces."
+  },
+
+  adminDashboard: {
+    title: "Administrative Dashboard",
+
+    description:
+      "Developed a separate React administrative portal for platform operators to manage game configuration, users, tasks, advertisements, game history, withdrawals, reporting, and Web3 settlement workflows.",
+
+    technologies: [
+      "React",
+      "React-Bootstrap",
+      "Bootstrap",
+      "Sass",
+      "Formik",
+      "Yup",
+      "SheetJS",
+      "TonConnect UI"
+    ],
+
+    features: [
+      "Admin authentication",
+      "Dashboard KPI cards",
+      "Total users",
+      "Total transactions",
+      "Total games",
+      "Game configuration",
+      "Game physics management",
+      "Level management",
+      "Multiplier management",
+      "Task CRUD",
+      "Advertisement CRUD",
+      "User management",
+      "Game history",
+      "Withdrawal management",
+      "Withdrawal approval",
+      "Withdrawal rejection",
+      "Transaction hash recording",
+      "Excel reporting",
+      "TON wallet connection",
+      "Batch payout workflow"
+    ]
+  },
+
+  backgroundJobs: {
+    title: "Background Jobs & Automation",
+
+    technology: "node-cron",
+
+    description:
+      "Implemented an automated background worker that periodically checks active game sessions and expires stale pending games according to dynamically configured database thresholds.",
+
+    features: [
+      "node-cron integration",
+      "Minute-based scheduled execution",
+      "Active game inspection",
+      "Pending game detection",
+      "Dynamic expiry threshold",
+      "Automatic expiration",
+      "Game status updates",
+      "Database maintenance",
+      "Abandoned wager cleanup"
+    ]
+  },
+
+  externalIntegrations: {
+    title: "External Services & Integrations",
+
+    services: [
+      {
+        name: "Telegram Bot API",
+        usage:
+          "Used for Telegram bot onboarding, /start commands, introductory content, and WebApp launch links."
+      },
+      {
+        name: "Telegram WebApp",
+        usage:
+          "Used as the primary player application environment and authentication source."
+      },
+      {
+        name: "Adsgram",
+        usage:
+          "Used for Telegram advertisement and reward-related flows."
+      },
+      {
+        name: "Ton-AI SDK",
+        usage:
+          "Used for advertisement and monetization-related interactions."
+      },
+      {
+        name: "Dexscreener API",
+        usage:
+          "Used for token price resolution during withdrawal approval and currency conversion."
+      },
+      {
+        name: "Solscan API",
+        usage:
+          "Used for optional transaction lookup and withdrawal reconciliation."
+      },
+      {
+        name: "Gmail SMTP",
+        usage:
+          "Used through Nodemailer for administrator OTP and credential recovery emails."
+      }
+    ]
+  },
+
+  apiArchitecture: {
+    title: "REST API Architecture",
+
+    description:
+      "The backend follows a modular Express REST API architecture with routes, controllers, middleware, Mongoose models, and service-specific logic. The API is divided into administrative, user, and withdrawal-related domains.",
+
+    structure: [
+      "Express server",
+      "Express Router",
+      "Authentication routes",
+      "User routes",
+      "Admin routes",
+      "Gameplay routes",
+      "Task routes",
+      "Referral routes",
+      "Leaderboard routes",
+      "Withdrawal routes",
+      "Middleware layer",
+      "Controller layer",
+      "Mongoose model layer",
+      "MongoDB persistence",
+      "Background job layer",
+      "External API integrations"
+    ],
+
+    responsibilities: [
+      "Designed REST endpoints.",
+      "Organized routes by business domain.",
+      "Implemented controller-level business logic.",
+      "Connected controllers with Mongoose models.",
+      "Protected routes with middleware.",
+      "Implemented standardized HTTP responses.",
+      "Handled API errors.",
+      "Implemented authentication checks.",
+      "Implemented authorization checks.",
+      "Implemented ownership validation.",
+      "Implemented game lifecycle APIs.",
+      "Implemented withdrawal APIs."
     ]
   },
 
@@ -884,128 +1148,135 @@ const stringDriveProject = {
     title: "User Experience",
 
     description:
-      "The frontend focuses on delivering a Telegram-first mobile gaming experience that combines interactive arcade gameplay with rewards, tasks, referrals, advertising, leaderboards, profile management, and Web3-related workflows.",
+      "String Drive combines a Telegram-first gaming experience with a Web3 reward economy. The user can enter the application through Telegram, authenticate through Telegram WebApp data, select a ticket wager, play the Canvas racing game, earn rewards, complete tasks, invite referrals, view rankings, and access withdrawal-related functionality.",
 
     highlights: [
       "Telegram-first user experience",
-      "Mobile-focused arcade gaming",
+      "Mobile-first arcade game",
       "Interactive 2D car racing",
-      "Touch-based game controls",
-      "Mouse-based game controls",
-      "Canvas-based game rendering",
-      "Obstacle avoidance gameplay",
-      "Collision-based gameplay",
-      "Particle crash effects",
-      "Audio gameplay feedback",
+      "Touch drag controls",
+      "Mouse controls",
       "Ticket-based gameplay",
-      "Wager selection flow",
-      "Three-life gameplay system",
-      "Advertisement-based revive flow",
-      "Daily reward experience",
-      "Social task experience",
-      "Referral and invite experience",
-      "Leaderboard experience",
-      "Profile management",
-      "Withdrawal-related navigation",
-      "Responsive administrative dashboard",
-      "Excel report generation",
-      "TON wallet interaction",
-      "Toast-based feedback",
-      "Loading and error states"
+      "Daily check-in rewards",
+      "Social tasks",
+      "Advertisement rewards",
+      "Referral system",
+      "Global leaderboard",
+      "User profile",
+      "Game statistics",
+      "Cryptocurrency withdrawal workflow",
+      "TON wallet support",
+      "Solana withdrawal support",
+      "Administrative management",
+      "Game configuration",
+      "Reward management",
+      "Withdrawal management"
     ]
   },
 
   challenges: [
     {
-      title: "Building a Canvas Game Inside React",
+      title: "Building a Canvas Game from Scratch",
 
       description:
-        "One of the major frontend challenges was integrating a custom HTML5 Canvas 2D game engine into a React application while managing canvas references, animation loops, rendering state, particles, audio, and user interactions through the React component lifecycle."
+        "Developing the racing game without a dedicated game engine required implementing the rendering loop, player movement, obstacle generation, collision detection, particle effects, audio playback, and game lifecycle manually using the HTML5 Canvas API."
     },
 
     {
-      title: "Mobile Telegram Environment",
+      title: "Telegram Mini-App Constraints",
 
       description:
-        "The application was designed primarily for users accessing the platform inside Telegram, requiring careful handling of Telegram WebApp initialization, mobile viewport behavior, touch controls, navigation, and external browser fallback states."
+        "The application needed to operate inside the Telegram WebApp environment, requiring mobile-focused layouts, Telegram viewport handling, environment detection, BackButton behavior, and Telegram-specific authentication flows."
     },
 
     {
-      title: "Custom Collision Detection",
+      title: "Game & Backend Synchronization",
 
       description:
-        "The racing game required custom bounding-box collision detection between the player vehicle, enemy vehicles, and road hazards without relying on a third-party game engine."
+        "The frontend game experience needed to communicate with backend APIs for wager placement, game session creation, result settlement, balance updates, and game history while keeping the client and server responsibilities separated."
     },
 
     {
-      title: "Game Performance & Animation",
+      title: "Secure Telegram Authentication",
 
       description:
-        "The Canvas game uses requestAnimationFrame for continuous rendering and requires coordinated handling of road movement, vehicle movement, obstacle spawning, particles, audio, and collision calculations."
+        "The authentication system required validating Telegram WebApp initialization data cryptographically on the backend using HMAC-SHA256 rather than trusting client-provided user information."
     },
 
     {
-      title: "Complex User Flows",
+      title: "Anti-Replay Request Verification",
 
       description:
-        "The frontend combines multiple connected workflows including authentication, wagering, gameplay, rewards, tasks, advertisements, referrals, leaderboards, profiles, and withdrawal-related interactions, requiring organized routing and reusable components."
+        "Protected frontend requests required additional AES-encrypted timestamp information that the backend decrypts and verifies against a strict five-second window."
     },
 
     {
-      title: "Advertising Integration",
+      title: "Game Economy & Atomic Balances",
 
       description:
-        "Integrating multiple advertisement providers required handling popup flows, countdown timers, daily limits, reward states, revive interactions, and advertisement failure scenarios."
+        "The backend needed to safely manage ticket wagers, winnings, balances, and withdrawal deductions while preventing duplicate active games and maintaining consistent game history records."
     },
 
     {
-      title: "Web3 Wallet-Aware Frontend",
+      title: "Multi-Chain Withdrawal Validation",
 
       description:
-        "The administrative frontend includes non-custodial TON wallet interactions through TonConnect UI, requiring wallet connection states, transaction-related UI states, and appropriate user feedback."
+        "The withdrawal system required validation of blockchain destinations across TON and Solana while supporting platform limits, transaction states, token price resolution, and administrative settlement workflows."
     },
 
     {
-      title: "Player and Admin Applications",
+      title: "Admin & Player Applications",
 
       description:
-        "The project contains two distinct frontend experiences: the player-facing Telegram Mini-App and the administrative operations portal, requiring different UI patterns, responsive behavior, navigation structures, and component requirements."
+        "The project contains both a mobile player-facing Telegram Mini-App and a separate administrative portal, requiring different UI patterns, routing structures, authentication behavior, and business workflows."
+    },
+
+    {
+      title: "Background Game Session Cleanup",
+
+      description:
+        "Abandoned pending game sessions needed automated cleanup so stale wagers would not remain active indefinitely. This was handled through a scheduled node-cron background worker."
     }
   ],
 
   learning: [
-    "React 18 application development",
-    "Vite frontend development",
-    "HTML5 Canvas 2D development",
-    "Custom game loop implementation",
-    "requestAnimationFrame",
-    "Canvas rendering",
-    "Collision detection",
-    "Particle system development",
-    "Browser audio integration",
-    "Touch interaction handling",
-    "Mouse interaction handling",
+    "Full-stack MERN application development",
+    "React 18 development",
+    "Vite application development",
+    "Node.js backend development",
+    "Express 5 REST API development",
+    "MongoDB database design",
+    "Mongoose schema development",
+    "REST API architecture",
     "React Context API",
-    "React Hooks",
     "React Router DOM",
-    "Axios REST API integration",
-    "Telegram WebApp development",
-    "Telegram Mini-App architecture",
-    "Telegram authentication flow",
-    "Mobile-first frontend development",
-    "Material UI",
-    "React-Bootstrap",
-    "Bootstrap responsive design",
-    "Formik form handling",
-    "Yup validation",
-    "Advertisement SDK integration",
-    "Ad blocker detection",
-    "Web3 wallet integration",
-    "TonConnect UI",
+    "Axios API integration",
+    "HTML5 Canvas 2D development",
+    "requestAnimationFrame game loops",
+    "Collision detection algorithms",
+    "Particle animation systems",
+    "Web Audio API integration",
+    "Telegram Mini-App development",
+    "Telegram Bot development",
+    "Telegram initData validation",
+    "HMAC-SHA256 authentication",
+    "AES encryption and timestamp validation",
+    "JWT authentication",
+    "Role-Based Access Control",
+    "Atomic MongoDB operations",
+    "Game session lifecycle management",
+    "node-cron background jobs",
+    "TON wallet integration",
+    "Solana Web3 integration",
+    "TON address validation",
+    "Solana address validation",
+    "Cryptocurrency withdrawal workflows",
     "Admin dashboard development",
-    "Excel report generation using SheetJS",
-    "Frontend notifications",
-    "Game-oriented UI/UX development"
+    "Formik and Yup form validation",
+    "SheetJS Excel reporting",
+    "Nodemailer email integration",
+    "External API integration",
+    "Web3 transaction workflows"
   ],
 
   frontendTechnologyStack: {
@@ -1019,63 +1290,52 @@ const stringDriveProject = {
       "JSX"
     ],
 
-    rendering: [
-      "HTML5 Canvas",
-      "Canvas 2D API",
-      "requestAnimationFrame"
-    ],
-
     routing: [
-      "React Router DOM"
+      "React Router DOM",
+      "Client-Side Routing"
     ],
 
     stateManagement: [
       "React Context API",
       "React Hooks",
       "useState",
-      "useReducer",
+      "useEffect",
       "useRef",
       "useCallback",
-      "useEffect"
+      "useReducer"
     ],
 
     apiCommunication: [
       "Axios",
       "REST APIs",
-      "Centralized API configuration",
-      "API service helpers"
+      "Centralized API Configuration",
+      "Custom API Calls"
+    ],
+
+    gameDevelopment: [
+      "HTML5 Canvas API",
+      "Canvas 2D Context",
+      "requestAnimationFrame",
+      "Collision Detection",
+      "Particle Systems",
+      "Web Audio"
     ],
 
     telegram: [
       "Telegram WebApp SDK",
       "@twa-dev/sdk",
-      "Telegram Bot Integration"
+      "Telegram Bot API",
+      "node-telegram-bot-api"
     ],
 
     ui: [
       "Material UI",
+      "MUI Icons",
       "React-Bootstrap",
       "Bootstrap",
       "Sass",
+      "Emotion",
       "Framer Motion"
-    ],
-
-    gameDevelopment: [
-      "HTML5 Canvas 2D",
-      "requestAnimationFrame",
-      "Collision Detection",
-      "Particle Effects",
-      "Web Audio API"
-    ],
-
-    advertising: [
-      "Ton-AI SDK",
-      "Adsgram",
-      "Telegram Ad Integration"
-    ],
-
-    wallet: [
-      "TonConnect UI"
     ],
 
     forms: [
@@ -1083,136 +1343,252 @@ const stringDriveProject = {
       "Yup"
     ],
 
-    security: [
-      "CryptoJS",
-      "Telegram initData"
-    ],
-
     notifications: [
       "React Hot Toast",
       "React Toastify"
     ],
 
-    reporting: [
-      "SheetJS",
-      "XLSX"
+    wallet: [
+      "TonConnect UI",
+      "TON Core",
+      "TonWeb",
+      "Solana Web3.js"
     ],
 
-    analytics: [
-      "React GA",
-      "Google Analytics"
+    reporting: [
+      "SheetJS",
+      "xlsx"
+    ],
+
+    security: [
+      "CryptoJS",
+      "JWT",
+      "Telegram HMAC-SHA256"
+    ]
+  },
+
+  backendTechnologyStack: {
+    runtime: [
+      "Node.js"
+    ],
+
+    framework: [
+      "Express 5"
+    ],
+
+    database: [
+      "MongoDB",
+      "Mongoose"
+    ],
+
+    authentication: [
+      "JSON Web Tokens",
+      "Telegram HMAC-SHA256",
+      "bcryptjs"
+    ],
+
+    authorization: [
+      "Role-Based Access Control",
+      "isAdmin Middleware",
+      "isuser Middleware"
+    ],
+
+    api: [
+      "Express Router",
+      "REST APIs",
+      "JSON over HTTP"
+    ],
+
+    security: [
+      "CryptoJS AES",
+      "HMAC-SHA256",
+      "JWT",
+      "bcryptjs",
+      "CORS"
+    ],
+
+    backgroundJobs: [
+      "node-cron"
+    ],
+
+    email: [
+      "Nodemailer",
+      "Gmail SMTP"
+    ],
+
+    telegram: [
+      "node-telegram-bot-api",
+      "Telegram Bot API"
+    ],
+
+    web3: [
+      "TonWeb",
+      "TON Core",
+      "Solana Web3.js",
+      "tweetnacl",
+      "Dexscreener API",
+      "Solscan API"
+    ],
+
+    utilities: [
+      "dotenv",
+      "express-async-handler",
+      "moment"
+    ]
+  },
+
+  databaseArchitecture: {
+    title: "Database Architecture",
+
+    technology: "MongoDB + Mongoose",
+
+    collections: [
+      {
+        name: "Users",
+        purpose:
+          "Stores user information, Telegram identifiers, balances, referral information, account status, and OTP-related fields."
+      },
+      {
+        name: "Games",
+        purpose:
+          "Stores configurable game physics, speed, multiplier, spawn rate, level distance, and expiry settings."
+      },
+      {
+        name: "Game History",
+        purpose:
+          "Stores wagers, winnings, initial and final balances, and game status such as PENDING, WON, LOSE, and EXPIRED."
+      },
+      {
+        name: "Withdrawals",
+        purpose:
+          "Stores wallet addresses, token information, amounts, deductions, USD values, transaction hashes, and withdrawal status."
+      },
+      {
+        name: "Tasks",
+        purpose:
+          "Stores available user tasks and associated reward configuration."
+      },
+      {
+        name: "Completed Tasks",
+        purpose:
+          "Tracks user task completion and one-time task rewards."
+      },
+      {
+        name: "Advertisements",
+        purpose:
+          "Stores advertising configuration and reward-related information."
+      },
+      {
+        name: "Completed Advertisements",
+        purpose:
+          "Tracks advertisement completion and user reward activity."
+      }
     ]
   },
 
   projectHighlights: [
-    "Telegram-integrated Play-to-Earn gaming platform",
+    "Full-stack MERN development",
     "React 18 frontend",
-    "Vite-based application",
-    "Custom HTML5 Canvas 2D racing game",
-    "requestAnimationFrame game loop",
-    "Multi-lane car movement",
-    "Touch and mouse drag controls",
+    "Vite application",
+    "Node.js backend",
+    "Express 5 REST API",
+    "MongoDB database",
+    "Mongoose ODM",
+    "Telegram Mini-App",
+    "Telegram Bot integration",
+    "HTML5 Canvas 2D racing game",
+    "requestAnimationFrame game engine",
     "Custom collision detection",
-    "Procedural obstacle spawning",
-    "Enemy vehicle rendering",
-    "Road hazard rendering",
-    "Particle crash effects",
-    "Water splash effects",
-    "Game audio integration",
-    "Ticket-based gameplay",
-    "Wager selection flow",
-    "Three-life gameplay system",
-    "Advertisement-based revive flow",
-    "Ton-AI SDK integration",
-    "Adsgram integration",
-    "Daily reward system",
-    "Social task system",
-    "Telegram referral functionality",
+    "Particle effects",
+    "Audio integration",
+    "Touch and mouse controls",
+    "Ticket wagering system",
+    "Game session lifecycle",
+    "Daily rewards",
+    "Social tasks",
+    "Advertisement monetization",
+    "Referral system",
     "Global leaderboard",
     "User profile management",
-    "React Context state management",
-    "Axios REST API integration",
-    "Telegram WebApp integration",
-    "Material UI responsive interface",
-    "React-Bootstrap admin dashboard",
-    "Admin game configuration",
-    "Admin user management",
-    "Admin withdrawal management",
-    "Excel reporting with SheetJS",
-    "TON wallet integration",
-    "TonConnect UI",
-    "Responsive mobile-first experience"
+    "JWT authentication",
+    "Telegram HMAC-SHA256 verification",
+    "AES timestamp validation",
+    "Replay protection",
+    "Role-Based Access Control",
+    "MongoDB atomic balance operations",
+    "node-cron background jobs",
+    "TON Web3 integration",
+    "Solana Web3 integration",
+    "TON address validation",
+    "Solana address validation",
+    "Cryptocurrency withdrawal workflow",
+    "React administrative dashboard",
+    "Game configuration management",
+    "Withdrawal management",
+    "SheetJS Excel reporting",
+    "TonConnect non-custodial wallet workflow",
+    "Nodemailer OTP recovery",
+    "Dexscreener API",
+    "Solscan API"
   ],
 
   portfolioDescription:
-    "Developed a mobile-first Telegram Mini-App frontend for String Drive, a Web3 Play-to-Earn arcade racing platform built with React 18 and Vite. Built the interactive 2D car racing experience using the HTML5 Canvas API and requestAnimationFrame, including multi-lane touch controls, custom collision detection, procedural obstacles, particle effects, audio feedback, ticket-based wagering, and life/revive interactions. Implemented Telegram WebApp integration, REST API communication using Axios, React Context state management, daily rewards, social tasks, referrals, leaderboard, profile management, advertisement integrations, and responsive Material UI interfaces. Also contributed to the administrative frontend with React-Bootstrap, Formik, SheetJS reporting, and TonConnect wallet-related functionality.",
+    "Developed String Drive as a full-stack Telegram Mini-App Web3 gaming platform using React 18, Vite, Node.js, Express 5, MongoDB, and Mongoose. Built an interactive HTML5 Canvas 2D car racing game with multi-lane touch controls, collision detection, procedural obstacles, particle effects, audio, ticket wagering, and backend-driven game configuration. Implemented Telegram WebApp authentication with HMAC-SHA256 validation, JWT-based authorization, AES-encrypted timestamp verification, daily rewards, tasks, advertisements, referrals, leaderboards, and cryptocurrency withdrawal workflows across TON and Solana. Developed a separate React administrative portal for game configuration, user management, withdrawal processing, Excel reporting, and non-custodial TON wallet batch payout workflows.",
 
   resumeDescription:
-    "Developed a React 18 and Vite-based Telegram Mini-App frontend for a Web3 Play-to-Earn racing platform, building a custom HTML5 Canvas 2D car racing engine with touch/mouse controls, collision detection, procedural obstacles, particle effects, audio, ticket wagering, and reward flows. Integrated Telegram WebApp authentication, Axios REST APIs, React Context, advertising SDKs, daily rewards, tasks, referrals, leaderboards, profile management, and responsive Material UI interfaces. Contributed to the administrative frontend using React-Bootstrap, Formik, SheetJS, and TonConnect UI.",
+    "Developed a full-stack Telegram Mini-App gaming platform using React 18, Vite, Node.js, Express 5, MongoDB, and Mongoose. Built an HTML5 Canvas 2D car racing engine, implemented Telegram HMAC-SHA256 authentication, AES timestamp-based request verification, JWT/RBAC authorization, ticket wagering, game session management, rewards, tasks, referrals, withdrawals, TON/Solana validation, node-cron automation, and a React-based administrative dashboard.",
 
   resumeBulletPoints: [
-    "Developed a Telegram Mini-App using React 18 and Vite for a mobile-first Web3 Play-to-Earn arcade racing platform.",
+    "Developed a full-stack Telegram Mini-App using React 18, Vite, Node.js, Express 5, MongoDB, and Mongoose for a Web3 Play-to-Earn gaming platform.",
 
-    "Built a custom HTML5 Canvas 2D car racing engine using requestAnimationFrame, multi-lane touch/mouse controls, procedural obstacles, bounding-box collision detection, particle effects, and audio feedback.",
+    "Built an interactive HTML5 Canvas 2D car racing engine with requestAnimationFrame rendering, multi-lane touch/mouse controls, procedural obstacles, collision detection, particle effects, and audio integration.",
 
-    "Implemented ticket-based wager flows, life management, advertisement-based revive interactions, daily rewards, social tasks, referrals, and leaderboard interfaces.",
+    "Implemented Telegram WebApp authentication using HMAC-SHA256 initData verification, JWT-based sessions, role-based authorization, and AES-encrypted timestamp validation for protected API requests.",
 
-    "Integrated Telegram WebApp functionality using @twa-dev/sdk, including WebApp initialization, mobile environment handling, viewport behavior, back-button interactions, and Telegram authentication flows.",
+    "Designed and developed REST APIs for user management, game sessions, ticket wagering, rewards, tasks, referrals, leaderboards, advertisements, withdrawals, and administrative operations.",
 
-    "Integrated REST APIs using Axios for authentication, game configuration, gameplay, balances, rewards, tasks, advertisements, referrals, leaderboards, profiles, and withdrawal-related workflows.",
+    "Implemented MongoDB and Mongoose data models for users, game configuration, game history, withdrawals, tasks, advertisements, and reward tracking with atomic balance operations.",
 
-    "Implemented centralized frontend state management using React Context API and React Hooks for user data, ticket balances, Telegram state, game state, and shared application interactions.",
+    "Engineered the game session lifecycle including wager validation, balance deduction, duplicate active-game prevention, result settlement, payout validation, and automated stale-session expiration using node-cron.",
 
-    "Integrated Telegram advertising providers including Ton-AI SDK and Adsgram with countdown timers, daily limitations, reward flows, revive interactions, and ad-blocker detection.",
+    "Integrated TON and Solana Web3 functionality for blockchain address validation, withdrawal processing, token price resolution, transaction verification, and non-custodial TON wallet workflows.",
 
-    "Developed responsive player interfaces using Material UI and contributed to the administrative dashboard using React-Bootstrap, Formik, and responsive Bootstrap layouts.",
+    "Developed a React-based administrative dashboard with React-Bootstrap, Formik, Yup, SheetJS, and TonConnect for game configuration, user management, reporting, withdrawal approvals, and batch payout operations.",
 
-    "Implemented client-side Excel reporting using SheetJS for administrative user logs, game history, and withdrawal-related reports.",
+    "Integrated Telegram Bot API, Adsgram, Ton-AI SDK, Dexscreener, Solscan, and Nodemailer to support onboarding, monetization, price conversion, transaction lookup, and administrator recovery workflows.",
 
-    "Integrated TonConnect UI into the administrative frontend for non-custodial TON wallet interactions and batch payout workflows."
+    "Implemented responsive mobile-first interfaces, React Context state management, React Router navigation, Axios API integration, loading states, error handling, and toast-based user feedback."
   ],
 
   links: {
     telegramName: "@stringdrive_bot",
-
     liveDemo: "",
-
     github: "",
-
     caseStudy: ""
   },
 
   modal: {
     showImage: true,
-
     showOverview: true,
-
     showRole: true,
-
     showResponsibilities: true,
-
     showFeatures: true,
-
     showFrontendArchitecture: true,
-
+    showBackendArchitecture: true,
     showApiIntegration: true,
-
     showTelegramIntegration: true,
-
     showWalletIntegration: true,
-
     showAuthentication: true,
-
+    showSecurity: true,
+    showDatabaseArchitecture: true,
+    showGameEngine: true,
+    showAdminDashboard: true,
+    showBackgroundJobs: true,
     showResponsiveDesign: true,
-
     showUiUx: true,
-
     showChallenges: true,
-
     showTechnologyStack: true,
-
     showLearning: false,
-
     showResumeDescription: false
   }
 };

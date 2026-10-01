@@ -19,21 +19,48 @@ export default function Services() {
       <div className="hidden md:block">
         <Container>
           <SectionHeading title="What I Do" subtitle="Capabilities" />
-          <div className="flex flex-col md:flex-row gap-8 md:gap-16">
+          <div 
+            className="flex flex-col md:flex-row gap-8 md:gap-16 group/grid"
+            onMouseMove={(e) => {
+              const cards = document.querySelectorAll('.service-card');
+              for (const card of cards) {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+              }
+            }}
+          >
             {/* Left Column (Even Indexes: 0, 2, 4, ...) */}
-            <div className="flex-1 flex flex-col gap-y-12">
+            <div className="flex-1 flex flex-col gap-y-6">
               {services.filter((_, idx) => idx % 2 === 0).map((service, mappedIdx) => {
                 const originalIdx = mappedIdx * 2;
                 return (
                   <div
                     key={originalIdx}
                     onClick={() => toggleAccordion(originalIdx)}
-                    className="group flex flex-col sm:flex-row gap-4 md:gap-6 p-4 md:p-6 -m-4 md:-m-6 rounded-2xl hover:bg-white/5 transition-colors duration-300 cursor-pointer items-start"
+                    className="service-card relative group flex flex-col sm:flex-row gap-4 md:gap-6 p-6 rounded-2xl bg-dark-200/50 backdrop-blur-sm border border-orange-primary/20 hover:border-orange-primary/50 transition-colors duration-500 cursor-pointer items-start overflow-hidden"
                   >
-                    <div className="text-xl md:text-2xl font-black text-orange-primary/30 group-hover:text-orange-primary transition-colors shrink-0 pt-1">
+                    {/* Spotlight hover effect with Grid */}
+                    <div 
+                      className="absolute inset-0 z-0 opacity-0 group-hover/grid:opacity-100 transition-opacity duration-500 pointer-events-none" 
+                      style={{
+                        backgroundImage: `
+                          radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,255,255,0.15), transparent 40%),
+                          linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), 
+                          linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px)
+                        `,
+                        backgroundSize: '100% 100%, 30px 30px, 30px 30px',
+                        maskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)',
+                        WebkitMaskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)'
+                      }}
+                    />
+                    
+                    <div className="text-xl md:text-2xl font-black text-orange-primary/30 group-hover:text-orange-primary transition-colors shrink-0 pt-1 relative z-10">
                       {service.id}
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 relative z-10">
                       <div className="flex items-start justify-between">
                         <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-orange-primary transition-colors">
                           {service.title}
@@ -60,19 +87,34 @@ export default function Services() {
             </div>
 
             {/* Right Column (Odd Indexes: 1, 3, 5, ...) */}
-            <div className="flex-1 flex flex-col gap-y-12 mt-12 md:mt-0">
+            <div className="flex-1 flex flex-col gap-y-6 mt-6 md:mt-0">
               {services.filter((_, idx) => idx % 2 !== 0).map((service, mappedIdx) => {
                 const originalIdx = mappedIdx * 2 + 1;
                 return (
                   <div
                     key={originalIdx}
                     onClick={() => toggleAccordion(originalIdx)}
-                    className="group flex flex-col sm:flex-row gap-4 md:gap-6 p-4 md:p-6 -m-4 md:-m-6 rounded-2xl hover:bg-white/5 transition-colors duration-300 cursor-pointer items-start"
+                    className="service-card relative group flex flex-col sm:flex-row gap-4 md:gap-6 p-6 rounded-2xl bg-dark-200/50 backdrop-blur-sm border border-orange-primary/20 hover:border-orange-primary/50 transition-colors duration-500 cursor-pointer items-start overflow-hidden"
                   >
-                    <div className="text-xl md:text-2xl font-black text-orange-primary/30 group-hover:text-orange-primary transition-colors shrink-0 pt-1">
+                    {/* Spotlight hover effect with Grid */}
+                    <div 
+                      className="absolute inset-0 z-0 opacity-0 group-hover/grid:opacity-100 transition-opacity duration-500 pointer-events-none" 
+                      style={{
+                        backgroundImage: `
+                          radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,255,255,0.15), transparent 40%),
+                          linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), 
+                          linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px)
+                        `,
+                        backgroundSize: '100% 100%, 30px 30px, 30px 30px',
+                        maskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)',
+                        WebkitMaskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)'
+                      }}
+                    />
+                    
+                    <div className="text-xl md:text-2xl font-black text-orange-primary/30 group-hover:text-orange-primary transition-colors shrink-0 pt-1 relative z-10">
                       {service.id}
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 relative z-10">
                       <div className="flex items-start justify-between">
                         <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-orange-primary transition-colors">
                           {service.title}
@@ -118,7 +160,7 @@ export default function Services() {
         </div>
 
         {/* Stacked cards — collapse under the sticky heading */}
-        <div className="relative px-4 pt-4 pb-6">
+        <div className="relative px-4 pt-4 pb-0">
           {services.map((service, idx) => (
             <div
               key={idx}

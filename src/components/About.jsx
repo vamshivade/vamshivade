@@ -35,26 +35,38 @@ export function Highlights() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[200px] bg-orange-primary/10 blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto px-4 md:px-12 relative z-10">
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+        <div 
+          className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 group/grid"
+          onMouseMove={(e) => {
+            const cards = document.querySelectorAll('.highlight-card');
+            for (const card of cards) {
+              const rect = card.getBoundingClientRect();
+              const x = e.clientX - rect.left;
+              const y = e.clientY - rect.top;
+              card.style.setProperty('--mouse-x', `${x}px`);
+              card.style.setProperty('--mouse-y', `${y}px`);
+            }
+          }}
+        >
           {highlights.map((highlight, idx) => (
             <div
               key={idx}
-              className="glass-card glass-card-hover rounded-xl md:rounded-2xl p-4 md:p-8 flex flex-col items-center justify-center text-center group relative overflow-hidden"
+              className="highlight-card glass-card glass-card-hover rounded-xl md:rounded-2xl p-4 md:p-8 flex flex-col items-center justify-center text-center group relative overflow-hidden border border-transparent hover:border-orange-primary/50 transition-colors duration-500"
             >
-              {/* Subtle tech background grid pattern */}
-              <div
-                className="absolute inset-0 opacity-[0.02] group-hover:opacity-[0.05] transition-opacity duration-500 pointer-events-none"
+              {/* Spotlight hover effect with Grid */}
+              <div 
+                className="absolute inset-0 z-0 opacity-0 group-hover/grid:opacity-100 transition-opacity duration-500 pointer-events-none" 
                 style={{
-                  backgroundImage: 'linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)',
-                  backgroundSize: '24px 24px'
+                  backgroundImage: `
+                    radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,255,255,0.15), transparent 40%),
+                    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), 
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px)
+                  `,
+                  backgroundSize: '100% 100%, 30px 30px, 30px 30px',
+                  maskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)',
+                  WebkitMaskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)'
                 }}
-              ></div>
-
-              {/* Subtle gradient overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-primary/0 to-orange-primary/0 group-hover:from-orange-primary/5 group-hover:to-transparent transition-all duration-500 pointer-events-none"></div>
-
-              {/* Subtle top border highlight */}
-              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-orange-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              />
 
 
               <span className="relative z-10 text-xl sm:text-2xl md:text-4xl font-black text-white mb-2 md:mb-3 group-hover:text-orange-primary transition-colors duration-300">

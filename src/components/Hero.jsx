@@ -83,6 +83,18 @@ export default function Hero() {
         {/* Left Column - Text Content */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center lg:col-span-7 xl:col-span-7 relative z-20 w-full">
 
+          {/* Rotating Light Border Badge */}
+          <div className="relative rounded-full overflow-hidden p-[1px] w-fit shadow-[0_0_20px_rgba(34,197,94,0.15)] group cursor-default hover:scale-105 transition-transform duration-300 mb-8">
+            <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00000000_50%,#22c55e_100%)]" />
+            <div className="relative flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-dark-300/95 backdrop-blur-xl w-full h-full">
+              <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 md:h-2.5 md:w-2.5 bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.8)]"></span>
+              </span>
+              <span className="text-[10px] md:text-xs font-semibold text-green-400 tracking-wide uppercase whitespace-nowrap">Available for work</span>
+            </div>
+          </div>
+
           <div className="relative mb-6">
             <h1 className="font-extrabold text-white leading-[1.1] tracking-tighter flex flex-col gap-2">
               <span className="text-3xl md:text-4xl lg:text-5xl text-white/80 font-bold">Hi, I'm</span>

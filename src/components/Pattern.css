@@ -8,7 +8,7 @@
   background-color: #050505;
 
   /* Multiple layers */
-  background-image: 
+  background-image:
     /* 1. Vignette */
     radial-gradient(circle at center, transparent 30%, #000 90%),
     /* 2. MAIN GRID (Cyan) */
@@ -39,6 +39,7 @@
       0 0,
       0 0;
   }
+
   100% {
     background-position:
       0 0,
@@ -46,12 +47,5 @@
       60px 60px,
       40px 40px,
       40px 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cyber-pattern {
-    animation: none;
-    /* Optional: further simplify background on mobile to just one gradient */
   }
 }
