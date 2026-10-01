@@ -13,6 +13,15 @@ import { personalInfo } from '../data';
 import { Container } from './ui/shared';
 import profileImg from '../assets/Profile.webp';
 
+import reactIcon from '../assets/icons/react.svg';
+import jsIcon from '../assets/icons/js.svg';
+import nextjsIcon from '../assets/icons/nextjs.svg';
+import tsIcon from '../assets/icons/ts.svg';
+import angularIcon from '../assets/icons/angular.svg';
+import nodejsIcon from '../assets/icons/nodejs.svg';
+import expressIcon from '../assets/icons/express.svg';
+import mongodbIcon from '../assets/icons/mongodb.svg';
+
 const TypingEffect = ({ titles }) => {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
@@ -138,9 +147,18 @@ export default function Hero() {
                   {/* Orbiting Icons */}
                   <div className="absolute inset-0 z-20 pointer-events-none">
                     <div className="absolute inset-0 rounded-full animate-[spin_25s_linear_infinite]">
-                      {['react', 'js', 'nextjs', 'ts', 'angular', 'nodejs', 'express', 'mongodb'].map((tech, i) => (
+                      {[
+                        { name: 'react', src: reactIcon },
+                        { name: 'js', src: jsIcon },
+                        { name: 'nextjs', src: nextjsIcon },
+                        { name: 'ts', src: tsIcon },
+                        { name: 'angular', src: angularIcon },
+                        { name: 'nodejs', src: nodejsIcon },
+                        { name: 'express', src: expressIcon },
+                        { name: 'mongodb', src: mongodbIcon }
+                      ].map((tech, i) => (
                         <div
-                          key={tech}
+                          key={tech.name}
                           className="absolute inset-0"
                           style={{ transform: `rotate(${i * 45}deg)` }}
                         >
@@ -151,8 +169,8 @@ export default function Hero() {
                                   <div className="absolute inset-0 bg-orange-primary/20 rounded-xl blur-md group-hover:bg-orange-primary/40 transition-colors duration-300" />
                                   <div className="relative bg-dark-secondary/80 backdrop-blur-sm border border-white/10 p-2 rounded-xl hover:border-orange-primary/50 transition-all duration-300 w-full h-full flex items-center justify-center">
                                     <img
-                                      src={`https://skillicons.dev/icons?i=${tech}`}
-                                      alt={tech}
+                                      src={tech.src}
+                                      alt={tech.name}
                                       className="w-full h-full object-contain"
                                     />
                                   </div>
