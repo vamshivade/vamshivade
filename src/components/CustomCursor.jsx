@@ -70,7 +70,7 @@ export default function CustomCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 rounded-full pointer-events-none z-[9999] mix-blend-difference"
+      className="fixed top-0 left-0 rounded-full pointer-events-none z-[999999] mix-blend-difference"
       variants={cursorVariants}
       animate={isHovering ? 'hover' : 'default'}
     />

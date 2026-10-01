@@ -11,7 +11,7 @@ const Linkedin = ({ size = 24 }) => (
 );
 import { personalInfo } from '../data';
 import { Container } from './ui/shared';
-import profileImg from '../assets/IMG_2886.PNG';
+import profileImg from '../assets/Profile.PNG';
 
 const TypingEffect = ({ titles }) => {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
@@ -178,7 +178,7 @@ export default function Hero() {
               <img
                 src={profileImg}
                 alt="Profile"
-                fetchpriority="high"
+                fetchPriority="high"
                 onLoad={() => setImgLoaded(true)}
                 className={`w-[220px] md:w-[300px] lg:w-[330px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(255,107,0,0.4)] transition-all duration-1000 ${
                   imgLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
