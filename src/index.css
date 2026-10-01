@@ -5,10 +5,23 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
   body {
     @apply bg-dark-300 text-white font-sans antialiased selection:bg-orange-primary/30 selection:text-orange-primary;
+    overflow-x: hidden;
+    max-width: 100vw;
+    touch-action: pan-y; /* Prevent horizontal drag on mobile */
   }
   
+  #root {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply text-white;
   }

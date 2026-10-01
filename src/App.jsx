@@ -43,7 +43,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-dark-300 font-sans selection:bg-orange-primary/30 selection:text-orange-primary relative z-0">
+    <div className="min-h-screen bg-dark-300 font-sans selection:bg-orange-primary/30 selection:text-orange-primary relative z-0 overflow-x-hidden">
       <CustomCursor />
       <Pattern />
       <Navbar />
