@@ -1,5 +1,5 @@
-import stringarc8ModernSquare from '../assets/String Arc8 Modern Square.png';
-import stringarc8ModernLandscape from '../assets/String Arc8 Modern Landscape.png';
+import stringarc8ModernSquare from '../assets/String Arc8 Modern Square.webp';
+import stringarc8ModernLandscape from '../assets/String Arc8 Modern Landscape.webp';
 
 const stringarc8ModernProject = {
   id: "stringarc8-modern",

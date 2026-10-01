@@ -1,5 +1,5 @@
-import stringGamesSquare from '../assets/String Games Square.png';
-import stringGamesLandscape from '../assets/String Games Landscape.png';
+import stringGamesSquare from '../assets/String Games Square.webp';
+import stringGamesLandscape from '../assets/String Games Landscape.webp';
 
 const stringGamesProject = {
   id: "string-games",

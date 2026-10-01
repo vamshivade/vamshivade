@@ -1,5 +1,5 @@
-import stringDriveSquare from '../assets/String Drive Square.png';
-import stringDriveLandscape from '../assets/String Drive Landscape.png';
+import stringDriveSquare from '../assets/String Drive Square.webp';
+import stringDriveLandscape from '../assets/String Drive Landscape.webp';
 
 const stringDriveProject = {
   id: "string-drive",

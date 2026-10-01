@@ -1,6 +1,6 @@
-import stringarc8RetroSquare from '../assets/String Arc8 Retro Square.png';
+import stringarc8RetroSquare from '../assets/String Arc8 Retro Square.webp';
 
-import stringarc8RetroLandscape from '../assets/String Arc8 Retro Landscape.png';
+import stringarc8RetroLandscape from '../assets/String Arc8 Retro Landscape.webp';
 
 const stringarc8RetroProject = {
   id: "stringarc8-retro",

@@ -11,7 +11,7 @@ const Linkedin = ({ size = 24 }) => (
 );
 import { personalInfo } from '../data';
 import { Container } from './ui/shared';
-import profileImg from '../assets/Profile.PNG';
+import profileImg from '../assets/Profile.webp';
 
 const TypingEffect = ({ titles }) => {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);

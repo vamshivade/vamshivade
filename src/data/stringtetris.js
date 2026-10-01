@@ -1,5 +1,5 @@
-import stringTetrisSquare from '../assets/String Tetris Square.png';
-import stringTetrisLandscape from '../assets/String Tetris Landscape.png';
+import stringTetrisSquare from '../assets/String Tetris Square.webp';
+import stringTetrisLandscape from '../assets/String Tetris Landscape.webp';
 
 const stringTetrisProject = {
   id: "string-tetris",
