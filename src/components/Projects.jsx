@@ -91,30 +91,33 @@ const Projects = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 group/grid"
+            onMouseMove={(e) => {
+              const cards = document.querySelectorAll('.project-card');
+              for (const card of cards) {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+              }
+            }}
           >
             {projects.map((project) => (
               <motion.div 
                 key={project.id}
                 variants={itemVariants}
                 onClick={() => setSelectedProject(project)}
-                onMouseMove={(e) => {
-                  const rect = e.currentTarget.getBoundingClientRect();
-                  const x = e.clientX - rect.left;
-                  const y = e.clientY - rect.top;
-                  e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
-                  e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
-                }}
-                className="group relative bg-dark-200/50 backdrop-blur-sm border border-orange-primary/20 rounded-2xl overflow-hidden hover:border-orange-primary/30 transition-colors duration-500 flex flex-col sm:flex-row sm:items-center cursor-pointer shadow-lg hover:shadow-orange-primary/5 p-4 sm:p-6"
+                className="project-card relative bg-dark-200/50 backdrop-blur-sm border border-orange-primary/20 rounded-2xl overflow-hidden hover:border-orange-primary/30 transition-colors duration-500 flex flex-col sm:flex-row sm:items-center cursor-pointer shadow-lg hover:shadow-orange-primary/5 p-4 sm:p-6"
               >
                 {/* Spotlight hover effect with Grid */}
                 <div 
-                  className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" 
+                  className="absolute inset-0 z-0 opacity-0 group-hover/grid:opacity-100 transition-opacity duration-500 pointer-events-none" 
                   style={{
                     backgroundImage: `
-                      radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,255,255,0.06), transparent 40%),
-                      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), 
-                      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px)
+                      radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,255,255,0.15), transparent 40%),
+                      linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px)
                     `,
                     backgroundSize: '100% 100%, 30px 30px, 30px 30px',
                     maskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)',
