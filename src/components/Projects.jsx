@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
+import { FaTelegramPlane } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -11,7 +12,8 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=800&auto=format&fit=crop',
     tags: ['React', 'JavaScript', 'Socket.IO', 'Bootstrap', 'TON Connect'],
     github: null,
-    live: 'https://t.me/string_gamesbot',
+    live: null,
+    telegram: 'https://t.me/string_gamesbot',
   },
   {
     id: 2,
@@ -113,6 +115,11 @@ const Projects = () => {
                     {project.github && (
                       <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="GitHub">
                         <FiGithub size={22} />
+                      </a>
+                    )}
+                    {project.telegram && (
+                      <a href={project.telegram} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Telegram">
+                        <FaTelegramPlane size={22} />
                       </a>
                     )}
                     {project.live && (
