@@ -70,7 +70,7 @@ const Projects = () => {
 
   return (
     <>
-      <section id="projects" className="py-24 relative z-10 overflow-hidden">
+      <section id="projects" className="py-8 md:py-24 relative z-10 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 sm:px-12 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -135,8 +135,8 @@ const Projects = () => {
                     />
                   </div>
                   
-                  {/* Buttons below image */}
-                  <div className="flex flex-wrap gap-2 justify-center w-full mt-4" onClick={(e) => e.stopPropagation()}>
+                  {/* Buttons below image (Desktop) */}
+                  <div className="hidden sm:flex flex-wrap gap-2 justify-center w-full mt-4" onClick={(e) => e.stopPropagation()}>
                     <button 
                       onClick={() => setSelectedProject(project)}
                       className="flex-1 flex justify-center items-center gap-1 bg-dark-300 hover:bg-white text-orange-primary hover:text-dark-300 px-2 py-1.5 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-xs sm:text-sm"
@@ -174,6 +174,31 @@ const Projects = () => {
                   <p className="text-gray-400 flex-grow whitespace-pre-wrap text-sm leading-relaxed text-center sm:text-left">
                     {project.description}
                   </p>
+
+                  {/* Buttons below description (Mobile) */}
+                  <div className="flex sm:hidden flex-wrap gap-2 justify-center w-full mt-6" onClick={(e) => e.stopPropagation()}>
+                    <button 
+                      onClick={() => setSelectedProject(project)}
+                      className="flex-1 flex justify-center items-center gap-1 bg-dark-300 hover:bg-white text-orange-primary hover:text-dark-300 px-3 py-2 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-sm"
+                    >
+                      <span>Details</span>
+                    </button>
+                    {(project.live || project.telegram) && (
+                      <a 
+                        href={project.live || project.telegram} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex-1 flex justify-center items-center gap-1 bg-orange-primary/10 hover:bg-orange-primary text-orange-primary hover:text-dark-300 px-3 py-2 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-sm"
+                      >
+                        <FiExternalLink size={16} /> <span>Live</span>
+                      </a>
+                    )}
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1 hover:text-orange-primary transition-colors text-gray-400 p-2" aria-label="GitHub">
+                        <FiGithub size={20} />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             ))}
