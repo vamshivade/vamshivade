@@ -1,0 +1,50 @@
+.cyber-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -50;
+  background-color: #050505;
+
+  /* Multiple layers */
+  background-image: 
+    /* 1. Vignette */
+    radial-gradient(circle at center, transparent 30%, #000 90%),
+    /* 2. MAIN GRID (Cyan) */
+    linear-gradient(rgba(3, 233, 244, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(3, 233, 244, 0.1) 1px, transparent 1px),
+    /* 3. SECONDARY GRID (Magenta) */
+    linear-gradient(rgba(217, 3, 244, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217, 3, 244, 0.05) 1px, transparent 1px);
+
+  /* Grid sizes */
+  background-size:
+    100% 100%,
+    60px 60px,
+    60px 60px,
+    20px 20px,
+    20px 20px;
+
+  animation: cyber-move 10s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes cyber-move {
+  0% {
+    background-position:
+      0 0,
+      0 0,
+      0 0,
+      0 0,
+      0 0;
+  }
+  100% {
+    background-position:
+      0 0,
+      60px 60px,
+      60px 60px,
+      40px 40px,
+      40px 40px;
+  }
+}
