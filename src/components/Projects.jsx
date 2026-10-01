@@ -112,9 +112,9 @@ const Projects = () => {
                   className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" 
                   style={{
                     backgroundImage: `
-                      radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,107,0,0.15), transparent 40%),
-                      linear-gradient(rgba(255, 107, 0, 0.1) 1px, transparent 1px), 
-                      linear-gradient(90deg, rgba(255, 107, 0, 0.1) 1px, transparent 1px)
+                      radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,255,255,0.06), transparent 40%),
+                      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px)
                     `,
                     backgroundSize: '100% 100%, 30px 30px, 30px 30px',
                     maskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)',
