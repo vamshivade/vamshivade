@@ -67,8 +67,8 @@ export default function Skills() {
       <div className="py-2">
         <div className="marquee-container">
           <div className="marquee-content">
-            {/* Double the array for seamless infinite scrolling */}
-            {[...skillsData, ...skillsData].map((skill, idx) => (
+            {/* Quadruple the array for truly seamless infinite scrolling even on ultrawide screens */}
+            {[...skillsData, ...skillsData, ...skillsData, ...skillsData].map((skill, idx) => (
               <div key={idx} className="marquee-item group">
                 <img
                   src={`https://skillicons.dev/icons?i=${skill.slug}`}

@@ -69,40 +69,40 @@ export default function Hero() {
       <div className="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] bg-orange-deep/10 rounded-full blur-[150px] -z-10 pointer-events-none" style={{ animationDelay: '2s' }}></div>
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-[0.03] pointer-events-none"></div>
 
-      <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-stretch w-full flex-1 z-10 mt-24 lg:mt-20">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-12 lg:gap-8 items-center lg:items-stretch w-full flex-1 z-10 mt-24 lg:mt-20">
 
         {/* Left Column - Text Content */}
-        <div className="flex flex-col justify-center lg:col-span-7 xl:col-span-7 relative z-20">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center lg:col-span-7 xl:col-span-7 relative z-20 w-full">
 
           <div className="relative mb-6">
             <h1 className="font-extrabold text-white leading-[1.1] tracking-tighter flex flex-col gap-2">
               <span className="text-3xl md:text-4xl lg:text-5xl text-white/80 font-bold">Hi, I'm</span>
-              <span className="text-5xl md:text-6xl lg:text-[5rem]">{personalInfo.name}.</span>
+              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-[5rem]">{personalInfo.name}.</span>
             </h1>
           </div>
 
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white/80 mb-8 h-[1.2em] whitespace-nowrap">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white/80 mb-8 h-[1.2em] whitespace-nowrap">
             I'm a <TypingEffect titles={personalInfo.titles} />
           </h2>
 
-          <p className="text-lg md:text-xl text-white/60 mb-10 leading-relaxed max-w-2xl font-light">
+          <p className="text-base sm:text-lg md:text-xl text-white/60 mb-10 leading-relaxed max-w-2xl font-light">
             {personalInfo.description}
           </p>
 
 
-          <div className="flex flex-wrap items-center gap-4 md:gap-6">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 md:gap-6">
             <Link
               to="experience"
               smooth={true}
               duration={500}
-              className="group flex items-center justify-center gap-2 px-8 py-4 bg-orange-primary text-dark-300 font-bold rounded-xl hover:bg-orange-bright hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-[0_10px_30px_rgba(255,107,0,0.3)]"
+              className="group flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-orange-primary text-dark-300 font-bold rounded-xl hover:bg-orange-bright hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-[0_10px_30px_rgba(255,107,0,0.3)]"
             >
               View My Work
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <a
               href="#"
-              className="group flex items-center justify-center gap-2 px-8 py-4 bg-white/5 text-white font-semibold border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/30 hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm"
+              className="group flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-white/5 text-white font-semibold border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/30 hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm"
             >
               Download CV
               <Download className="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" />
@@ -112,7 +112,7 @@ export default function Hero() {
         </div>
 
         {/* Right Column - Profile Image */}
-        <div className="lg:col-span-5 xl:col-span-5 relative w-full flex items-center justify-center">
+        <div className="lg:col-span-5 xl:col-span-5 relative w-full flex items-center justify-center mt-8 lg:mt-0">
           <div className="relative w-full max-w-[450px] flex items-center justify-center">
 
             {/* Animated Rings Behind Profile */}
