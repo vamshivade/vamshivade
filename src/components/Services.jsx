@@ -58,18 +58,18 @@ export default function Services() {
               key={idx}
               className="sticky rounded-2xl p-5 mx-1 mb-3"
               style={{
-                /* Cards stack starting just below the sticky heading (~80px height) */
-                top: `${NAVBAR_H + 80 + idx * 16}px`,
+                /* Cards stack starting just below the sticky heading */
+                top: `${NAVBAR_H + 80 + idx * 20}px`,
                 zIndex: 10 + idx,
-                background: `linear-gradient(135deg, rgba(20,18,14,0.93) 0%, rgba(30,22,10,0.89) 100%)`,
+                background: `linear-gradient(135deg, rgba(20,18,14,0.95) 0%, rgba(30,22,10,0.92) 100%)`,
                 backdropFilter: 'blur(16px)',
                 WebkitBackdropFilter: 'blur(16px)',
                 boxShadow: `
-                  0 ${8 + idx * 6}px ${32 + idx * 8}px rgba(0,0,0,0.55),
-                  inset 0 1px 0 rgba(255,140,60,0.12),
-                  0 0 0 1px rgba(255,120,40,${0.15 + idx * 0.04})
+                  0 -10px 30px rgba(0,0,0,0.5),
+                  inset 0 1px 1px rgba(255,140,60,0.3),
+                  0 0 0 1px rgba(255,120,40,${0.2 + idx * 0.05})
                 `,
-                border: `1px solid rgba(255,130,50,${0.18 + idx * 0.04})`,
+                border: `1px solid rgba(255,130,50,0.1)`,
               }}
             >
               {/* Subtle glow */}
