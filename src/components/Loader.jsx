@@ -58,22 +58,25 @@ export default function Loader({ onComplete }) {
     const topLeftX = -(windowSize.width / 2) + 40;
     const topLeftY = -(windowSize.height / 2) + 40;
 
+    const radius = Math.min(windowSize.width, windowSize.height) * 0.28; 
+    const startRadius = Math.max(windowSize.width, windowSize.height) * 1.5; 
+
     let transitionDelay = '0ms';
     let transitionDuration = '1.2s';
     let transitionTiming = 'cubic-bezier(0.34, 1.56, 0.64, 1)'; // bouncy
 
     switch (stage) {
       case 'start':
-        x = topLeftX;
-        y = topLeftY;
-        scale = 0.2;
+        // Start far offscreen in the direction of their angle
+        x = startRadius * Math.cos(angle - Math.PI); // Offset angle for spiral curve
+        y = startRadius * Math.sin(angle - Math.PI);
+        scale = 0;
         opacity = 0; // Starts invisible
-        rotate = -720; // They will spin twice
+        rotate = -1080; // Massive spinning
         transitionDuration = '0s';
         break;
       case 'circle':
-        // Radius of the circle
-        const radius = Math.min(windowSize.width, windowSize.height) * 0.28; 
+        // Move to final circle position
         x = radius * Math.cos(angle);
         y = radius * Math.sin(angle);
         scale = 1;
@@ -117,7 +120,12 @@ export default function Loader({ onComplete }) {
         (stage === 'explode' || stage === 'fadeout') ? 'bg-transparent pointer-events-none' : 'bg-dark-300'
       }`}
     >
-      <div className="relative w-full h-full overflow-hidden">
+      <div 
+        className="relative w-full h-full overflow-hidden flex items-center justify-center transition-all duration-[3s] ease-out"
+        style={{
+          transform: stage === 'start' ? 'rotate(-180deg) scale(1.5)' : 'rotate(0deg) scale(1)'
+        }}
+      >
         {icons.map((tech, idx) => (
           <img
             key={tech}
