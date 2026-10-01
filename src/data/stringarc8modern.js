@@ -1,74 +1,82 @@
-import stringarc8ModernSquare from '../assets/String Arc8 Modern Square.webp';
-import stringarc8ModernLandscape from '../assets/String Arc8 Modern Landscape.webp';
+import stringArc8ModernSquare from '../assets/String Arc8 Modern Square.webp';
+import stringArc8ModernLandscape from '../assets/String Arc8 Modern Landscape.webp';
 
-const stringarc8ModernProject = {
-  id: "stringarc8-modern",
-  title: "Stringarc8Modern",
-  subtitle: "Telegram Arcade Gaming & Rewards Platform",
+const stringArc8ModernProject = {
+  id: "string-arc8-modern",
 
-  category: "Frontend Development",
+  title: "String Arc8 Modern",
 
-  role: "Frontend Developer",
+  subtitle: "Telegram Arcade Gaming, Rewards & Wallet Platform",
+
+  category: "Full Stack Development",
+
+  role: "Full Stack MERN Developer",
 
   description:
-    "A Telegram-integrated arcade gaming and rewards platform built with Next.js and React, providing users with browser-based games such as Flappy Bird, Stack, and Doodle Jump, along with ticket-based gameplay, daily rewards, tasks, referrals, boosters, profile management, leaderboards, and wallet-related interactions.",
+    "A Telegram-based arcade gaming and rewards platform built with Next.js, React, Node.js, Express, and MongoDB. The platform allows users to authenticate through Telegram, play arcade games such as Flappy Bird, Stack, and Doodle Jump, earn ticket-based rewards, complete tasks, invite friends, use boosters, manage profiles, and interact with wallet and withdrawal flows.",
 
   shortDescription:
-    "A mobile-first Telegram mini-app frontend for an arcade gaming and rewards platform featuring casual games, ticket-based gameplay, daily rewards, tasks, referrals, boosters, leaderboards, profiles, and wallet interactions.",
+    "A full-stack Telegram mini-app combining arcade gaming, rewards, referrals, tasks, boosters, user management, wallet flows, and admin operations using Next.js, Node.js, Express, and MongoDB.",
 
-  image: stringarc8ModernSquare,
+  image: stringArc8ModernSquare,
 
-  coverImage: stringarc8ModernLandscape,
+  coverImage: stringArc8ModernLandscape,
 
   technologies: [
     "Next.js",
     "React",
     "JavaScript",
     "JSX",
-    "React Context",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "REST APIs",
     "Axios",
+    "React Context",
+    "JWT",
     "Telegram WebApp SDK",
-    "Telegram Bot Integration",
-    "Material UI",
+    "Telegram Bot API",
     "Bootstrap",
+    "Material UI",
     "CSS Modules",
-    "Custom Styling",
-    "TonConnect",
-    "TON API",
-    "Solana Web3",
-    "Formik",
+    "Custom SCSS",
     "Joi",
-    "React Hot Toast",
-    "React Toastify",
-    "React GA",
-    "Lucide React"
+    "Multer",
+    "TON Connect",
+    "TON API",
+    "Solana Web3.js",
+    "Telegraf",
+    "Nodemailer",
+    "Swagger",
+    "PM2"
   ],
 
-  projectType: "Telegram Mini Application",
+  projectType: "Telegram Mini Application & Admin Platform",
 
-  developmentType: "Frontend Application",
+  developmentType: "Full Stack MERN Application",
 
   overview: {
     title: "Project Overview",
 
     content:
-      "String Arc8 Modern is a Telegram-integrated arcade gaming and rewards platform designed for users accessing the application through Telegram mini-apps. The frontend is built with Next.js and React and provides a mobile-first experience where users can discover and play arcade games such as Flappy Bird, Stack, and Doodle Jump. The application also includes profile management, referrals, daily rewards, boosters, tasks, ticket balances, leaderboards, and wallet-related interactions. The frontend communicates with backend REST APIs to provide dynamic user, game, reward, task, booster, and profile data."
+      "String Arc8 Modern is a Telegram-integrated arcade gaming and rewards platform designed around a mobile-first gaming and reward experience. Users enter the application through Telegram, authenticate using Telegram WebApp data, access arcade games such as Flappy Bird, Stack, and Doodle Jump, claim daily rewards, complete tasks, invite friends, activate boosters, track ticket balances, and interact with wallet and withdrawal functionality. The application is structured across a Next.js and React frontend, a Node.js and Express backend, and a MongoDB database layer. The project also includes administrative functionality for managing users, games, rewards, banners, tasks, withdrawals, and reporting."
   },
 
   myRole: {
     title: "My Role",
 
-    position: "Frontend Developer",
+    position: "Full Stack MERN Developer",
 
     description:
-      "My primary responsibility in the String Arc8 Modern project was frontend application development. I worked on building the Telegram mini-app interface using Next.js and React, developing reusable UI components, implementing game discovery and game-related screens, integrating backend REST APIs using Axios, managing shared application state with React Context, implementing Telegram WebApp flows, developing profile, rewards, task, referral, booster, ticket, leaderboard, and wallet-related interfaces, and creating responsive mobile-first experiences."
+      "My responsibility in the String Arc8 Modern project covered both frontend and backend development. I worked on the Next.js and React-based Telegram mini-app, reusable UI components, game-related screens, authentication flows, profile management, rewards, tasks, referrals, boosters, tickets, leaderboards, and wallet-related interfaces. On the backend, I worked with Node.js, Express, MongoDB, and Mongoose to implement REST APIs, Telegram authentication, JWT-based protected routes, user management, reward logic, task and referral workflows, game history, booster handling, wallet-related operations, and admin functionality."
   },
 
   frontend: {
     title: "Frontend Development",
 
     description:
-      "The frontend was developed using Next.js and React with JavaScript and JSX. The application follows a page-based architecture with reusable components, shared application state, Next.js routing, centralized API communication, Telegram WebApp integration, responsive styling, and mobile-first game interfaces.",
+      "The frontend was developed using Next.js and React with JavaScript and JSX. The application follows a page-based architecture with reusable components, React Context for shared state, Next.js routing, Axios-based API communication, Telegram WebApp integration, responsive mobile-first layouts, and game-focused interfaces.",
 
     architecture: [
       "Next.js page-based React application",
@@ -85,9 +93,9 @@ const stringarc8ModernProject = {
 
       "Axios-based REST API integration",
 
-      "Centralized API configuration and service helpers",
+      "Centralized API configuration and service layer",
 
-      "Telegram WebApp SDK integration",
+      "Telegram WebApp integration",
 
       "Telegram bot integration",
 
@@ -103,60 +111,127 @@ const stringarc8ModernProject = {
 
       "Toast-based user feedback",
 
-      "Local storage and cookie-based session persistence"
+      "Frontend authentication and session handling"
+    ]
+  },
+
+  backend: {
+    title: "Backend Development",
+
+    description:
+      "The backend was developed using Node.js and Express as a modular REST API layer connected to MongoDB through Mongoose. It handles Telegram-based authentication, JWT access tokens, protected APIs, user profiles, game sessions, rewards, tasks, referrals, boosters, tickets, transaction-related workflows, and administrative operations.",
+
+    architecture: [
+      "Node.js runtime",
+
+      "Express.js REST API architecture",
+
+      "Modular route and controller structure",
+
+      "MongoDB database",
+
+      "Mongoose data modeling",
+
+      "Resource-based REST API modules",
+
+      "JWT authentication",
+
+      "Telegram initData validation",
+
+      "Role-based authorization",
+
+      "Joi request validation",
+
+      "Centralized error handling",
+
+      "CORS middleware",
+
+      "Request logging with Morgan",
+
+      "Multer file upload handling",
+
+      "MongoDB aggregation and historical queries",
+
+      "PM2 process management",
+
+      "Environment-based configuration"
+    ],
+
+    responsibilities: [
+      "Developed REST API functionality using Node.js and Express.",
+
+      "Implemented Telegram WebApp initData authentication.",
+
+      "Implemented JWT-based protected route access.",
+
+      "Created and maintained MongoDB/Mongoose models.",
+
+      "Implemented user registration and profile APIs.",
+
+      "Implemented reward and daily reward workflows.",
+
+      "Implemented task creation and completion workflows.",
+
+      "Implemented referral tracking and reward logic.",
+
+      "Implemented game catalog and game history APIs.",
+
+      "Implemented booster creation, activation, and expiration logic.",
+
+      "Implemented ticket-related backend workflows.",
+
+      "Supported wallet and withdrawal-related API flows.",
+
+      "Implemented administrative APIs for users, games, tasks, rewards, and banners.",
+
+      "Added Joi validation for API requests.",
+
+      "Implemented centralized API error responses.",
+
+      "Integrated file upload processing.",
+
+      "Supported Telegram bot messaging and notification functionality."
     ]
   },
 
   features: [
     {
-      title: "Arcade Gaming Interface",
+      title: "Telegram Arcade Platform",
 
       description:
-        "Developed a Telegram-focused gaming interface that allows users to discover and access browser-based arcade games through a mobile-first game catalog.",
+        "Built the main Telegram gaming experience where users enter through a Telegram mini app and access the platform's gaming and reward functionality.",
 
       items: [
-        "Arcade game catalog",
-
-        "Featured game cards",
-
-        "Game discovery interface",
-
-        "Individual game pages",
-
-        "Flappy Bird game interface",
-
-        "Stack game interface",
-
-        "Doodle Jump game interface",
-
-        "Game-related navigation",
-
-        "Interactive game screens",
-
-        "Responsive gaming layouts"
+        "Telegram mini-app entry",
+        "Mobile-first dashboard",
+        "Game discovery",
+        "Game catalog",
+        "Game detail screens",
+        "Reward dashboard",
+        "User profile",
+        "Task dashboard",
+        "Referral interface",
+        "Booster store"
       ]
     },
 
     {
-      title: "Game Catalog",
+      title: "Arcade Games",
 
       description:
-        "Built the game discovery experience where users can view available games, access game information, and navigate to individual gameplay screens.",
+        "Implemented frontend and backend support for the platform's arcade game experiences.",
 
       items: [
+        "Flappy Bird",
+        "Stack",
+        "Doodle Jump",
         "Game listing",
-
-        "Game cards",
-
-        "Featured games",
-
-        "Game information",
-
-        "Game metadata from backend APIs",
-
-        "Individual game navigation",
-
-        "Responsive game catalog"
+        "Game-specific routes",
+        "Game session handling",
+        "Score-related state",
+        "Game history",
+        "Game metadata",
+        "Mobile game interfaces"
       ]
     },
 
@@ -164,22 +239,37 @@ const stringarc8ModernProject = {
       title: "Ticket-Based Gameplay",
 
       description:
-        "Implemented frontend flows around the platform's ticket-based gameplay system, including displaying ticket balances and supporting game participation interactions.",
+        "Implemented frontend and backend flows around the platform's ticket-based gameplay and reward model.",
 
       items: [
         "Ticket balance display",
-
-        "Game ticket information",
-
+        "Ticket-related API workflows",
         "Game participation flow",
+        "Game ticket information",
+        "Ticket status",
+        "Game history",
+        "Backend ticket processing",
+        "Reward-related ticket handling"
+      ]
+    },
 
-        "Ticket-related user interactions",
+    {
+      title: "User Authentication",
 
-        "Game status display",
+      description:
+        "Implemented Telegram-based authentication combined with JWT session handling for protected application access.",
 
-        "Ticket balance updates",
-
-        "Game-related feedback"
+      items: [
+        "Telegram WebApp authentication",
+        "Telegram initData validation",
+        "HMAC-based Telegram verification",
+        "JWT access tokens",
+        "Protected API routes",
+        "Authenticated frontend state",
+        "Token persistence",
+        "Cookie-based session handling",
+        "Local storage session handling",
+        "Role-based backend authorization"
       ]
     },
 
@@ -187,49 +277,18 @@ const stringarc8ModernProject = {
       title: "User Profile",
 
       description:
-        "Developed user profile and account-related interfaces for displaying user information, balance information, boosters, and wallet-related actions.",
+        "Developed user profile functionality across frontend and backend for displaying and managing account information.",
 
       items: [
-        "User profile",
-
         "Profile information",
-
-        "Profile editing",
-
-        "Account-related information",
-
-        "User session state",
-
-        "Balance information",
-
+        "Profile retrieval",
+        "Profile updates",
+        "User balance",
         "Booster status",
-
-        "Withdrawal-related action",
-
-        "Profile interaction flows"
-      ]
-    },
-
-    {
-      title: "Referral System",
-
-      description:
-        "Implemented frontend referral and invite flows that allow users to access referral information and participate in the platform's referral engagement system.",
-
-      items: [
-        "Referral flow",
-
-        "Invite friends interface",
-
-        "Referral information",
-
-        "Referral link generation",
-
-        "Copy-to-clipboard functionality",
-
-        "Referral-related navigation",
-
-        "Referral reward information"
+        "Withdrawal-related actions",
+        "User session information",
+        "Profile API integration",
+        "Frontend profile state"
       ]
     },
 
@@ -237,24 +296,17 @@ const stringarc8ModernProject = {
       title: "Daily Rewards",
 
       description:
-        "Built frontend interfaces for the daily reward functionality, allowing users to view available rewards and interact with reward claim flows.",
+        "Implemented the daily reward flow that allows users to access available rewards and track reward-related actions.",
 
       items: [
-        "Daily reward interface",
-
+        "Daily reward display",
         "Reward claim flow",
-
-        "Reward status display",
-
-        "Reward prompts",
-
-        "Reward interaction states",
-
-        "Reward tracking",
-
-        "Success feedback",
-
-        "Error feedback"
+        "Reward status",
+        "Reward API integration",
+        "Reward creation",
+        "Reward claim processing",
+        "Reward feedback",
+        "Success and error handling"
       ]
     },
 
@@ -262,51 +314,56 @@ const stringarc8ModernProject = {
       title: "Tasks & Advertising",
 
       description:
-        "Developed the task interface where users can view available tasks and complete supported engagement activities such as advertising or watch-based tasks.",
+        "Implemented task-related frontend and backend workflows allowing users to view available activities and receive supported rewards.",
 
       items: [
         "Task listing",
-
-        "Task status",
-
+        "Task details",
+        "Task completion",
         "Advertising tasks",
-
         "Watch-based tasks",
-
-        "Task completion flow",
-
-        "Task loading states",
-
-        "Task success feedback",
-
-        "Task error feedback",
-
-        "Reward updates"
+        "Task reward processing",
+        "Task status",
+        "Task APIs",
+        "Task validation",
+        "Success and error feedback"
       ]
     },
 
     {
-      title: "Booster Store",
+      title: "Referral System",
 
       description:
-        "Implemented the booster store interface where users can view available boosters and interact with booster purchase-related flows.",
+        "Implemented referral and invite functionality allowing users to invite friends and participate in referral-based reward flows.",
 
       items: [
-        "Booster store",
+        "Referral flow",
+        "Invite friends",
+        "Referral information",
+        "Referral tracking",
+        "Referral history",
+        "Referral rewards",
+        "Referral API integration",
+        "Backend referral logic"
+      ]
+    },
 
+    {
+      title: "Booster System",
+
+      description:
+        "Developed frontend and backend functionality for creating, displaying, activating, purchasing, and managing boosters.",
+
+      items: [
+        "Booster listing",
         "Booster cards",
-
         "Booster information",
-
+        "Booster activation",
         "Booster purchase flow",
-
+        "Booster expiration logic",
+        "Booster status",
         "TON-based booster interaction",
-
-        "Purchase status",
-
-        "Purchase feedback",
-
-        "Booster availability"
+        "Backend booster management"
       ]
     },
 
@@ -314,72 +371,36 @@ const stringarc8ModernProject = {
       title: "Leaderboard",
 
       description:
-        "Built leaderboard interfaces for displaying user rankings and game-related information within the Telegram mini-app.",
+        "Implemented leaderboard functionality for displaying ranking and game-related user information.",
 
       items: [
         "Leaderboard page",
-
         "User rankings",
-
         "Ranking information",
-
-        "Game-related ranking data",
-
+        "Game-related data",
+        "Leaderboard API",
         "Responsive leaderboard UI",
-
-        "Leaderboard API integration",
-
-        "User ranking display"
+        "Backend ranking data"
       ]
     },
 
     {
-      title: "Wallet Integration",
+      title: "Wallet & Withdrawal",
 
       description:
-        "Implemented frontend wallet-related interactions involving TON and Solana integrations, including wallet connectivity, balance-related checks, and wallet-aware user flows.",
+        "Implemented wallet-aware frontend and backend flows involving TON and Solana-related wallet validation and transaction workflows.",
 
       items: [
         "Wallet connection",
-
-        "Wallet status display",
-
+        "Wallet status",
         "Wallet balance availability",
-
         "TON wallet interaction",
-
-        "Solana wallet-related interaction",
-
-        "Wallet-related user flows",
-
-        "Wallet connection feedback",
-
-        "Booster purchase interaction"
-      ]
-    },
-
-    {
-      title: "Authentication",
-
-      description:
-        "Implemented frontend authentication and session handling for users entering the application through Telegram.",
-
-      items: [
-        "Telegram WebApp login flow",
-
-        "Telegram initData-based authentication flow",
-
-        "JWT session handling",
-
-        "Token persistence",
-
-        "Local storage handling",
-
-        "Cookie-based session persistence",
-
-        "Authenticated user state",
-
-        "Protected frontend navigation"
+        "TON transaction checks",
+        "Solana wallet validation",
+        "Withdrawal-related APIs",
+        "Transaction tracking",
+        "Wallet-related feedback",
+        "Booster purchase workflow"
       ]
     },
 
@@ -387,20 +408,38 @@ const stringarc8ModernProject = {
       title: "Game & Transaction History",
 
       description:
-        "Developed interfaces for displaying user-related game activity and transaction-related information within the application.",
+        "Implemented APIs and frontend interfaces for maintaining and displaying user activity, game history, and transaction-related information.",
 
       items: [
         "Game history",
-
-        "Transaction-related information",
-
+        "Transaction records",
         "User activity",
+        "Historical game data",
+        "Transaction-related information",
+        "MongoDB historical queries",
+        "Frontend history interfaces"
+      ]
+    },
 
-        "Historical game information",
+    {
+      title: "Admin Management",
 
-        "Responsive history interfaces",
+      description:
+        "Supported a separate administrative surface for managing users, games, rewards, tasks, banners, withdrawals, and reporting.",
 
-        "User activity states"
+      items: [
+        "User management",
+        "Game management",
+        "Reward management",
+        "Task management",
+        "Banner management",
+        "Withdrawal workflows",
+        "Admin dashboards",
+        "User activity",
+        "Historical reports",
+        "Analytics-related data",
+        "Admin settings",
+        "Role-based admin access"
       ]
     }
   ],
@@ -409,44 +448,44 @@ const stringarc8ModernProject = {
     title: "API Integration",
 
     description:
-      "Integrated REST APIs into the Next.js frontend using Axios and centralized API configuration/service helpers. API-driven workflows support authentication, profiles, tasks, boosters, tickets, games, leaderboard data, daily rewards, referrals, and wallet-related functionality.",
+      "Integrated the Next.js frontend with the Node.js and Express backend through Axios and centralized API configuration. The REST API layer supports authentication, profiles, games, game history, rewards, tasks, referrals, boosters, tickets, leaderboards, wallet-related operations, notifications, static content, and administrative functionality.",
 
     technologies: [
       "Axios",
-
       "REST APIs",
-
+      "Node.js",
+      "Express.js",
       "Next.js",
-
       "React",
-
-      "Centralized API configuration",
-
-      "Custom API service helpers"
+      "MongoDB",
+      "Mongoose",
+      "Centralized API configuration"
     ],
 
     responsibilities: [
       "Integrated frontend API requests using Axios.",
 
-      "Connected React and Next.js components with backend REST APIs.",
+      "Connected React and Next.js components with Express REST APIs.",
 
-      "Integrated APIs for game metadata and game-related workflows.",
+      "Integrated authentication APIs.",
 
-      "Integrated APIs for user profile information.",
+      "Integrated user profile APIs.",
 
-      "Integrated APIs for tasks and rewards.",
+      "Integrated game catalog and game history APIs.",
 
-      "Integrated APIs for boosters and ticket-related workflows.",
+      "Integrated task and reward APIs.",
+
+      "Integrated referral APIs.",
+
+      "Integrated booster and ticket APIs.",
 
       "Integrated leaderboard-related API data.",
 
-      "Handled API-driven user interactions.",
+      "Integrated wallet and withdrawal-related APIs.",
 
-      "Managed loading states during API operations.",
+      "Handled API loading states.",
 
       "Handled API success and failure states.",
-
-      "Updated UI based on API responses.",
 
       "Provided user feedback using toast notifications."
     ]
@@ -456,65 +495,57 @@ const stringarc8ModernProject = {
     title: "Telegram Mini-App Integration",
 
     description:
-      "The frontend was designed specifically for Telegram users and integrated Telegram WebApp functionality to support application entry, authentication, mobile behavior, and Telegram-specific user interactions.",
+      "The platform was designed specifically for Telegram users. Telegram WebApp functionality is used for application entry, user authentication, and Telegram-specific interaction flows, while Telegram bot functionality supports communication and engagement.",
 
     technologies: [
       "Telegram WebApp SDK",
-
-      "Telegram Bot Integration"
+      "Telegram Bot API",
+      "Telegraf",
+      "Telegram initData"
     ],
 
     responsibilities: [
-      "Integrated Telegram WebApp functionality into the frontend.",
+      "Integrated Telegram WebApp functionality.",
 
       "Supported Telegram-based application entry.",
 
-      "Worked with Telegram authentication flows.",
+      "Implemented Telegram authentication flows.",
 
-      "Handled Telegram WebApp initialization and readiness.",
+      "Worked with Telegram WebApp initialization data.",
 
-      "Handled Telegram-specific application behavior.",
+      "Integrated Telegram-specific user interactions.",
 
-      "Integrated Telegram-specific user interaction flows.",
+      "Supported Telegram bot communication.",
 
-      "Designed the frontend around the Telegram mini-app experience.",
+      "Connected Telegram authentication with backend JWT sessions.",
 
-      "Optimized layouts for Telegram mobile usage."
+      "Designed the frontend experience specifically for Telegram mobile users."
     ]
   },
 
   walletIntegration: {
-    title: "Wallet Integration",
+    title: "Wallet & Blockchain Integration",
 
     description:
-      "The frontend includes wallet-related functionality using TON and Solana integrations. Wallet interactions are used for connection, balance availability checks, booster-related flows, and wallet-aware user interactions.",
+      "The project includes wallet-related functionality involving TON and Solana. The frontend supports wallet connection and user-facing wallet interactions, while backend flows include transaction validation and wallet-related processing.",
 
     technologies: [
-      "TonConnect",
-
+      "TON Connect",
       "TON API",
-
       "TON Core",
-
-      "Solana Web3"
+      "Solana Web3.js"
     ],
 
     features: [
-      "Wallet connection",
-
+      "TON wallet connection",
       "Wallet status",
-
       "Balance availability checks",
-
-      "TON wallet interaction",
-
-      "Solana wallet-related interaction",
-
+      "TON transaction verification",
       "TON-based booster purchase flow",
-
-      "Wallet-related user feedback",
-
-      "Transaction-related UI states"
+      "Withdrawal-related processing",
+      "Solana wallet validation",
+      "Transaction-related API flows",
+      "Wallet feedback states"
     ]
   },
 
@@ -522,34 +553,22 @@ const stringarc8ModernProject = {
     title: "Responsive & Mobile-First Design",
 
     description:
-      "The application was designed primarily for users accessing the platform through Telegram mini-apps. The frontend uses responsive layouts and mobile-focused UI patterns to provide a consistent gaming and rewards experience across small-screen devices.",
+      "The application was primarily designed for users accessing the platform through Telegram mini apps. The frontend uses responsive layouts and mobile-focused UI patterns to provide a consistent gaming and rewards experience across smaller screens.",
 
     features: [
       "Mobile-first layouts",
-
+      "Responsive dashboard",
       "Responsive game catalog",
-
       "Responsive game cards",
-
       "Responsive game screens",
-
       "Responsive profile pages",
-
       "Responsive task pages",
-
       "Responsive reward interfaces",
-
       "Responsive booster store",
-
       "Responsive leaderboard",
-
       "Responsive wallet interfaces",
-
       "Mobile-friendly navigation",
-
-      "Responsive modal workflows",
-
-      "Touch-friendly interaction patterns"
+      "Responsive modal workflows"
     ]
   },
 
@@ -557,38 +576,24 @@ const stringarc8ModernProject = {
     title: "UI / UX Features",
 
     description:
-      "The frontend focuses on creating a customized game-oriented experience rather than a generic application interface. Interactive states, loading indicators, notifications, responsive layouts, reusable cards, and game-focused components are used throughout the application.",
+      "The frontend focuses on a customized arcade and reward-oriented experience rather than a generic application interface. Reusable components, interactive states, loading indicators, notifications, responsive layouts, and game-focused UI patterns are used throughout the application.",
 
     features: [
       "Game-focused visual design",
-
+      "Telegram-first user experience",
       "Mobile-first navigation",
-
       "Loading indicators",
-
       "Toast notifications",
-
       "Confirmation modals",
-
       "Game cards",
-
       "Featured game cards",
-
       "Responsive cards",
-
       "Interactive buttons",
-
       "User feedback states",
-
       "Wallet connection feedback",
-
       "Task completion feedback",
-
       "Reward interaction states",
-
-      "Game loading states",
-
-      "Empty and conditional states"
+      "Game loading states"
     ]
   },
 
@@ -598,187 +603,220 @@ const stringarc8ModernProject = {
     technology: "Next.js File-Based Routing",
 
     description:
-      "Implemented application navigation using Next.js file-based routing and next/router. The routing structure supports the major user-facing sections of the Telegram mini-app and individual game routes.",
+      "Implemented application navigation using Next.js file-based routing and next/router. The routing structure supports the main user-facing sections, game-specific routes, profile flows, task pages, referral pages, store functionality, and wallet-related views.",
 
     areas: [
-      "Home Dashboard",
-
-      "Game Catalog",
-
+      "Home",
+      "Game catalog",
+      "Game pages",
       "Profile",
-
       "Store",
-
       "Tasks",
-
       "Invite Friends",
-
-      "Flappy Bird Game",
-
-      "Stack Game",
-
-      "Doodle Jump Game",
-
+      "Flappy Bird",
+      "Stack",
+      "Doodle Jump",
       "Wallet-related pages",
-
-      "Leaderboard-related views",
-
-      "Reward-related views"
+      "Leaderboard views"
     ]
   },
 
   stateManagement: {
     title: "State Management",
 
-    technology: "React Context",
+    technology: "React Context API",
 
     description:
-      "Used React Context for shared application state across the Next.js frontend. Shared state includes authentication information, user profile data, ticket balance, wallet state, session state, and other user-related information. Local component state is used for page-specific UI and gameplay interactions.",
+      "Used React Context for shared application state across the Next.js frontend. Component-level state is used for local UI behavior, loading states, gameplay states, and interactive controls.",
 
     responsibilities: [
       "Authentication state",
-
       "User profile state",
-
       "Ticket balance state",
-
       "Wallet state",
-
       "Session state",
-
       "User data",
-
       "Application-level state sharing",
-
       "Component-level state management",
-
-      "Loading states",
-
-      "Gameplay-related UI state"
+      "Gameplay-related UI state",
+      "Loading state management"
     ]
   },
 
   authentication: {
-    title: "Authentication & Session Handling",
+    title: "Authentication & Authorization",
 
     description:
-      "The frontend integrates Telegram-based authentication with JWT session handling. Telegram WebApp initialization data is processed as part of the authentication flow, while the frontend maintains the authenticated session using client-side token persistence.",
+      "Implemented Telegram-based authentication combined with JWT session handling. Telegram WebApp initialization data is validated by the backend before authenticated access is granted. Protected routes use JWT verification, while administrative functionality uses role-based access checks.",
 
     technologies: [
       "Telegram WebApp",
-
+      "Telegram initData",
+      "HMAC verification",
       "JWT",
-
       "Local Storage",
-
       "Cookies",
-
-      "JWT Decode"
+      "JWT Decode",
+      "Role-based authorization"
     ],
 
     features: [
       "Telegram-based login",
-
-      "Telegram initData authentication flow",
-
+      "Telegram initData verification",
+      "HMAC-based authentication",
+      "JWT access token generation",
+      "Protected API routes",
       "JWT token handling",
-
       "Token persistence",
-
       "Local storage persistence",
-
-      "Cookie-based persistence",
-
+      "Cookie-based session handling",
       "Authenticated user state",
-
-      "Authentication-aware navigation",
-
-      "Session restoration"
+      "Admin role checks",
+      "Sub-admin role checks"
     ]
   },
 
-  uiTechnologies: {
-    title: "UI Technologies",
+  database: {
+    title: "Database & Data Modeling",
 
-    technologies: [
-      {
-        name: "Material UI",
+    technology: "MongoDB + Mongoose",
 
-        usage:
-          "Used to build reusable and responsive interface components within the application."
-      },
+    description:
+      "Used MongoDB as the primary data layer with Mongoose schemas and models for managing users, games, tasks, rewards, boosters, transactions, referrals, game history, banners, contact records, and administrative settings.",
 
-      {
-        name: "Bootstrap",
-
-        usage:
-          "Used for responsive layout structures and mobile-friendly interface development."
-      },
-
-      {
-        name: "CSS Modules",
-
-        usage:
-          "Used for component-specific styling and isolated frontend styles."
-      },
-
-      {
-        name: "Custom Styling",
-
-        usage:
-          "Used for application-specific visual requirements and game-oriented interface styling."
-      },
-
-      {
-        name: "Lucide React",
-
-        usage:
-          "Used for interface icons and visual UI elements."
-      }
-    ]
-  },
-
-  chartsAndVisualization: {
-    title: "Charts & Visualization",
-
-    technologies: [
-      {
-        name: "React GA",
-
-        usage:
-          "Used for Google Analytics page tracking and frontend usage measurement."
-      }
+    models: [
+      "Users",
+      "Games",
+      "Tasks",
+      "Rewards",
+      "Boosters",
+      "Transactions",
+      "Referral History",
+      "Game History",
+      "Banners",
+      "Contact Us Records",
+      "Admin Settings"
     ],
 
-    note:
-      "The project overview does not clearly establish a significant charting implementation in the frontend, so the portfolio should not exaggerate chart or analytics visualization work."
+    responsibilities: [
+      "Designed MongoDB data models using Mongoose.",
+
+      "Implemented CRUD operations.",
+
+      "Managed user-related data.",
+
+      "Managed game and gameplay history data.",
+
+      "Stored task and reward information.",
+
+      "Stored referral records.",
+
+      "Managed booster information.",
+
+      "Tracked transaction-related data.",
+
+      "Used aggregation for historical and analytical queries.",
+
+      "Supported administrative reporting queries."
+    ]
   },
 
-  formsAndValidation: {
-    title: "Forms & User Interaction",
+  backendApiArchitecture: {
+    title: "Backend API Architecture",
+
+    technology: "Node.js + Express.js REST API",
+
+    description:
+      "The backend is organized into resource-based route modules and controllers. API groups separate user-facing functionality, game operations, rewards, tasks, boosters, tickets, notifications, static content, Solana-related operations, and administrative functionality.",
+
+    routes: [
+      "/api/v1/user",
+      "/api/v1/admin",
+      "/api/v1/game",
+      "/api/v1/task",
+      "/api/v1/rewards",
+      "/api/v1/Booster",
+      "/api/v1/ticket",
+      "/api/v1/notification",
+      "/api/v1/static",
+      "/api/v1/solana"
+    ],
+
+    components: [
+      "Express server",
+      "Route modules",
+      "Controllers",
+      "Mongoose models",
+      "Authentication middleware",
+      "Authorization middleware",
+      "Validation middleware",
+      "Error handling middleware",
+      "Upload middleware",
+      "CORS middleware",
+      "Request logging"
+    ]
+  },
+
+  validationAndErrorHandling: {
+    title: "Validation & Error Handling",
 
     technologies: [
-      "Formik",
-
-      "Frontend form state handling",
-
-      "Backend validation through API integration"
+      "Joi",
+      "Express middleware",
+      "Custom API error handling"
     ],
 
     features: [
-      "Profile forms",
+      "Login validation",
+      "Sign-up validation",
+      "Task validation",
+      "Reward validation",
+      "Booster validation",
+      "Profile validation",
+      "Wallet request validation",
+      "Admin action validation",
+      "Centralized error responses",
+      "API failure handling",
+      "Frontend error feedback"
+    ]
+  },
 
-      "User input handling",
+  adminPanel: {
+    title: "Admin Management",
 
-      "Form state management",
+    description:
+      "The project includes a separate administrative surface and backend functionality for managing operational aspects of the platform, including users, games, rewards, banners, tasks, withdrawals, and reporting.",
 
-      "User interaction states",
+    features: [
+      "User management",
+      "User activity",
+      "Game management",
+      "Reward management",
+      "Task management",
+      "Banner management",
+      "Withdrawal workflows",
+      "Admin dashboards",
+      "Analytics-related information",
+      "Historical reports",
+      "Admin settings",
+      "Role-based access"
+    ]
+  },
 
-      "Form submission",
+  fileUploads: {
+    title: "File Upload & Media Handling",
 
-      "Form feedback",
+    technology: "Multer",
 
-      "API-driven validation responses"
+    description:
+      "Implemented backend file upload handling for supported profile and application asset workflows. The project also contains cloud storage helper support for services such as Cloudinary and AWS S3.",
+
+    features: [
+      "Multer-based upload handling",
+      "Profile-related uploads",
+      "Application asset processing",
+      "Cloud storage helper support",
+      "Media-related backend processing"
     ]
   },
 
@@ -787,28 +825,40 @@ const stringarc8ModernProject = {
 
     technologies: [
       "React Hot Toast",
-
-      "React Toastify"
+      "React Toastify",
+      "Telegram Bot",
+      "Nodemailer"
     ],
 
     features: [
       "Login feedback",
-
       "Task completion notifications",
-
-      "Wallet connection feedback",
-
       "Reward feedback",
-
+      "Wallet connection feedback",
       "Booster purchase feedback",
-
       "Success notifications",
-
       "Error notifications",
-
       "Application status feedback",
+      "Telegram notifications",
+      "Email-related backend support"
+    ]
+  },
 
-      "API operation feedback"
+  deployment: {
+    title: "Deployment & Process Management",
+
+    technologies: [
+      "PM2",
+      "Environment Variables",
+      "Node.js"
+    ],
+
+    features: [
+      "Node.js process management",
+      "PM2 configuration",
+      "Application restart handling",
+      "Environment-based configuration",
+      "Backend process management"
     ]
   },
 
@@ -816,90 +866,84 @@ const stringarc8ModernProject = {
     title: "User Experience",
 
     description:
-      "The frontend focuses on providing a mobile-first Telegram gaming experience by combining arcade game discovery, responsive interfaces, ticket-based gameplay, rewards, tasks, referrals, boosters, leaderboards, profile management, and wallet-related interactions.",
+      "The application focuses on providing a Telegram-first arcade gaming and rewards experience by combining game discovery, ticket-based gameplay, rewards, tasks, referrals, boosters, profiles, leaderboards, and wallet-related interactions within a mobile-oriented interface.",
 
     highlights: [
       "Telegram-first user experience",
-
       "Mobile-focused gaming interface",
-
       "Interactive arcade game catalog",
-
-      "Casual arcade game access",
-
-      "Flappy Bird gameplay flow",
-
-      "Stack gameplay flow",
-
-      "Doodle Jump gameplay flow",
-
+      "Flappy Bird gameplay",
+      "Stack gameplay",
+      "Doodle Jump gameplay",
       "Ticket-based gameplay flow",
-
-      "Reward-focused user interactions",
-
       "Daily reward experience",
-
       "Task and advertising interactions",
-
       "Referral and invite flows",
-
       "Booster store experience",
-
       "Wallet connection flows",
-
       "Leaderboard experience",
-
-      "Responsive profile management",
-
+      "Profile management",
       "Toast-based feedback",
-
       "Loading states",
-
       "Interactive modals"
     ]
   },
 
   challenges: [
     {
-      title: "Telegram Mini-App Experience",
+      title: "Telegram Mini-App Architecture",
 
       description:
-        "Building the frontend around Telegram mini-apps required designing the application for users entering through Telegram rather than treating it as a traditional standalone website."
+        "Building the application around Telegram mini-apps required designing both authentication and user experience around Telegram WebApp behavior rather than treating the application as a traditional standalone website."
+    },
+
+    {
+      title: "Full-Stack Authentication Flow",
+
+      description:
+        "The authentication flow required coordination between Telegram WebApp initialization data, backend verification, JWT generation, protected API routes, and frontend session persistence."
     },
 
     {
       title: "Mobile-First Gaming UI",
 
       description:
-        "The application targets Telegram users, making responsive layouts, mobile-friendly navigation, game cards, and touch-oriented interfaces important parts of the frontend implementation."
+        "The application primarily targets Telegram mobile users, requiring responsive layouts, touch-friendly interactions, compact game interfaces, and mobile-focused navigation."
     },
 
     {
       title: "Multiple Game Interfaces",
 
       description:
-        "The application includes separate frontend experiences for Flappy Bird, Stack, and Doodle Jump, requiring reusable UI patterns while supporting game-specific screens and interactions."
+        "The application includes separate frontend experiences for Flappy Bird, Stack, and Doodle Jump while maintaining consistent navigation, gameplay state handling, and reward-related interactions."
     },
 
     {
-      title: "Complex User Flows",
+      title: "Complex Reward Workflows",
 
       description:
-        "The frontend contains multiple connected workflows including authentication, games, tickets, rewards, tasks, referrals, boosters, profiles, leaderboards, and wallet interactions, requiring organized navigation and reusable components."
+        "The platform contains connected workflows for daily rewards, tasks, referrals, tickets, boosters, game history, and user balances, requiring coordinated frontend interactions and backend business logic."
     },
 
     {
-      title: "API-Driven Frontend",
+      title: "API-Driven Full-Stack Architecture",
 
       description:
-        "The application depends on backend API data for games, users, tasks, rewards, boosters, tickets, leaderboards, and wallet-related workflows, requiring structured API integration and clear loading and feedback states."
+        "The frontend depends heavily on backend APIs for authentication, users, games, tasks, rewards, boosters, tickets, leaderboards, and wallet-related workflows, requiring structured API communication and clear loading and error states."
     },
 
     {
       title: "Wallet-Aware User Experience",
 
       description:
-        "The frontend includes TON and Solana-related wallet interactions, requiring wallet connection states, balance availability checks, and user feedback within the Telegram gaming experience."
+        "TON and Solana-related functionality introduced wallet connection, validation, transaction checks, and withdrawal-related flows that required coordination between frontend interfaces and backend processing."
+    },
+
+    {
+      title: "Admin Operations",
+
+      description:
+        "Supporting user management, game management, rewards, tasks, banners, withdrawals, and reporting required separate administrative APIs, data models, authorization checks, and operational workflows."
     }
   ],
 
@@ -916,137 +960,193 @@ const stringarc8ModernProject = {
 
     "REST API integration with Axios",
 
-    "Telegram WebApp frontend integration",
+    "Node.js backend development",
+
+    "Express.js REST API development",
+
+    "MongoDB database design",
+
+    "Mongoose data modeling",
+
+    "Telegram WebApp integration",
 
     "Telegram mini-app development",
 
-    "JWT session handling",
+    "Telegram initData authentication",
 
-    "Local storage and cookie-based session persistence",
+    "JWT authentication",
 
-    "Responsive and mobile-first development",
+    "Role-based authorization",
+
+    "Local storage and cookie-based session handling",
+
+    "Responsive mobile-first development",
 
     "Arcade gaming UI development",
 
-    "Wallet integration using TonConnect",
+    "Reward system development",
 
-    "TON API integration",
+    "Task and referral workflow development",
 
-    "Solana wallet-related frontend integration",
+    "Booster system development",
 
-    "Interactive game catalog development",
+    "Game history management",
 
-    "Reward and task workflow development",
+    "Wallet integration using TON Connect",
 
-    "Referral and leaderboard interfaces",
+    "Solana wallet-related backend validation",
 
-    "Booster store development",
+    "Joi API validation",
 
-    "Frontend form handling",
+    "Centralized backend error handling",
 
-    "Frontend notifications and user feedback",
+    "Multer file upload handling",
 
-    "Google Analytics page tracking"
+    "MongoDB aggregation",
+
+    "Admin dashboard API development",
+
+    "PM2 process management",
+
+    "Telegram bot integration"
   ],
 
   frontendTechnologyStack: {
     framework: [
       "Next.js",
-
       "React"
     ],
 
     language: [
       "JavaScript",
-
       "JSX"
     ],
 
     routing: [
       "Next.js File-Based Routing",
-
       "next/router"
     ],
 
     stateManagement: [
       "React Context",
-
       "Component State"
     ],
 
     apiCommunication: [
       "Axios",
-
       "REST APIs",
-
-      "Centralized API configuration",
-
-      "Custom API service helpers"
+      "Centralized API Configuration"
     ],
 
     telegram: [
       "Telegram WebApp SDK",
-
       "Telegram Bot Integration"
     ],
 
     ui: [
       "Material UI",
-
       "Bootstrap",
-
       "CSS Modules",
-
-      "Custom Styling"
+      "Custom SCSS"
     ],
 
     wallet: [
-      "TonConnect",
-
+      "TON Connect",
       "TON API",
-
       "TON Core",
-
-      "Solana Web3"
+      "Solana Web3.js"
     ],
 
-    forms: [
-      "Formik"
-    ],
-
-    notifications: [
-      "React Hot Toast",
-
-      "React Toastify"
-    ],
-
-    analytics: [
-      "React GA",
-
-      "Google Analytics"
+    authentication: [
+      "JWT",
+      "JWT Decode",
+      "Telegram initData"
     ],
 
     utilities: [
-      "JWT Decode",
+      "React Hot Toast",
+      "React Toastify",
+      "Lucide React"
+    ]
+  },
 
-      "Lucide React",
+  backendTechnologyStack: {
+    runtime: [
+      "Node.js"
+    ],
 
-      "React Share",
+    framework: [
+      "Express.js"
+    ],
 
-      "React Scroll",
+    database: [
+      "MongoDB",
+      "Mongoose"
+    ],
 
-      "React Dropzone"
+    authentication: [
+      "JWT",
+      "Telegram initData",
+      "Telegram HMAC verification"
+    ],
+
+    authorization: [
+      "USER",
+      "ADMIN",
+      "SUBADMIN role checks"
+    ],
+
+    api: [
+      "REST APIs",
+      "Express Route Modules",
+      "Controllers"
+    ],
+
+    validation: [
+      "Joi"
+    ],
+
+    middleware: [
+      "CORS",
+      "Morgan",
+      "JWT verification",
+      "Telegram authentication",
+      "Error handling",
+      "Multer"
+    ],
+
+    blockchain: [
+      "TON API",
+      "Solana Web3.js"
+    ],
+
+    messaging: [
+      "Telegraf",
+      "Telegram Bot API",
+      "Nodemailer"
+    ],
+
+    documentation: [
+      "Swagger UI"
+    ],
+
+    deployment: [
+      "PM2",
+      "dotenv",
+      "Environment Configuration"
     ]
   },
 
   projectHighlights: [
     "Telegram-integrated arcade gaming platform",
 
-    "Next.js and React frontend",
+    "Full-stack Next.js and Node.js application",
 
-    "Mobile-first Telegram mini-app experience",
+    "React-based mobile-first frontend",
 
-    "Arcade game catalog",
+    "Express.js REST API backend",
+
+    "MongoDB and Mongoose data layer",
 
     "Flappy Bird game interface",
 
@@ -1056,61 +1156,73 @@ const stringarc8ModernProject = {
 
     "Ticket-based gameplay flows",
 
-    "REST API integration using Axios",
+    "Telegram WebApp authentication",
 
-    "Telegram WebApp integration",
+    "Telegram initData validation",
 
-    "JWT-based session handling",
+    "JWT-based authentication",
 
-    "React Context state management",
+    "Role-based authorization",
 
-    "Daily rewards and task interfaces",
+    "Daily rewards",
 
-    "Referral and invite functionality",
+    "Task management",
 
-    "Booster store and purchase flow",
+    "Referral system",
 
-    "Leaderboard interface",
+    "Booster system",
 
-    "User profile management",
+    "Leaderboard functionality",
+
+    "Game history",
+
+    "Transaction-related workflows",
 
     "TON wallet integration",
 
-    "Solana wallet-related integration",
+    "Solana wallet validation",
 
-    "Responsive game-oriented UI",
+    "Responsive mobile-first UI",
 
     "Reusable React components",
 
-    "Loading and error states",
+    "Axios REST API integration",
 
-    "Toast notifications",
+    "MongoDB data modeling",
 
-    "Google Analytics page tracking"
+    "Joi validation",
+
+    "Admin management functionality",
+
+    "Withdrawal-related workflows",
+
+    "File upload handling",
+
+    "PM2 process management"
   ],
 
   portfolioDescription:
-    "Developed a Telegram-first arcade gaming and rewards frontend using Next.js and React, providing users with a mobile-first game catalog and interactive experiences for Flappy Bird, Stack, and Doodle Jump. Implemented profile management, ticket-based gameplay flows, daily rewards, tasks, referrals, boosters, leaderboards, and wallet-related interactions. Integrated REST APIs using Axios, Telegram WebApp functionality, React Context for shared state, Next.js file-based routing, responsive MUI and Bootstrap interfaces, and TON and Solana wallet-related frontend workflows.",
+    "Developed a full-stack Telegram arcade gaming and rewards platform using Next.js, React, Node.js, Express, and MongoDB. Built mobile-first gaming and reward experiences for Flappy Bird, Stack, and Doodle Jump, along with user profiles, daily rewards, tasks, referrals, boosters, tickets, leaderboards, game history, and wallet-related workflows. Implemented Telegram WebApp authentication, JWT-based sessions, Axios REST API integration, React Context state management, MongoDB/Mongoose data models, Express controllers and routes, Joi validation, administrative APIs, and TON/Solana-related wallet and transaction validation flows.",
 
   resumeDescription:
-    "Developed a Telegram mini-app frontend using Next.js and React for an arcade gaming and rewards platform, implementing responsive game discovery, profile, tasks, rewards, booster, referral, leaderboard, ticket, and wallet-aware user flows. Integrated Telegram WebApp logic, Axios-based REST APIs, JWT session handling, React Context state management, and responsive MUI, Bootstrap, and custom CSS interfaces.",
+    "Developed a Telegram-based full-stack arcade gaming and rewards platform using Next.js, React, Node.js, Express, and MongoDB. Implemented Telegram authentication, JWT-protected APIs, game and reward workflows, tasks, referrals, boosters, user profiles, game history, admin management, and wallet-related functionality while building responsive mobile-first interfaces and MongoDB-backed REST APIs.",
 
   resumeBulletPoints: [
-    "Developed a Telegram mini-app frontend using Next.js and React for an arcade gaming and rewards platform with wallet-aware user flows.",
+    "Developed a Telegram mini-app using Next.js and React with mobile-first arcade gaming, reward, task, referral, booster, and profile workflows.",
 
-    "Implemented responsive game discovery, profile, tasks, rewards, referral, leaderboard, ticket, and booster pages using MUI, Bootstrap, and custom CSS.",
+    "Built Node.js and Express REST APIs with MongoDB/Mongoose for users, games, rewards, tasks, referrals, boosters, transactions, and game history.",
 
-    "Integrated Telegram WebApp functionality, JWT-based session handling, local storage/cookie persistence, and React Context for authenticated user state.",
+    "Implemented Telegram WebApp initData verification and JWT-based authentication with protected API routes and role-based authorization.",
 
-    "Built frontend game screens for Flappy Bird, Stack, and Doodle Jump with game-focused layouts and mobile interaction flows.",
+    "Developed reward, daily reward, ticket, referral, task, and booster workflows across frontend and backend layers.",
 
-    "Built reusable UI components including game cards, loaders, confirmation modals, responsive layouts, and interactive action states.",
+    "Integrated TON wallet connectivity and transaction validation along with Solana wallet-related validation for wallet and withdrawal flows.",
 
-    "Integrated TON and Solana wallet-related interactions for wallet connectivity, balance checks, and booster purchase workflows.",
+    "Developed administrative functionality for managing users, games, rewards, tasks, banners, withdrawals, and reporting.",
 
-    "Integrated REST APIs using Axios for profiles, games, tasks, rewards, boosters, tickets, referrals, and leaderboard-related data.",
+    "Implemented Joi validation, centralized API error handling, Multer-based file processing, MongoDB aggregation, and PM2 process management.",
 
-    "Optimized the frontend for mobile-first Telegram gameplay and reward-focused user interactions."
+    "Built responsive interfaces using Bootstrap, Material UI, CSS Modules, custom SCSS, reusable React components, loading states, and toast notifications."
   ],
 
   links: {
@@ -1136,6 +1248,8 @@ const stringarc8ModernProject = {
 
     showFrontendArchitecture: true,
 
+    showBackendArchitecture: true,
+
     showApiIntegration: true,
 
     showTelegramIntegration: true,
@@ -1143,6 +1257,12 @@ const stringarc8ModernProject = {
     showWalletIntegration: true,
 
     showAuthentication: true,
+
+    showDatabase: true,
+
+    showAdminPanel: true,
+
+    showValidationAndErrorHandling: true,
 
     showResponsiveDesign: true,
 
@@ -1152,10 +1272,12 @@ const stringarc8ModernProject = {
 
     showTechnologyStack: true,
 
+    showDeployment: true,
+
     showLearning: false,
 
     showResumeDescription: false
   }
 };
 
-export default stringarc8ModernProject;
+export default stringArc8ModernProject;
