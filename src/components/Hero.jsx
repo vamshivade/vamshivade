@@ -76,8 +76,8 @@ export default function Hero() {
   return (
     <Container id="home" className="flex flex-col relative overflow-hidden py-0 pt-[125px] pb-8 lg:py-0 lg:min-h-screen lg:justify-center lg:pt-0">
       {/* Dynamic Background Elements */}
-      <div className="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-orange-primary/10 rounded-full blur-[150px] -z-10 pointer-events-none animate-pulse-slow"></div>
-      <div className="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] bg-orange-deep/10 rounded-full blur-[150px] -z-10 pointer-events-none" style={{ animationDelay: '2s' }}></div>
+      <div className="hidden md:block absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-orange-primary/10 rounded-full blur-[150px] -z-10 pointer-events-none animate-pulse-slow"></div>
+      <div className="hidden md:block absolute bottom-[10%] right-[10%] w-[600px] h-[600px] bg-orange-deep/10 rounded-full blur-[150px] -z-10 pointer-events-none" style={{ animationDelay: '2s' }}></div>
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-[0.03] pointer-events-none"></div>
 
       <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-6 lg:gap-8 items-center lg:items-stretch w-full lg:flex-1 z-10 lg:mt-20">
@@ -127,8 +127,8 @@ export default function Hero() {
         <div className="lg:col-span-5 xl:col-span-5 relative w-full flex items-center justify-center lg:mt-0">
           <div className="relative w-full max-w-[450px] flex items-center justify-center">
 
-            {/* Animated Rings Behind Profile */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] z-10 pointer-events-none">
+            {/* Animated Rings Behind Profile - Hidden on mobile for performance */}
+            <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] z-10 pointer-events-none">
 
               {/* Mask Wrapper to fade bottom of rings and icons */}
               <div
@@ -198,7 +198,7 @@ export default function Hero() {
                 alt="Profile"
                 fetchPriority="high"
                 onLoad={() => setImgLoaded(true)}
-                className={`w-[220px] md:w-[300px] lg:w-[330px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(255,107,0,0.4)] transition-all duration-1000 ${
+                className={`w-[220px] md:w-[300px] lg:w-[330px] h-auto object-contain drop-shadow-xl md:drop-shadow-[0_20px_50px_rgba(255,107,0,0.4)] transition-all duration-1000 ${
                   imgLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}
               />

@@ -48,3 +48,10 @@
       40px 40px;
   }
 }
+
+@media (max-width: 768px) {
+  .cyber-pattern {
+    animation: none;
+    /* Optional: further simplify background on mobile to just one gradient */
+  }
+}
