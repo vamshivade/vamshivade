@@ -11,7 +11,6 @@ import { About, Highlights } from './components/About';
 import Skills from './components/Skills';
 import Services from './components/Services';
 import Experience from './components/Experience';
-import CoreExpertise from './components/CoreExpertise';
 import Process from './components/Process';
 import Education from './components/Education';
 import Contact from './components/Contact';
@@ -57,7 +56,6 @@ function App() {
         <Skills />
         <Services />
         <Experience />
-        <CoreExpertise />
         <Process />
         <Education />
         <Contact />
