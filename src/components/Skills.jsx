@@ -69,7 +69,7 @@ export default function Skills() {
                   alt={skill.name}
                   className="w-16 h-16 md:w-20 md:h-20 drop-shadow-xl"
                 />
-                <span className="text-xs md:text-sm font-medium text-white/50 group-hover:text-white transition-colors duration-300">
+                <span className="text-sm md:text-base font-medium text-white/50 group-hover:text-white transition-colors duration-300">
                   {skill.name}
                 </span>
               </div>
@@ -88,7 +88,7 @@ export default function Skills() {
                 alt={skill.name}
                 className="w-12 h-12 drop-shadow-lg"
               />
-              <span className="text-[9px] font-medium text-white/60 text-center leading-tight">
+              <span className="text-xs font-medium text-white/60 text-center leading-tight">
                 {skill.name}
               </span>
             </div>

@@ -79,14 +79,14 @@ export default function Services() {
               />
               <div className="relative flex items-start gap-3">
                 <span
-                  className="text-xl font-black leading-none pt-0.5 shrink-0"
+                  className="text-2xl font-black leading-none pt-0.5 shrink-0"
                   style={{ color: `rgba(255,140,50,${0.35 + idx * 0.08})` }}
                 >
                   {service.id}
                 </span>
                 <div className="space-y-1">
-                  <h3 className="text-sm font-bold text-white">{service.title}</h3>
-                  <p className="text-[11px] text-white/55 leading-relaxed">{service.description}</p>
+                  <h3 className="text-base font-bold text-white">{service.title}</h3>
+                  <p className="text-xs sm:text-sm text-white/60 leading-relaxed">{service.description}</p>
                 </div>
               </div>
             </div>
