@@ -9,7 +9,6 @@ const navItems = [
   { name: 'Skills', to: 'skills' },
   { name: 'Experience', to: 'experience' },
   // { name: 'Projects', to: 'projects' }, // Ready for future
-  { name: 'Education', to: 'education' },
   { name: 'Contact', to: 'contact' },
 ];
 
