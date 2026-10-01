@@ -98,9 +98,31 @@ const Projects = () => {
                 key={project.id}
                 variants={itemVariants}
                 onClick={() => setSelectedProject(project)}
+                onMouseMove={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  const x = e.clientX - rect.left;
+                  const y = e.clientY - rect.top;
+                  e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
+                  e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+                }}
                 className="group relative bg-dark-200/50 backdrop-blur-sm border border-orange-primary/20 rounded-2xl overflow-hidden hover:border-orange-primary/30 transition-colors duration-500 flex flex-col sm:flex-row sm:items-center cursor-pointer shadow-lg hover:shadow-orange-primary/5 p-4 sm:p-6"
               >
-                <div className="flex flex-col items-center shrink-0">
+                {/* Spotlight hover effect with Grid */}
+                <div 
+                  className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" 
+                  style={{
+                    backgroundImage: `
+                      radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,107,0,0.15), transparent 40%),
+                      linear-gradient(rgba(255, 107, 0, 0.1) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(255, 107, 0, 0.1) 1px, transparent 1px)
+                    `,
+                    backgroundSize: '100% 100%, 30px 30px, 30px 30px',
+                    maskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)',
+                    WebkitMaskImage: 'radial-gradient(500px circle at var(--mouse-x, 0) var(--mouse-y, 0), black, transparent 100%)'
+                  }}
+                />
+
+                <div className="flex flex-col items-center shrink-0 relative z-10">
                   <div className="relative w-[160px] sm:max-w-none mx-auto sm:mx-0 sm:w-36 md:w-44 aspect-square overflow-hidden bg-dark-300 rounded-xl">
                     <div className="absolute inset-0 bg-dark-300/40 group-hover:bg-transparent transition-colors duration-500 z-10" />
                     <img 
@@ -150,9 +172,6 @@ const Projects = () => {
                     {project.description}
                   </p>
                 </div>
-                
-                {/* Decorative gradient blur */}
-                <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-primary/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               </motion.div>
             ))}
           </motion.div>
