@@ -23,6 +23,11 @@ function App() {
 
   // Initialize honey-smooth scrolling
   useEffect(() => {
+    // Disable Lenis on touch devices and small screens to improve mobile performance
+    if (window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 768) {
+      return;
+    }
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // smooth easing
@@ -44,7 +49,6 @@ function App() {
       lenis.destroy();
     };
   }, []);
-
   return (
     <div className="min-h-screen bg-dark-300 font-sans selection:bg-orange-primary/30 selection:text-orange-primary relative z-0">
       {!isLoaderDone && <Loader onComplete={() => setIsLoaderDone(true)} />}

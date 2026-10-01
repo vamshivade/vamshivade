@@ -56,7 +56,9 @@ const ProjectDetails = ({ project, onClose }) => {
     document.body.style.overflow = 'hidden';
     
     let lenis;
-    if (scrollRef.current) {
+    const isMobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 768;
+
+    if (scrollRef.current && !isMobile) {
       lenis = new Lenis({
         wrapper: scrollRef.current,
         content: scrollRef.current.firstElementChild,
@@ -77,11 +79,25 @@ const ProjectDetails = ({ project, onClose }) => {
         requestAnimationFrame(raf);
       };
       requestAnimationFrame(raf);
+    } else if (scrollRef.current && isMobile) {
+      // Native scroll listener for mobile
+      const handleScroll = (e) => {
+        if (e.target.scrollTop > 100) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+      scrollRef.current.addEventListener('scroll', handleScroll);
+      scrollRef.current._handleScroll = handleScroll; // store for cleanup
     }
 
     return () => {
       document.body.style.overflow = 'unset';
       if (lenis) lenis.destroy();
+      if (scrollRef.current && scrollRef.current._handleScroll) {
+        scrollRef.current.removeEventListener('scroll', scrollRef.current._handleScroll);
+      }
     };
   }, []);
 
