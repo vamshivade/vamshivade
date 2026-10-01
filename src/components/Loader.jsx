@@ -120,8 +120,52 @@ export default function Loader({ onComplete }) {
         (stage === 'explode' || stage === 'fadeout') ? 'bg-transparent pointer-events-none' : 'bg-dark-300'
       }`}
     >
+      <style>
+        {`
+          @keyframes codeFloat {
+            0% { transform: translateY(20px) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.4; }
+            90% { opacity: 0.4; }
+            100% { transform: translateY(-150px) rotate(15deg); opacity: 0; }
+          }
+        `}
+      </style>
+      
+      {/* Coding Animation Background */}
+      <div className={`absolute inset-0 pointer-events-none transition-opacity duration-[1.5s] ease-in-out ${
+        (stage === 'explode' || stage === 'fadeout') ? 'opacity-0' : 'opacity-100'
+      }`}>
+        {Array.from({ length: 25 }).map((_, i) => {
+          // Pre-calculate deterministic random-like values based on index to avoid hydration mismatch/re-renders
+          const symbols = ['</>', '{ }', '( )', '=>', '[ ]', '&&', '||', '!=', '===', 'function', 'const', 'async', 'await'];
+          const symbol = symbols[i % symbols.length];
+          const left = (i * 17) % 100; // pseudo-random spread
+          const top = (i * 23) % 100;
+          const delay = (i * 0.2) % 2;
+          const duration = 6 + (i % 4); // Long duration so they don't reset during the 5s loader
+          const fontSize = 16 + (i % 14);
+          const isOrange = i % 4 === 0;
+
+          return (
+            <div
+              key={i}
+              className={`absolute font-mono font-bold whitespace-nowrap ${isOrange ? 'text-orange-primary/30 drop-shadow-[0_0_8px_rgba(255,107,0,0.8)]' : 'text-white/10'}`}
+              style={{
+                left: `${left}%`,
+                top: `${top}%`,
+                fontSize: `${fontSize}px`,
+                animation: `codeFloat ${duration}s linear infinite`,
+                animationDelay: `${delay}s`,
+              }}
+            >
+              {symbol}
+            </div>
+          );
+        })}
+      </div>
+
       <div 
-        className="relative w-full h-full overflow-hidden flex items-center justify-center transition-all duration-[3s] ease-out"
+        className="relative w-full h-full flex items-center justify-center transition-all duration-[3s] ease-out"
         style={{
           transform: stage === 'start' ? 'rotate(-180deg) scale(1.5)' : 'rotate(0deg) scale(1)'
         }}
