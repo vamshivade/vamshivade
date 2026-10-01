@@ -90,22 +90,22 @@ export default function Hero() {
           </p>
 
 
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 md:gap-6">
+          <div className="flex flex-row items-center justify-center lg:justify-start gap-3 md:gap-5">
             <Link
               to="experience"
               smooth={true}
               duration={500}
-              className="group flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-orange-primary text-dark-300 font-bold rounded-xl hover:bg-orange-bright hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-[0_10px_30px_rgba(255,107,0,0.3)]"
+              className="group flex items-center justify-center gap-1.5 px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-orange-primary text-dark-300 text-xs sm:text-sm md:text-base font-bold rounded-xl hover:bg-orange-bright hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-[0_10px_30px_rgba(255,107,0,0.3)]"
             >
               View My Work
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <a
               href="#"
-              className="group flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-white/5 text-white font-semibold border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/30 hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm"
+              className="group flex items-center justify-center gap-1.5 px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-white/5 text-white text-xs sm:text-sm md:text-base font-semibold border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/30 hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm"
             >
               Download CV
-              <Download className="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" />
+              <Download className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 opacity-70 group-hover:opacity-100 transition-opacity" />
             </a>
           </div>
 

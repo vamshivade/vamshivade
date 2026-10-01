@@ -8,7 +8,7 @@ export function cn(...inputs) {
 
 export function Container({ className, children, id }) {
   return (
-    <section id={id} className={cn("w-full py-20 lg:py-32 px-6 md:px-12 max-w-7xl mx-auto", className)}>
+    <section id={id} className={cn("w-full py-10 lg:py-16 px-6 md:px-12 max-w-7xl mx-auto", className)}>
       {children}
     </section>
   );
@@ -16,7 +16,7 @@ export function Container({ className, children, id }) {
 
 export function SectionHeading({ title, subtitle, className }) {
   return (
-    <div className={cn("mb-12 md:mb-24", className)}>
+    <div className={cn("mb-8 md:mb-14", className)}>
       {subtitle && (
         <span className="text-orange-primary font-medium tracking-wider uppercase text-xs md:text-sm mb-2 md:mb-3 block">
           {subtitle}
