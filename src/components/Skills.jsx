@@ -17,7 +17,8 @@ const skillsData = [
   { name: 'Git', slug: 'git' },
   { name: 'GitHub', slug: 'github' },
   { name: 'Postman', slug: 'postman' },
-  { name: 'Vite', slug: 'vite' }
+  { name: 'Vite', slug: 'vite' },
+  { name: 'Figma', slug: 'figma' }
 ];
 
 export default function Skills() {
@@ -63,27 +64,7 @@ export default function Skills() {
         }
       `}</style>
 
-      {/* Mobile View: Centered grid/wrap, no scrolling, no duplicates */}
-      <div className="md:hidden w-full py-4 pb-8">
-        <div className="flex flex-wrap justify-center gap-4 px-2">
-          {skillsData.map((skill, idx) => (
-            <div key={idx} className="flex flex-col items-center justify-center gap-2 w-16 md:w-20">
-              <img
-                src={`https://skillicons.dev/icons?i=${skill.slug}`}
-                alt={skill.name}
-                className="w-12 h-12 drop-shadow-lg"
-                loading="lazy"
-              />
-              <span className="text-[10px] font-medium text-white/70 text-center">
-                {skill.name}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Desktop View: Seamless infinite marquee */}
-      <div className="hidden md:block py-2">
+      <div className="py-2">
         <div className="marquee-container">
           <div className="marquee-content">
             {/* Quadruple the array for truly seamless infinite scrolling even on ultrawide screens */}
@@ -92,10 +73,10 @@ export default function Skills() {
                 <img
                   src={`https://skillicons.dev/icons?i=${skill.slug}`}
                   alt={skill.name}
-                  className="w-20 h-20 drop-shadow-xl"
+                  className="w-16 h-16 md:w-20 md:h-20 drop-shadow-xl"
                   loading="lazy"
                 />
-                <span className="text-sm font-medium text-white/50 group-hover:text-white transition-colors duration-300">
+                <span className="text-xs md:text-sm font-medium text-white/50 group-hover:text-white transition-colors duration-300">
                   {skill.name}
                 </span>
               </div>
