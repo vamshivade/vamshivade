@@ -1,8 +1,10 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=f97316&height=200&section=header&text=Transforming%20Complexity%20into%20Seamless%20Experiences&fontSize=32&fontAlignY=35&fontColor=ffffff&desc=Full%20Stack%20Developer%20dedicated%20to%20writing%20clean,%20scalable,%20and%20impactful%20code&descAlignY=55&descSize=16" width="100%" alt="Professional Banner"/>
+
 <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border: none;">
   <tr style="border: none;">
     <td width="65%" valign="center" style="border: none;">
       <h1>👋 Hi, I'm Vamshi Vade!</h1>
-      <h3>MERN Stack | Full Stack | React.js Developer</h3>
+      <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=2000&pause=1000&color=f97316&center=false&vCenter=true&width=500&lines=Full+Stack+Developer;MERN+Stack+Developer;Frontend+Developer;React.js+Developer;Angular+Developer;Creative+Problem+Solver" alt="Typing SVG" />
       <br/>
       <p>I'm a developer focused on building scalable web applications, robust backends, and sleek user interfaces using the JavaScript ecosystem.</p>
       <br/>
@@ -19,7 +21,7 @@
       </p>
     </td>
     <td width="35%" align="center" style="border: none;">
-      <img src="https://github.com/vamshivade.png" width="220" style="border-radius: 50%; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);" alt="Vamshi Vade" />
+      <img src="./src/assets/Profile.webp" width="220" height="220" style="border-radius: 50%; object-fit: cover; object-position: center 15%; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);" alt="Vamshi Vade" />
     </td>
   </tr>
 </table>
@@ -51,18 +53,26 @@ Beyond traditional web applications, I have hands-on experience building **produ
 
 <div align="center">
 
-| Frontend | Backend | Database & Tools |
-| :---: | :---: | :---: |
-| <img src="https://skillicons.dev/icons?i=js,html,css,react,nextjs,tailwind,bootstrap" /> | <img src="https://skillicons.dev/icons?i=nodejs,express" /> | <img src="https://skillicons.dev/icons?i=mongodb,git,github,postman,vscode" /> |
+### Languages
+<img src="https://skillicons.dev/icons?i=js,ts,html,css" />
+
+### Frontend
+<img src="https://skillicons.dev/icons?i=angular,react,nextjs,tailwind,bootstrap" />
+
+### Backend & Database
+<img src="https://skillicons.dev/icons?i=nodejs,express,mongodb" />
+
+### Tools
+<img src="https://skillicons.dev/icons?i=git,github,postman,vscode" />
 
 <br/>
 
-<img src="https://img.shields.io/badge/REST_API-009688?style=flat-square&logoColor=white"/>
-<img src="https://img.shields.io/badge/WebSockets-000000?style=flat-square&logoColor=white"/>
-<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logoColor=white"/>
-<img src="https://img.shields.io/badge/Mongoose-880000?style=flat-square&logoColor=white"/>
-<img src="https://img.shields.io/badge/Context_API-61DAFB?style=flat-square&logoColor=white"/>
-<img src="https://img.shields.io/badge/Responsive_Design-4285F4?style=flat-square&logoColor=white"/>
+<img src="https://img.shields.io/badge/REST_API-009688?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/WebSockets-000000?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/Context_API-61DAFB?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/Responsive_Design-4285F4?style=for-the-badge&logoColor=white"/>
 
 </div>
 
@@ -84,31 +94,38 @@ Beyond traditional web applications, I have hands-on experience building **produ
 ## 🚀 Featured Projects
 
 <details>
-<summary><b>🎮 String Games (Telegram Web3 Gaming Platform)</b></summary>
+<summary><b>🎮 String Games (Telegram Web3 Gaming)</b> — <a href="https://t.me/string_gamesbot">Play on Telegram</a></summary>
 <br/>
 <b>Tech Stack:</b> React.js • JavaScript • REST APIs • WebSockets • TON<br/><br/>
-Built the mobile-first frontend for a production-ready Telegram Mini App. Integrated TON wallet functionality, APIs for user profiles and rewards, and real-time WebSockets for live gameplay updates across multiple games like Crash, Dice, Mines, and Limbo.
+Built the mobile-first frontend for a production-ready Telegram Mini App. Integrated TON wallet functionality, APIs for user profiles and rewards, and real-time WebSockets for live gameplay updates across multiple games like Crash, Dice, Mines, and Limbo. Added comprehensive features for daily rewards, advertising tasks, referrals, leaderboards, and game history.
 </details>
 
 <details>
-<summary><b>🎯 String Arc8 (Telegram Arcade Gaming Platform)</b></summary>
+<summary><b>🕹️ String Arc8 Retro (Telegram Arcade)</b> — <a href="https://t.me/Stringarc8Retrobot">Play on Telegram</a></summary>
 <br/>
 <b>Tech Stack:</b> Next.js • React.js • JavaScript • REST APIs<br/><br/>
-Contributed to a Telegram-native arcade platform featuring games like Doodle Jump, Stack, and Flappy Bird. Developed modular React components, integrated live leaderboards, and focused on delivering a buttery-smooth 60fps mobile experience.
+Contributed to a Telegram-native arcade platform featuring retro games like Doodle Jump, Stack, and Flappy Bird. Developed modular React components, integrated live leaderboards, managed frontend state, implemented dynamic user flows, and focused on delivering a buttery-smooth 60fps mobile experience.
 </details>
 
 <details>
-<summary><b>🏎️ String Drive (Telegram Racing Game)</b></summary>
+<summary><b>🎯 String Arc8 Modern (Telegram Arcade)</b> — <a href="https://t.me/stringarc8modernbot">Play on Telegram</a></summary>
 <br/>
-<b>Tech Stack:</b> React.js • Node.js • Express.js • MongoDB • WebSockets<br/><br/>
-A full-stack project utilizing the complete MERN stack. Designed scalable MongoDB schemas, created Node.js REST APIs, and implemented real-time multiplayer racing logic and scoring via WebSockets.
+<b>Tech Stack:</b> Next.js • React.js • JavaScript • REST APIs<br/><br/>
+Developed the frontend for the modern version of the Arc8 platform with enhanced graphics and animations. Built complex UI components, integrated Web3 features, implemented dynamic live leaderboards, and optimized rendering performance for a premium gaming experience.
 </details>
 
 <details>
-<summary><b>🧩 String Tetris (Play-to-Earn Telegram Platform)</b></summary>
+<summary><b>🏎️ String Drive (Telegram Racing Game)</b> — <a href="https://t.me/stringdrive_bot">Play on Telegram</a></summary>
 <br/>
 <b>Tech Stack:</b> React.js • Node.js • Express.js • MongoDB • WebSockets<br/><br/>
-Developed backend APIs and frontend interfaces for a P2E Tetris variant. Engineered complex reward calculation systems, referral programs, and task achievement modules.
+A full-stack project utilizing the complete MERN stack. Designed scalable MongoDB schemas, created Node.js REST APIs, and implemented real-time multiplayer racing logic and scoring via WebSockets. Added features like secure user authentication, vehicle upgrades, and real-time global rankings.
+</details>
+
+<details>
+<summary><b>🧩 String Tetris (P2E Telegram Platform)</b> — <a href="https://t.me/stringtetris_bot">Play on Telegram</a></summary>
+<br/>
+<b>Tech Stack:</b> React.js • Node.js • Express.js • MongoDB • WebSockets<br/><br/>
+Developed robust backend APIs and frontend interfaces for a P2E Tetris variant. Engineered complex reward calculation systems, multi-tiered referral programs, secure wallet connections, and task achievement modules. Optimized database queries for real-time score tracking and leaderboards.
 </details>
 
 <br/>
