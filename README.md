@@ -3,7 +3,7 @@
 <div align="left">
   <img src="./src/assets/Profile.webp" align="right" width="280" alt="Vamshi Vade" />
   
-  <h1>👋 Hi, I'm Vamshi Vade!</h1>
+  <h3>👋 Hi, I'm Vamshi Vade!</h3>
   <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=2000&pause=1000&color=f97316&center=false&vCenter=true&width=500&lines=Full+Stack+Developer;MERN+Stack+Developer;Frontend+Developer;React.js+Developer;Angular+Developer;Creative+Problem+Solver" alt="Typing SVG" />
   <br/><br/>
   
