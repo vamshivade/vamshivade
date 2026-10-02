@@ -108,7 +108,7 @@ const Projects = () => {
                 key={project.id}
                 variants={itemVariants}
                 onClick={() => setSelectedProject(project)}
-                className="project-card relative bg-dark-200/50 backdrop-blur-sm border border-orange-primary/20 rounded-2xl overflow-hidden hover:border-orange-primary/30 transition-colors duration-500 flex flex-col sm:flex-row sm:items-center cursor-pointer shadow-lg hover:shadow-orange-primary/5 p-4 sm:p-6"
+                className="project-card relative bg-dark-200/50 backdrop-blur-sm border border-orange-primary/20 rounded-2xl overflow-hidden hover:border-orange-primary/30 transition-colors duration-500 flex flex-col sm:flex-row sm:items-center cursor-pointer shadow-lg hover:shadow-orange-primary/5 sm:p-6"
               >
                 {/* Spotlight hover effect with Grid */}
                 <div 
@@ -125,9 +125,8 @@ const Projects = () => {
                   }}
                 />
 
-                <div className="flex flex-col items-center shrink-0 relative z-10">
-                  <div className="relative w-[160px] sm:max-w-none mx-auto sm:mx-0 sm:w-36 md:w-44 aspect-square overflow-hidden bg-dark-300 rounded-xl">
-                    <div className="absolute inset-0 bg-dark-300/40 group-hover:bg-transparent transition-colors duration-500 z-10" />
+                <div className="flex flex-col items-center shrink-0 relative z-10 w-full sm:w-auto">
+                  <div className="relative w-full sm:max-w-none mx-auto sm:mx-0 sm:w-40 md:w-56 aspect-[4/3] sm:aspect-square overflow-hidden bg-dark-300 sm:rounded-xl flex items-center justify-center border-b border-orange-primary/10 sm:border-0">
                     <img 
                       src={project.image} 
                       alt={project.title}
@@ -161,7 +160,7 @@ const Projects = () => {
                   </div>
                 </div>
                 
-                <div className="p-4 sm:p-0 sm:pl-6 md:pl-8 flex flex-col flex-grow relative z-30 justify-center">
+                <div className="p-6 sm:p-0 sm:pl-6 md:pl-8 flex flex-col flex-grow relative z-30 justify-center">
                   <h4 className="text-xl md:text-2xl font-bold text-orange-primary group-hover:text-orange-primary transition-colors duration-300 mb-2 text-center sm:text-left">
                     {project.title}
                   </h4>

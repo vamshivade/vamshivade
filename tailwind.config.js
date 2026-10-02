@@ -8,14 +8,14 @@ export default {
     extend: {
       colors: {
         orange: {
-          primary: '#FAB384',
-          secondary: '#FC944C',
-          bright: '#EF670F',
-          deep: '#B44404',
+          primary: '#f97316',
+          secondary: '#ea580c',
+          bright: '#f97316',
+          deep: '#c2410c',
         },
         cream: {
-          DEFAULT: '#FBE4CC',
-          soft: '#FCC499',
+          DEFAULT: '#ffedd5',
+          soft: '#fed7aa',
         },
         brown: {
           dark: '#4B1C04',

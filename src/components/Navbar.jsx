@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { cn } from './ui/shared';
+import resumePDF from '../data/resume/VAMSHI_VADE_02102026.pdf';
 
 const navItems = [
   { name: 'Home', to: 'home' },
@@ -62,10 +63,12 @@ export default function Navbar() {
             ))}
           </ul>
           <a 
-            href="#" 
-            className="px-5 py-2 text-sm font-medium bg-orange-primary/10 text-orange-primary border border-orange-primary/20 rounded-full hover:bg-orange-primary hover:text-dark-300 transition-all duration-300"
+            href={resumePDF}
+            download="Vamshi_Vade_Resume.pdf"
+            className="flex items-center gap-2 px-5 py-2 text-sm font-medium bg-orange-primary/10 text-orange-primary border border-orange-primary/20 rounded-full hover:bg-orange-primary hover:text-dark-300 transition-all duration-300"
           >
-            Download Resume
+            <Download className="w-4 h-4" />
+            Resume
           </a>
         </nav>
 
@@ -105,10 +108,12 @@ export default function Navbar() {
           ))}
           <li className="pt-2">
              <a 
-              href="#" 
-              className="inline-block px-5 py-2 text-sm font-medium bg-orange-primary/10 text-orange-primary border border-orange-primary/20 rounded-full hover:bg-orange-primary hover:text-dark-300 transition-all duration-300"
+              href={resumePDF}
+              download="Vamshi_Vade_Resume.pdf"
+              className="inline-flex items-center gap-2 px-5 py-2 text-sm font-medium bg-orange-primary/10 text-orange-primary border border-orange-primary/20 rounded-full hover:bg-orange-primary hover:text-dark-300 transition-all duration-300"
             >
-              Download Resume
+              <Download className="w-4 h-4" />
+              Resume
             </a>
           </li>
         </ul>
