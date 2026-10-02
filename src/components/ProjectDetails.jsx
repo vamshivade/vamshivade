@@ -206,7 +206,7 @@ const ProjectDetails = ({ project, onClose }) => {
 
             {(project.coverImage || project.image) && (
               <div className="w-full max-w-5xl mx-auto h-40 sm:h-56 md:h-72 lg:h-[350px] rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-orange-primary/5">
-                <img src={project.coverImage || project.image} alt={project.title} className="w-full h-full object-cover object-center" />
+                <img src={project.coverImage || project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover object-center" />
               </div>
             )}
           </div>

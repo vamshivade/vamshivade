@@ -53,7 +53,7 @@ export default function Contact() {
           <div className="space-y-6 md:space-y-8">
             <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-4 md:gap-6 group">
               <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-white/70 group-hover:bg-orange-primary/10 group-hover:border-orange-primary/30 transition-all duration-300 shrink-0">
-                <img src="https://skillicons.dev/icons?i=gmail" alt="Email" className="w-6 h-6 md:w-7 md:h-7 object-contain group-hover:scale-110 transition-transform" />
+                <img src="https://skillicons.dev/icons?i=gmail" alt="Email" loading="lazy" className="w-6 h-6 md:w-7 md:h-7 object-contain group-hover:scale-110 transition-transform" />
               </div>
               <div className="min-w-0">
                 <div className="text-xs md:text-sm font-medium text-white/50 mb-0.5 md:mb-1 uppercase tracking-wider">Email</div>
@@ -63,7 +63,7 @@ export default function Contact() {
 
             <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 md:gap-6 group">
               <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-dark-200 border border-white/10 flex items-center justify-center text-white/70 group-hover:bg-orange-primary/10 group-hover:border-orange-primary/30 transition-all duration-300 shrink-0">
-                <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" className="w-6 h-6 md:w-7 md:h-7 object-contain group-hover:scale-110 transition-transform" />
+                <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" loading="lazy" className="w-6 h-6 md:w-7 md:h-7 object-contain group-hover:scale-110 transition-transform" />
               </div>
               <div className="min-w-0">
                 <div className="text-xs md:text-sm font-medium text-white/50 mb-0.5 md:mb-1 uppercase tracking-wider">LinkedIn</div>

@@ -67,6 +67,7 @@ export default function Skills() {
                 <img
                   src={`https://skillicons.dev/icons?i=${skill.slug}`}
                   alt={skill.name}
+                  loading="lazy"
                   className="w-16 h-16 md:w-20 md:h-20 drop-shadow-xl"
                 />
                 <span className="text-sm md:text-base font-medium text-white/50 group-hover:text-white transition-colors duration-300">
@@ -86,6 +87,7 @@ export default function Skills() {
               <img
                 src={`https://skillicons.dev/icons?i=${skill.slug}`}
                 alt={skill.name}
+                loading="lazy"
                 className="w-12 h-12 drop-shadow-lg"
               />
               <span className="text-xs font-medium text-white/60 text-center leading-tight">

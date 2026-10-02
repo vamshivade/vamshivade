@@ -6,16 +6,18 @@ import ScrollToTop from './components/ScrollToTop';
 import CustomCursor from './components/CustomCursor';
 import Lenis from 'lenis';
 
-// Eager load all components
+// Eager load components above the fold
 import { About, Highlights } from './components/About';
-import Skills from './components/Skills';
-import Services from './components/Services';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
-import Process from './components/Process';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+
+// Lazy load components below the fold
+const Skills = React.lazy(() => import('./components/Skills'));
+const Services = React.lazy(() => import('./components/Services'));
+const Projects = React.lazy(() => import('./components/Projects'));
+const Experience = React.lazy(() => import('./components/Experience'));
+const Process = React.lazy(() => import('./components/Process'));
+const Education = React.lazy(() => import('./components/Education'));
+const Contact = React.lazy(() => import('./components/Contact'));
+const Footer = React.lazy(() => import('./components/Footer'));
 
 function App() {
 
@@ -60,16 +62,20 @@ function App() {
         <Hero />
         <About />
         <Highlights />
-        <Skills />
-        <Services />
-        <Projects />
-        <Experience />
-        <Process />
-        <Education />
-        <Contact />
+        <React.Suspense fallback={<div className="py-20 flex items-center justify-center text-orange-primary/50 text-sm animate-pulse font-mono">Loading...</div>}>
+          <Skills />
+          <Services />
+          <Projects />
+          <Experience />
+          <Process />
+          <Education />
+          <Contact />
+        </React.Suspense>
       </main>
       
-      <Footer />
+      <React.Suspense fallback={null}>
+        <Footer />
+      </React.Suspense>
     </div>
   );
 }

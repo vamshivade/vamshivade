@@ -65,6 +65,32 @@ const itemVariants = {
   }
 };
 
+const ProjectActionButtons = ({ project, setSelectedProject, className }) => (
+  <div className={`flex flex-wrap gap-2 justify-center w-full ${className}`} onClick={(e) => e.stopPropagation()}>
+    <button 
+      onClick={() => setSelectedProject(project)}
+      className="flex-1 flex justify-center items-center gap-1 bg-dark-300 hover:bg-white text-orange-primary hover:text-dark-300 px-3 py-2 sm:px-2 sm:py-1.5 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-sm sm:text-xs md:text-sm"
+    >
+      <span>Details</span>
+    </button>
+    {(project.live || project.telegram) && (
+      <a 
+        href={project.live || project.telegram} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="flex-1 flex justify-center items-center gap-1 bg-orange-primary/10 hover:bg-orange-primary text-orange-primary hover:text-dark-300 px-3 py-2 sm:px-2 sm:py-1.5 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-sm sm:text-xs md:text-sm"
+      >
+        <FiExternalLink className="w-4 h-4 sm:w-3.5 sm:h-3.5" /> <span>Live</span>
+      </a>
+    )}
+    {project.github && (
+      <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1 hover:text-orange-primary transition-colors text-gray-400 p-2 sm:p-1.5" aria-label="GitHub">
+        <FiGithub className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+      </a>
+    )}
+  </div>
+);
+
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -130,34 +156,17 @@ const Projects = () => {
                     <img 
                       src={project.image} 
                       alt={project.title}
+                      loading="lazy"
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
                     />
                   </div>
                   
                   {/* Buttons below image (Desktop) */}
-                  <div className="hidden sm:flex flex-wrap gap-2 justify-center w-full mt-4" onClick={(e) => e.stopPropagation()}>
-                    <button 
-                      onClick={() => setSelectedProject(project)}
-                      className="flex-1 flex justify-center items-center gap-1 bg-dark-300 hover:bg-white text-orange-primary hover:text-dark-300 px-2 py-1.5 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-xs sm:text-sm"
-                    >
-                      <span>Details</span>
-                    </button>
-                    {(project.live || project.telegram) && (
-                      <a 
-                        href={project.live || project.telegram} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="flex-1 flex justify-center items-center gap-1 bg-orange-primary/10 hover:bg-orange-primary text-orange-primary hover:text-orange-primary px-2 py-1.5 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-xs sm:text-sm"
-                      >
-                        <FiExternalLink size={14} /> <span>Live</span>
-                      </a>
-                    )}
-                    {project.github && (
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1 hover:text-orange-primary transition-colors text-gray-400 p-1.5" aria-label="GitHub">
-                        <FiGithub size={18} />
-                      </a>
-                    )}
-                  </div>
+                  <ProjectActionButtons 
+                    project={project} 
+                    setSelectedProject={setSelectedProject} 
+                    className="hidden sm:flex mt-4" 
+                  />
                 </div>
                 
                 <div className="p-6 sm:p-0 sm:pl-6 md:pl-8 flex flex-col flex-grow relative z-30 justify-center">
@@ -175,29 +184,11 @@ const Projects = () => {
                   </p>
 
                   {/* Buttons below description (Mobile) */}
-                  <div className="flex sm:hidden flex-wrap gap-2 justify-center w-full mt-6" onClick={(e) => e.stopPropagation()}>
-                    <button 
-                      onClick={() => setSelectedProject(project)}
-                      className="flex-1 flex justify-center items-center gap-1 bg-dark-300 hover:bg-white text-orange-primary hover:text-dark-300 px-3 py-2 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-sm"
-                    >
-                      <span>Details</span>
-                    </button>
-                    {(project.live || project.telegram) && (
-                      <a 
-                        href={project.live || project.telegram} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="flex-1 flex justify-center items-center gap-1 bg-orange-primary/10 hover:bg-orange-primary text-orange-primary hover:text-dark-300 px-3 py-2 rounded-lg transition-all duration-300 border border-orange-primary/30 font-medium text-sm"
-                      >
-                        <FiExternalLink size={16} /> <span>Live</span>
-                      </a>
-                    )}
-                    {project.github && (
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1 hover:text-orange-primary transition-colors text-gray-400 p-2" aria-label="GitHub">
-                        <FiGithub size={20} />
-                      </a>
-                    )}
-                  </div>
+                  <ProjectActionButtons 
+                    project={project} 
+                    setSelectedProject={setSelectedProject} 
+                    className="flex sm:hidden mt-6" 
+                  />
                 </div>
               </motion.div>
             ))}

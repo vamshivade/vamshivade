@@ -26,15 +26,15 @@ export default function Footer() {
           <div className="flex items-center gap-5">
             <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="w-8 h-8 md:w-10 md:h-10 hover:-translate-y-1 hover:scale-110 transition-all duration-300 drop-shadow-md hover:drop-shadow-[0_10px_20px_rgba(255,107,0,0.3)]">
               <span className="sr-only">LinkedIn</span>
-              <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" className="w-full h-full object-contain" />
+              <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" loading="lazy" className="w-full h-full object-contain" />
             </a>
             <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="w-8 h-8 md:w-10 md:h-10 hover:-translate-y-1 hover:scale-110 transition-all duration-300 drop-shadow-md hover:drop-shadow-[0_10px_20px_rgba(255,107,0,0.3)]">
               <span className="sr-only">GitHub</span>
-              <img src="https://skillicons.dev/icons?i=github" alt="GitHub" className="w-full h-full object-contain" />
+              <img src="https://skillicons.dev/icons?i=github" alt="GitHub" loading="lazy" className="w-full h-full object-contain" />
             </a>
             <a href={`mailto:${personalInfo.email}`} className="w-8 h-8 md:w-10 md:h-10 hover:-translate-y-1 hover:scale-110 transition-all duration-300 drop-shadow-md hover:drop-shadow-[0_10px_20px_rgba(255,107,0,0.3)]">
               <span className="sr-only">Email</span>
-              <img src="https://skillicons.dev/icons?i=gmail" alt="Email" className="w-full h-full object-contain" />
+              <img src="https://skillicons.dev/icons?i=gmail" alt="Email" loading="lazy" className="w-full h-full object-contain" />
             </a>
           </div>
           
