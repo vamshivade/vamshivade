@@ -21,7 +21,7 @@
       </p>
     </td>
     <td width="35%" align="center" style="border: none;">
-      <img src="./src/assets/Profile.webp" width="220" height="220" style="border-radius: 50%; object-fit: cover; object-position: center 15%; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);" alt="Vamshi Vade" />
+      <img src="./src/assets/Profile.webp" width="280" alt="Vamshi Vade" />
     </td>
   </tr>
 </table>
