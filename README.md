@@ -1,22 +1,28 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=f97316&height=200&section=header&text=Hi,%20I'm%20Vamshi%20Vade!&fontSize=50&fontAlignY=38&desc=MERN%20Stack%20|%20Full%20Stack%20|%20React.js%20Developer&descAlignY=60&descSize=20&fontColor=ffffff" alt="Header" width="100%" />
-
-  <p align="center">
-    <a href="https://github.com/vamshivade">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-    </a>
-    <a href="https://www.linkedin.com/in/vamshi-vade-1b7287157/">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-    </a>
-    <a href="mailto:vamshi.vade1@gmail.com">
-      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-    </a>
-  </p>
-  
-  <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=vamshivade&style=flat-square&color=f97316&label=Profile%20Views" alt="Profile Views"/>
-  </p>
-</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border: none;">
+  <tr style="border: none;">
+    <td width="65%" valign="center" style="border: none;">
+      <h1>👋 Hi, I'm Vamshi Vade!</h1>
+      <h3>MERN Stack | Full Stack | React.js Developer</h3>
+      <br/>
+      <p>I'm a developer focused on building scalable web applications, robust backends, and sleek user interfaces using the JavaScript ecosystem.</p>
+      <br/>
+      <p>
+        <a href="https://github.com/vamshivade">
+          <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+        </a>
+        <a href="https://www.linkedin.com/in/vamshi-vade-1b7287157/">
+          <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+        </a>
+        <a href="mailto:vamshi.vade1@gmail.com">
+          <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+        </a>
+      </p>
+    </td>
+    <td width="35%" align="center" style="border: none;">
+      <img src="https://github.com/vamshivade.png" width="220" style="border-radius: 50%; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);" alt="Vamshi Vade" />
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -104,15 +110,6 @@ A full-stack project utilizing the complete MERN stack. Designed scalable MongoD
 <b>Tech Stack:</b> React.js • Node.js • Express.js • MongoDB • WebSockets<br/><br/>
 Developed backend APIs and frontend interfaces for a P2E Tetris variant. Engineered complex reward calculation systems, referral programs, and task achievement modules.
 </details>
-
-<br/>
-
-## 📊 GitHub Analytics
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vamshivade&show_icons=true&theme=nord&hide_border=true&bg_color=0D1117&title_color=f97316&icon_color=f97316" alt="GitHub Stats" height="180" />
-  <img src="https://streak-stats.demolab.com?user=vamshivade&theme=nord&hide_border=true&background=0D1117&ring=f97316&fire=f97316&currStreakLabel=f97316" alt="GitHub Streak" height="180" />
-</div>
 
 <br/>
 
