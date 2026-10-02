@@ -1,30 +1,28 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=f97316&height=200&section=header&text=Transforming%20Complexity%20into%20Seamless%20Experiences&fontSize=32&fontAlignY=35&fontColor=ffffff&desc=Full%20Stack%20Developer%20dedicated%20to%20writing%20clean,%20scalable,%20and%20impactful%20code&descAlignY=55&descSize=16" width="100%" alt="Professional Banner"/>
 
-<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border: none;">
-  <tr style="border: none;">
-    <td width="65%" valign="center" style="border: none;">
-      <h1>👋 Hi, I'm Vamshi Vade!</h1>
-      <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=2000&pause=1000&color=f97316&center=false&vCenter=true&width=500&lines=Full+Stack+Developer;MERN+Stack+Developer;Frontend+Developer;React.js+Developer;Angular+Developer;Creative+Problem+Solver" alt="Typing SVG" />
-      <br/>
-      <p>I'm a developer focused on building scalable web applications, robust backends, and sleek user interfaces using the JavaScript ecosystem.</p>
-      <br/>
-      <p>
-        <a href="https://github.com/vamshivade">
-          <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-        </a>
-        <a href="https://www.linkedin.com/in/vamshi-vade-1b7287157/">
-          <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-        </a>
-        <a href="mailto:vamshi.vade1@gmail.com">
-          <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-        </a>
-      </p>
-    </td>
-    <td width="35%" align="center" style="border: none;">
-      <img src="./src/assets/Profile.webp" width="280" alt="Vamshi Vade" />
-    </td>
-  </tr>
-</table>
+<div align="left">
+  <img src="./src/assets/Profile.webp" align="right" width="280" alt="Vamshi Vade" />
+  
+  <h1>👋 Hi, I'm Vamshi Vade!</h1>
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=2000&pause=1000&color=f97316&center=false&vCenter=true&width=500&lines=Full+Stack+Developer;MERN+Stack+Developer;Frontend+Developer;React.js+Developer;Angular+Developer;Creative+Problem+Solver" alt="Typing SVG" />
+  <br/><br/>
+  
+  <p>I'm a developer focused on building scalable web applications, robust backends, and sleek user interfaces using the JavaScript ecosystem.</p>
+  <br/>
+  
+  <p>
+    <a href="https://github.com/vamshivade">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    </a>
+    <a href="https://www.linkedin.com/in/vamshi-vade-1b7287157/">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    </a>
+    <a href="mailto:vamshi.vade1@gmail.com">
+      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    </a>
+  </p>
+</div>
+<br clear="both"/>
 
 <br/>
 
